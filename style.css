@@ -221,3 +221,34 @@ a{color:inherit}
   opacity:0;transition:opacity .25s}
 #map.wide-view .region-name{opacity:1}
 .leaflet-interactive{transition:fill-opacity .2s,stroke-opacity .2s}
+
+/* ---------- شبكة الصلات ---------- */
+#webView{padding:6px 6px 0}
+#web{width:100%;height:calc(100% - 26px)}
+.edge{stroke:#cfd8d2;stroke-width:1.3;transition:stroke .2s,opacity .2s}
+.edge.e-tie{stroke:#e0d6c0;stroke-dasharray:3 4}
+.edge.e-at{stroke:#cdbfa6}
+.edge.e-era{stroke:#d8c7a2}
+.edge.hot{stroke:#a9762f;stroke-width:2.2;opacity:1}
+.edge.dim{opacity:.22}
+.node circle{stroke:#fbf8f0;stroke-width:2;cursor:pointer;transition:opacity .2s}
+.node text{font-family:inherit;font-size:10.5px;font-weight:600;text-anchor:middle;
+  fill:#5f6f67;pointer-events:none}
+.node.region circle{fill:#173d36}
+.node.region text{fill:#173d36;font-size:12px;font-weight:700}
+.node.place circle{fill:#3f6f61}
+.node.person circle{fill:#b7834d}
+.node.event circle{fill:#8a6a4a}
+.node.material circle{fill:#c2ad8c}
+.node.on circle{stroke:#a9762f;stroke-width:4}
+.node.on text{fill:#173d36;font-weight:700}
+.node.dim{opacity:.28}
+.node:hover circle{stroke:#d3ac76;stroke-width:3.5}
+.node:focus{outline:none}
+.node:focus circle{stroke:#a9762f;stroke-width:3.5}
+.web-legend{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;
+  font-size:11.5px;color:var(--ink-3);padding:2px 0 8px}
+.web-legend span{display:flex;align-items:center;gap:5px}
+.web-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.k-region{background:#173d36}.k-place{background:#3f6f61}.k-person{background:#b7834d}
+.k-event{background:#8a6a4a}.k-material{background:#c2ad8c}

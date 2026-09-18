@@ -408,15 +408,6 @@ function drawTimeline(){
 }
 
 /* ---------------- ego web ---------------- */
-function relations(it){
-  if (!it) return [];
-  if (it.type === 'person') return [...contemporaries(it).map(x => [x,'معاصر']), ...eventsInLife(it).map(x => [x,'في زمنه'])];
-  if (it.type === 'event')  return [...aliveAt(it.year).map(x => [x,'حيّ وقتها']),
-                                    ...(it.place && byId(it.place) ? [[byId(it.place),'المكان']] : [])];
-  if (it.type === 'place')  return [...placeEvents(it).map(x => [x,'هنا']), ...regionPeople(it.region).map(x => [x,'المنطقة'])];
-  return [];
-}
-
 /** اسم طويل على سطرين بدل قصّه */
 function wrapLabel(name, max = 17, lines = 2){
   const words = String(name).split(' ');
@@ -433,30 +424,131 @@ function wrapLabel(name, max = 17, lines = 2){
   return out;
 }
 
-function drawWeb(){
-  const svg = $('#web'), it = state.sel && byId(state.sel);
-  if (!it){ svg.innerHTML = `<text class="web-empty" x="320" y="230">اختر عنصرًا لترى صلاته</text>`; return; }
-  const rel = relations(it).slice(0, 11);
-  if (!rel.length){ svg.innerHTML = `<text class="web-empty" x="320" y="230">لا صلات موثّقة لهذا العنصر بعد</text>`; return; }
-  const cx = 320, cy = 226, R = 160;
-  const nodes = rel.map(([x,label], i) => {
-    const a = (-Math.PI/2) + (i / rel.length) * Math.PI * 2;
-    return { x:cx + R*Math.cos(a), y:cy + R*Math.sin(a), item:x, label };
+/** عقد الشبكة وحوافها للنطاق المعروض */
+function webModel(){
+  const d = state.data;
+  const scope = x => inRegion(x);
+  const places = d.places.filter(scope), people = d.people.filter(scope);
+  const events = d.events.filter(scope), mats = d.materials.filter(scope);
+  const regions = d.regions.filter(r => r.id !== 'all' &&
+    (state.region === 'all' ? [...places,...people,...events,...mats].some(x => x.region === r.id)
+                            : r.id === state.region));
+
+  const nodes = [
+    ...regions.map(r => ({ id:'r_'+r.id, kind:'region', name:r.name, rid:r.id, r:20 })),
+    ...places.map(x => ({ id:x.id, kind:'place',    name:x.name, rid:x.region, r:12 })),
+    ...people.map(x => ({ id:x.id, kind:'person',   name:x.name, rid:x.region, r:12 })),
+    ...events.map(x => ({ id:x.id, kind:'event',    name:x.name, rid:x.region, r:11 })),
+    ...mats.map(x   => ({ id:x.id, kind:'material', name:x.name, rid:x.region, r:8  })),
+  ];
+  const has = new Set(nodes.map(n => n.id));
+  const edges = [];
+  const link = (a, b, w) => { if (has.has(a) && has.has(b)) edges.push([a, b, w]); };
+
+  nodes.forEach(n => { if (n.kind !== 'region') link(n.id, 'r_' + n.rid, 'tie'); });
+  events.forEach(e => { if (e.place) link(e.id, e.place, 'at'); });
+  people.forEach(p => eventsInLife(p).filter(scope).forEach(e => link(p.id, e.id, 'era')));
+  return { nodes, edges };
+}
+
+/** توزيع قوى بسيط: تنافر بين العقد، وزنبرك على الحواف، وشدّ نحو المركز */
+function layout(nodes, edges, w, h, iters){
+  const N = nodes.length;
+  nodes.forEach((n, i) => {
+    const a = (i / N) * Math.PI * 2;
+    n.x = w/2 + Math.cos(a) * w * .31; n.y = h/2 + Math.sin(a) * h * .31; n.vx = n.vy = 0;
   });
-  svg.innerHTML =
-    nodes.map(n => `<line class="edge" x1="${cx}" y1="${cy}" x2="${n.x.toFixed(1)}" y2="${n.y.toFixed(1)}"/>`).join('') +
-    `<g class="node center"><circle cx="${cx}" cy="${cy}" r="32"/>
-      <text x="${cx}" y="${cy+50}" style="fill:#16352f;font-size:13px">${esc(it.name)}</text></g>` +
-    nodes.map(n => `<g class="node ${n.item.type}" data-id="${esc(n.item.id)}" tabindex="0" role="button"
-        aria-label="${esc(n.item.name)} — ${esc(n.label)}">
-      <circle cx="${n.x.toFixed(1)}" cy="${n.y.toFixed(1)}" r="19"/>
-      ${wrapLabel(n.item.name).map((line,li) =>
-        `<text x="${n.x.toFixed(1)}" y="${(n.y + 34 + li*14).toFixed(1)}">${esc(line)}</text>`).join('')}
-    </g>`).join('');
-  $$('#web .node[data-id]').forEach(g => {
-    const go = () => { const t = byId(g.dataset.id); state.kind = t.type; renderTabs(); renderList(); select(t.id); };
+  const at = Object.fromEntries(nodes.map((n, i) => [n.id, i]));
+  for (let it = 0; it < iters; it++){
+    const cool = 1 - it / iters;
+    for (let i = 0; i < N; i++) for (let j = i + 1; j < N; j++){
+      const a = nodes[i], b = nodes[j];
+      const dx = b.x - a.x, dy = b.y - a.y, d2 = dx*dx + dy*dy || .01, d = Math.sqrt(d2);
+      const f = Math.min(5200 / d2, 45), ux = dx/d, uy = dy/d;
+      a.vx -= ux*f; a.vy -= uy*f; b.vx += ux*f; b.vy += uy*f;
+    }
+    edges.forEach(([sa, sb, kind]) => {
+      const a = nodes[at[sa]], b = nodes[at[sb]];
+      if (!a || !b) return;
+      const rest = kind === 'tie' ? 96 : 74;
+      const dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || .01;
+      const f = (d - rest) * .022, ux = dx/d, uy = dy/d;
+      a.vx += ux*f; a.vy += uy*f; b.vx -= ux*f; b.vy -= uy*f;
+    });
+    nodes.forEach(n => {
+      n.vx += (w/2 - n.x) * .0045; n.vy += (h/2 - n.y) * .0045;
+      n.x += n.vx * cool * .5; n.y += n.vy * cool * .5;
+      n.vx *= .82; n.vy *= .82;
+      n.x = Math.max(n.r + 6, Math.min(w - n.r - 6, n.x));
+      n.y = Math.max(n.r + 6, Math.min(h - n.r - 18, n.y));
+    });
+  }
+}
+
+function drawWeb(){
+  const svg = $('#web');
+  if (!state.data) return;
+  const W = 760, H = 520;
+  const key = state.region;
+  if (!state.web || state.web.key !== key){
+    const m = webModel();
+    if (!m.nodes.length){
+      svg.innerHTML = `<text class="web-empty" x="${W/2}" y="${H/2}">لا عناصر موثّقة في هذه المنطقة بعد</text>`;
+      state.web = { key, nodes:[], edges:[] };
+      return;
+    }
+    layout(m.nodes, m.edges, W, H, 300);
+    state.web = { key, ...m };
+  }
+  const { nodes, edges } = state.web;
+  if (!nodes.length){
+    svg.innerHTML = `<text class="web-empty" x="${W/2}" y="${H/2}">لا عناصر موثّقة في هذه المنطقة بعد</text>`;
+    return;
+  }
+  const at = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const sel = state.sel;
+  const near = new Set();
+  if (sel) edges.forEach(([a, b]) => { if (a === sel) near.add(b); if (b === sel) near.add(a); });
+
+  const eSvg = edges.map(([a, b, kind]) => {
+    const A = at[a], B = at[b];
+    if (!A || !B) return '';
+    const hot = sel && (a === sel || b === sel);
+    const dim = sel && !hot;
+    return `<line class="edge e-${kind}${hot ? ' hot' : ''}${dim ? ' dim' : ''}"
+      x1="${A.x.toFixed(1)}" y1="${A.y.toFixed(1)}" x2="${B.x.toFixed(1)}" y2="${B.y.toFixed(1)}"/>`;
+  }).join('');
+
+  const nSvg = nodes.map(n => {
+    const isSel = n.id === sel, isNear = near.has(n.id);
+    const dim = sel && !isSel && !isNear;
+    const label = n.kind === 'region' || isSel || isNear || nodes.length <= 20;
+    const clickable = n.kind !== 'region';
+    return `<g class="node ${n.kind}${isSel ? ' on' : ''}${dim ? ' dim' : ''}"
+        ${clickable ? `data-id="${esc(n.id)}" tabindex="0" role="button"` : `data-region="${esc(n.rid)}" tabindex="0" role="button"`}
+        aria-label="${esc(n.name)}">
+      <title>${esc(n.name)}</title>
+      <circle cx="${n.x.toFixed(1)}" cy="${n.y.toFixed(1)}" r="${n.r}"/>
+      ${label ? wrapLabel(n.name, n.kind === 'region' ? 14 : 16).map((line, li) =>
+        `<text x="${n.x.toFixed(1)}" y="${(n.y + n.r + 13 + li*12).toFixed(1)}">${esc(line)}</text>`).join('') : ''}
+    </g>`;
+  }).join('');
+
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = eSvg + nSvg;
+
+  $$('#web .node').forEach(g => {
+    const go = () => {
+      if (g.dataset.id){
+        const t = byId(g.dataset.id);
+        if (!t) return;
+        state.kind = t.type; renderTabs(); renderList(); select(t.id);
+      } else if (g.dataset.region && g.dataset.region !== state.region){
+        selectRegion(g.dataset.region);
+      }
+    };
     g.onclick = go;
-    g.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } };
+    g.onkeydown = e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); go(); } };
   });
 }
 
