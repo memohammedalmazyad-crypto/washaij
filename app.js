@@ -1,6 +1,13 @@
 /* وشائج — نموذج أولي. كل عنصر يحمل رابط مصدره. */
 'use strict';
 
+/* ختم الإصدار مأخوذ من وسم السكربت، فبَمْب رقم واحد في index.html يحدّث كل الملفات */
+const VER = (() => {
+  const el = document.querySelector('script[src*="app.js"]');
+  const m = el && el.src.match(/[?&]v=([^&]+)/);
+  return m ? '?v=' + m[1] : '';
+})();
+
 const $  = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
 const AR = (n) => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
@@ -247,7 +254,7 @@ function initMap(){
   }).addTo(state.map);
 
   drawGraticule();
-  fetch('./land.geojson').then(x => x.json()).then(land => {
+  fetch('./land.geojson' + VER).then(x => x.json()).then(land => {
     state.land = L.geoJSON(land, {
       style: f => ({
         color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
@@ -257,7 +264,7 @@ function initMap(){
         { className:'land-label', permanent:false, direction:'center' })
     }).addTo(state.map);
     state.land.bringToBack();
-    return fetch('./regions.geojson').then(x => x.json()).then(drawRegions);
+    return fetch('./regions.geojson' + VER).then(x => x.json()).then(drawRegions);
   }).then(syncBase).catch(() => {});
 
   state.map.on('zoomend', syncBase);
@@ -473,7 +480,7 @@ function setView(v){
 }
 
 /* ---------------- boot ---------------- */
-fetch('./data.json')
+fetch('./data.json' + VER)
   .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
   .then(d => {
     state.data = d;
