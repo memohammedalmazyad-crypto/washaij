@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="./style.css?v=5">
+  <link rel="stylesheet" href="./style.css?v=6">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script defer src="./app.js?v=5"></script>
+  <script defer src="./app.js?v=6"></script>
 </head>
 <body>
 <header class="topbar">
@@ -27,6 +27,20 @@
 </header>
 
 <nav class="regions" id="regions" aria-label="المناطق"></nav>
+
+<section class="era" aria-label="تصفية بالفترة الزمنية">
+  <div class="era-head">
+    <span class="era-title">الفترة</span>
+    <output id="eraOut" class="era-out"></output>
+    <button id="eraReset" class="era-reset" type="button">كل الفترات</button>
+  </div>
+  <div class="era-track">
+    <div class="era-fill" id="eraFill"></div>
+    <input type="range" id="eraFrom" aria-label="من سنة">
+    <input type="range" id="eraTo" aria-label="إلى سنة">
+  </div>
+  <p class="era-note" id="eraNote"></p>
+</section>
 
 <main class="layout">
   <section class="stage" aria-label="العرض">
@@ -71,6 +85,10 @@
   </section>
 
   <section class="browser" aria-label="الفهرس">
+    <div class="search">
+      <input id="q" type="search" placeholder="ابحث في كل المناطق…" aria-label="بحث" autocomplete="off">
+      <span class="count" id="count"></span>
+    </div>
     <div class="tabs" role="tablist" aria-label="نوع المحتوى">
       <button role="tab" data-kind="place" class="on" aria-selected="true">أماكن</button>
       <button role="tab" data-kind="person" aria-selected="false">شخصيات</button>

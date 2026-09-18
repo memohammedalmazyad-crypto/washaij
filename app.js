@@ -16,7 +16,8 @@ const esc = (s) => String(s == null ? '' : s)
 
 const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية' };
 
-const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[] };
+const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[],
+                era:{ from:0, to:0, active:false }, q:'' };
 
 /* ---------------- data helpers ---------------- */
 const all = () => {
@@ -26,6 +27,12 @@ const all = () => {
 const byId = (id) => all().find(x => x.id === id);
 const region = () => state.data.regions.find(r => r.id === state.region);
 const inRegion = (x) => state.region === 'all' || x.region === state.region;
+
+/** تطبيع عربي للبحث: تشكيل وهمزات وتاء مربوطة وألف مقصورة */
+const norm = (v) => String(v == null ? '' : v)
+  .replace(/[\u064B-\u0652\u0640]/g, '')
+  .replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه').replace(/[ؤئ]/g, 'ء')
+  .toLowerCase();
 
 const born = (p) => p.birth && p.birth.y;
 const died = (p) => p.death && p.death.y;
@@ -50,6 +57,28 @@ const aliveAt = (year) => state.data.people
 const nearbyEvents = (ev, span = 40) => state.data.events
   .filter(e => e.id !== ev.id && Math.abs(e.year - ev.year) <= span)
   .sort((a,b) => a.year - b.year);
+
+/** هل يقع العنصر داخل الفترة المختارة؟ */
+function inEra(x){
+  const e = state.era;
+  if (!e.active) return true;
+  if (x.type === 'event')    return x.year >= e.from && x.year <= e.to;
+  if (x.type === 'person')   return (born(x) && died(x)) ? (born(x) <= e.to && died(x) >= e.from) : true;
+  if (x.type === 'material') return x.year ? (x.year >= e.from && x.year <= e.to) : true;
+  if (x.type === 'place')    return !(x.inception && x.inception.y > e.to);   // مبنى لم يُنشأ بعد
+  return true;
+}
+/** ما يُعرض فعلًا: داخل المنطقة وداخل الفترة */
+const shown = (x) => inRegion(x) && inEra(x);
+
+/** نتائج البحث عبر كل المناطق والأنواع، أو null حين لا بحث */
+function searchHits(){
+  const q = norm(state.q).trim();
+  if (!q) return null;
+  return all().filter(x => inEra(x) &&
+    (norm(x.name).includes(q) || norm(x.blurb).includes(q) ||
+     norm(x.role).includes(q) || norm(x.kind).includes(q)));
+}
 
 const placeEvents = (pl) => state.data.events.filter(e => e.place === pl.id);
 const regionPeople = (rid) => state.data.people.filter(p => p.region === rid);
@@ -88,11 +117,21 @@ function renderTabs(){
 function bucket(){
   const d = state.data;
   const map = { place:d.places, person:d.people, event:d.events, material:d.materials };
-  return map[state.kind].filter(inRegion);
+  return map[state.kind].filter(shown);
 }
 
 function renderList(){
-  const items = bucket();
+  const hits = searchHits();
+  const items = hits || bucket();
+  const cnt = $('#count');
+  if (cnt) cnt.textContent = hits
+    ? `${AR(items.length)} ${items.length === 1 ? 'نتيجة' : 'نتيجة'}`
+    : `${AR(items.length)} ${items.length === 1 ? 'عنصر' : 'عنصر'}`;
+  $$('.tabs button').forEach(b => b.disabled = !!hits);
+  if (hits && !items.length){
+    $('#list').innerHTML = `<p class="empty">لا نتيجة لـ«${esc(state.q)}»${state.era.active ? ' داخل الفترة المختارة' : ''}.</p>`;
+    return;
+  }
   if (!items.length){
     $('#list').innerHTML = `<p class="empty">لا توجد ${esc(({place:'أماكن',person:'شخصيات',event:'أحداث',material:'مواد'})[state.kind])}
       موثّقة في «${esc(region().name)}» ضمن هذا النموذج بعد.<br>النموذج يعرض ما تحقّقنا من مصدره فقط.</p>`;
@@ -102,8 +141,9 @@ function renderList(){
     const thumb = it.image
       ? `<img src="${esc(it.image.url)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'ph',textContent:'—'}))">`
       : `<span class="ph">${it.type==='person'?'ش':it.type==='event'?'ح':'م'}</span>`;
+    const badge = hits ? `<span class="badge">${esc(KIND_LABEL[it.type])}</span>` : '';
     return `<button class="row${state.sel===it.id?' on':''}" data-id="${esc(it.id)}" aria-pressed="${state.sel===it.id}">
-      ${thumb}<span><strong>${esc(it.name)}</strong><small>${esc(subtitle(it))}</small></span></button>`;
+      ${thumb}<span><strong>${esc(it.name)}${badge}</strong><small>${esc(subtitle(it))}</small></span></button>`;
   }).join('');
   $$('.row').forEach(b => b.onclick = () => select(b.dataset.id));
 }
@@ -349,7 +389,7 @@ function drawGraticule(){
 function drawMarkers(){
   if (!state.map) return;
   state.markers.forEach(m => state.map.removeLayer(m));
-  const visible = all().filter(x => inRegion(x) && x.coord);
+  const visible = all().filter(x => shown(x) && x.coord);
   const seats = {};
   visible.forEach(x => { const k = x.coord.join(','); (seats[k] = seats[k] || []).push(x.id); });
   state.markers = visible.map(x => {
@@ -374,8 +414,8 @@ function drawMarkers(){
 function drawTimeline(){
   const [lo, hi] = span(), W = hi - lo;
   const pos = (y) => ((y - lo) / W) * 100;
-  const people = state.data.people.filter(inRegion).filter(p => born(p) && died(p)).sort((a,b) => born(a)-born(b));
-  const events = state.data.events.filter(inRegion).sort((a,b) => a.year - b.year);
+  const people = state.data.people.filter(shown).filter(p => born(p) && died(p)).sort((a,b) => born(a)-born(b));
+  const events = state.data.events.filter(shown).sort((a,b) => a.year - b.year);
 
   const ticks = [];
   for (let y = lo; y <= hi; y += 50) ticks.push(`<span style="inset-inline-start:${pos(y)}%">${AR(y)}</span>`);
@@ -427,7 +467,7 @@ function wrapLabel(name, max = 17, lines = 2){
 /** عقد الشبكة وحوافها للنطاق المعروض */
 function webModel(){
   const d = state.data;
-  const scope = x => inRegion(x);
+  const scope = x => shown(x);
   const places = d.places.filter(scope), people = d.people.filter(scope);
   const events = d.events.filter(scope), mats = d.materials.filter(scope);
   const regions = d.regions.filter(r => r.id !== 'all' &&
@@ -489,7 +529,7 @@ function drawWeb(){
   const svg = $('#web');
   if (!state.data) return;
   const W = 760, H = 520;
-  const key = state.region;
+  const key = state.region + '|' + (state.era.active ? state.era.from + '-' + state.era.to : 'كل');
   if (!state.web || state.web.key !== key){
     const m = webModel();
     if (!m.nodes.length){
@@ -515,8 +555,10 @@ function drawWeb(){
     if (!A || !B) return '';
     const hot = sel && (a === sel || b === sel);
     const dim = sel && !hot;
+    const why = kind === 'tie' ? 'ضمن منطقة' : kind === 'at' ? 'وقع في' : 'عاش في زمن';
     return `<line class="edge e-${kind}${hot ? ' hot' : ''}${dim ? ' dim' : ''}"
-      x1="${A.x.toFixed(1)}" y1="${A.y.toFixed(1)}" x2="${B.x.toFixed(1)}" y2="${B.y.toFixed(1)}"/>`;
+      x1="${A.x.toFixed(1)}" y1="${A.y.toFixed(1)}" x2="${B.x.toFixed(1)}" y2="${B.y.toFixed(1)}"
+      ><title>${esc(A.name)} — ${why} — ${esc(B.name)}</title></line>`;
   }).join('');
 
   const nSvg = nodes.map(n => {
@@ -552,6 +594,49 @@ function drawWeb(){
   });
 }
 
+
+/* ---------------- شريط الفترة والبحث ---------------- */
+function initFilters(){
+  const [lo, hi] = span();
+  const from = $('#eraFrom'), to = $('#eraTo');
+  state.era = { from:lo, to:hi, active:false };
+  [from, to].forEach(el => { el.min = lo; el.max = hi; el.step = 10; });
+  from.value = lo; to.value = hi;
+
+  const paint = () => {
+    const a = ((state.era.from - lo) / (hi - lo)) * 100;
+    const b = ((state.era.to   - lo) / (hi - lo)) * 100;
+    $('#eraFill').style.insetInlineStart = a + '%';
+    $('#eraFill').style.width = Math.max(b - a, 0) + '%';
+    $('#eraOut').textContent = state.era.active
+      ? `${AR(state.era.from)} – ${AR(state.era.to)} م` : `${AR(lo)} – ${AR(hi)} م · كل الفترات`;
+    $('#eraReset').hidden = !state.era.active;
+  };
+
+  const apply = () => {
+    let a = +from.value, b = +to.value;
+    if (a > b) { [a, b] = [b, a]; from.value = a; to.value = b; }
+    state.era = { from:a, to:b, active: !(a === lo && b === hi) };
+    state.web = null; state.sel = null;
+    paint(); renderList(); renderDetail(); drawMarkers(); drawTimeline(); drawWeb();
+  };
+
+  from.addEventListener('input', apply);
+  to.addEventListener('input', apply);
+  $('#eraReset').addEventListener('click', () => { from.value = lo; to.value = hi; apply(); });
+  $('#eraNote').textContent =
+    'تُعرض الأحداث الواقعة داخل الفترة، والشخصيات التي عاشت جزءًا منها، والمواد المؤرخة فيها. ' +
+    'والأماكن تبقى ظاهرة ما لم يذكر مصدرها نشأةً بعد نهاية الفترة.';
+  paint();
+
+  const q = $('#q');
+  let t;
+  q.addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(() => { state.q = q.value; renderList(); }, 140);
+  });
+}
+
 /* ---------------- views ---------------- */
 const HINTS = {
   map:'الدبابيس تشير إلى المكان الموثّق في المصدر، لا إلى موضع التصوير.',
@@ -576,7 +661,7 @@ fetch('./data.json' + VER)
   .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
   .then(d => {
     state.data = d;
-    renderRegions(); renderTabs(); renderList(); renderDetail();
+    renderRegions(); renderTabs(); initFilters(); renderList(); renderDetail();
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
