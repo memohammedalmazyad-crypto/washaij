@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870" height="320" viewBox="250 0 870 320" role="img" aria-labelledby="title description">
+  <title id="title">شعار وشائج</title>
+  <desc id="description">اسم وشائج مع رمز يجمع شكل الواو بخطّ يربط نقاطًا؛ إشارة إلى الأماكن والقصص ومصادرها.</desc>
+  <g fill="none" stroke="#173D36" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" transform="translate(852 42)">
+    <path d="M176 32C145 7 101 8 68 29C34 51 22 91 33 124C45 159 83 177 114 165C143 154 154 121 137 98C123 79 96 77 81 96"/>
+    <path d="M43 145C34 179 16 195-11 198"/>
+  </g>
+  <g fill="#B7834D" transform="translate(852 42)">
+    <circle cx="176" cy="32" r="9"/>
+    <circle cx="81" cy="96" r="9"/>
+    <circle cx="-11" cy="198" r="9"/>
+  </g>
+  <text x="760" y="180" fill="#173D36" direction="rtl" unicode-bidi="plaintext" text-anchor="start" font-family="IBM Plex Sans Arabic, SF Arabic, Geeza Pro, Tahoma, Arial, sans-serif" font-size="134" font-weight="800">وشائج</text>
+  <text x="760" y="238" fill="#526960" direction="rtl" unicode-bidi="plaintext" text-anchor="start" font-family="IBM Plex Sans Arabic, SF Arabic, Geeza Pro, Tahoma, Arial, sans-serif" font-size="32" font-weight="400">لكل مكان قصة، ولكل قصة مصدر</text>
+</svg>

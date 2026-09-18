@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d36">
+  <meta name="description" content="وشائج: خريطة حيّة للذاكرة الثقافية السعودية — أماكن وشخصيات وأحداث، لكل معلومة مصدر ظاهر.">
+  <title>وشائج | لكل مكان قصة، ولكل قصة مصدر</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23173d36'/%3E%3Cpath d='M47 14C35 5 18 12 16 27c-2 14 12 25 24 17 8-6 6-17-2-18' fill='none' stroke='%23f3ece1' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='14' r='4' fill='%23b7834d'/%3E%3Ccircle cx='38' cy='26' r='4' fill='%23b7834d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./index.html">
+    <img src="./washaij-logo.svg" alt="وشائج">
+  </a>
+  <p class="tagline">لكل مكان قصة، ولكل قصة مصدر</p>
+  <a class="rights-link" href="./سجل-الحقوق.html">المصادر والحقوق ↗</a>
+</header>
+
+<nav class="regions" id="regions" aria-label="المناطق"></nav>
+
+<main class="layout">
+  <section class="stage" aria-label="العرض">
+    <div class="stage-head">
+      <div class="views" role="tablist" aria-label="طريقة العرض">
+        <button role="tab" data-view="map" class="on" aria-selected="true">الخريطة</button>
+        <button role="tab" data-view="time" aria-selected="false">الزمن</button>
+        <button role="tab" data-view="web" aria-selected="false">الشبكة</button>
+      </div>
+      <p class="stage-hint" id="stageHint"></p>
+    </div>
+
+    <div class="stage-body">
+      <div id="mapView" class="view"><div id="map"></div></div>
+      <div id="timeView" class="view hide"><div class="timeline" id="timeline"></div></div>
+      <div id="webView" class="view hide"><svg id="web" viewBox="0 0 640 460" role="img" aria-label="شبكة صلات العنصر المختار"></svg></div>
+    </div>
+
+    <div class="region-note" id="regionNote"></div>
+  </section>
+
+  <section class="browser" aria-label="الفهرس">
+    <div class="tabs" role="tablist" aria-label="نوع المحتوى">
+      <button role="tab" data-kind="place" class="on" aria-selected="true">أماكن</button>
+      <button role="tab" data-kind="person" aria-selected="false">شخصيات</button>
+      <button role="tab" data-kind="event" aria-selected="false">أحداث</button>
+      <button role="tab" data-kind="material" aria-selected="false">مواد</button>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <aside class="detail" id="detail" aria-live="polite" aria-label="التفاصيل"></aside>
+</main>
+
+<footer class="foot">
+  <span>وشائج — نموذج أولي. كل بطاقة تحمل رابط مصدرها.</span>
+  <span>الروابط بين العناصر مدخلة تحريريًا من أوصاف المصادر، ولم تُستخرج آليًا.</span>
+</footer>
+</body>
+</html>

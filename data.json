@@ -1,0 +1,961 @@
+{
+ "regions": [
+  {
+   "id": "diriyah",
+   "name": "الدرعية",
+   "focus": true,
+   "center": [
+    24.7333,
+    46.5756
+   ],
+   "zoom": 13,
+   "blurb": "عاصمة الدولة السعودية الأولى في وادي حنيفة. منها بدأت الحكاية، وفيها انتهت الدولة الأولى سنة ١٨١٨."
+  },
+  {
+   "id": "najd",
+   "name": "نجد",
+   "center": [
+    25.6,
+    44.8
+   ],
+   "zoom": 6,
+   "blurb": "هضبة نجد وعارض اليمامة والقصيم وجبل شمر: مركز الثقل السياسي في القرون الثلاثة الأخيرة."
+  },
+  {
+   "id": "eastern",
+   "name": "الشرقية",
+   "center": [
+    25.9,
+    49.7
+   ],
+   "zoom": 8,
+   "blurb": "واحة الأحساء وسواحل القطيف: زراعة ومياه وموانئ وطرق تجارة قديمة."
+  },
+  {
+   "id": "south",
+   "name": "الجنوب",
+   "center": [
+    18.0,
+    43.0
+   ],
+   "zoom": 7,
+   "blurb": "عسير ونجران وجازان: جبال السروات وعمارة حجرية وتاريخ يمتد إلى ممالك ما قبل الإسلام."
+  },
+  {
+   "id": "north",
+   "name": "الشمال",
+   "center": [
+    28.5,
+    38.5
+   ],
+   "zoom": 6,
+   "blurb": "تبوك والجوف وتيماء: محطات على طرق القوافل بين الجزيرة والشام، ومواقع أثرية من الألف الأول قبل الميلاد."
+  },
+  {
+   "id": "hijaz",
+   "name": "الحجاز",
+   "center": [
+    21.4275,
+    39.8262
+   ],
+   "zoom": 12,
+   "secondary": true,
+   "blurb": "مواد أرشيفية مصوَّرة من مطلع القرن العشرين، محفوظة في مكتبة الكونغرس."
+  }
+ ],
+ "places": [
+  {
+   "id": "Q277505",
+   "type": "place",
+   "name": "الدرعية",
+   "region": "diriyah",
+   "kind": "مدينة تاريخية",
+   "coord": [
+    24.73333,
+    46.57556
+   ],
+   "blurb": "نشأت على ضفاف وادي حنيفة وصارت عاصمة الدولة السعودية الأولى بعد أن حكمها محمد بن سعود.",
+   "note": "إحداثيات ويكي بيانات تشير إلى المدينة عمومًا، لا إلى مبنى بعينه.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Diriyahpic.jpg/960px-Diriyahpic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Diriyahpic.jpg",
+    "license": "CC BY 2.5",
+    "artist": "Petrovic-Njegos at English Wikipedia"
+   },
+   "imageNote": "صورة حديثة للموقع، لا مشهد تاريخي.",
+   "source": "https://www.wikidata.org/wiki/Q277505",
+   "sourceName": "ويكي بيانات · Q277505",
+   "inception": null
+  },
+  {
+   "id": "Q22687629",
+   "type": "place",
+   "name": "حي الطريف",
+   "region": "diriyah",
+   "kind": "حي أثري",
+   "coord": [
+    24.73333,
+    46.57556
+   ],
+   "blurb": "حي الطريف: النواة العمرانية للدرعية القديمة، مبني بالطين على الطراز النجدي، ومسجّل ضمن مواقع التراث العالمي.",
+   "note": "سجل ويكي بيانات يعطي الحي نفس إحداثيات المدينة؛ يحتاج تدقيقًا ميدانيًا لموضع أدق.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/At-Turaif_District_in_ad-Dir%27iyah_%2812%29.jpg/960px-At-Turaif_District_in_ad-Dir%27iyah_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:At-Turaif_District_in_ad-Dir%27iyah_(12).jpg",
+    "license": "CC BY 3.0 pl",
+    "artist": "Radosław Botev"
+   },
+   "imageNote": "صورة حديثة للموقع، لا مشهد تاريخي.",
+   "source": "https://www.wikidata.org/wiki/Q22687629",
+   "sourceName": "ويكي بيانات · Q22687629",
+   "inception": null
+  },
+  {
+   "id": "Q3692",
+   "type": "place",
+   "name": "الرياض",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    24.65,
+    46.71
+   ],
+   "blurb": "انتقل إليها مركز الحكم بعد الدرعية، وصارت عاصمة الدولة السعودية الثانية ثم المملكة.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/960px-Riyadh_Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "B.alotaby"
+   },
+   "imageNote": "صورة حديثة للمدينة، لا مشهد تاريخي.",
+   "source": "https://www.wikidata.org/wiki/Q3692",
+   "sourceName": "ويكي بيانات · Q3692",
+   "inception": {
+    "y": 1746,
+    "m": null,
+    "d": null
+   }
+  },
+  {
+   "id": "Q751987",
+   "type": "place",
+   "name": "قصر المصمك",
+   "region": "najd",
+   "kind": "حصن",
+   "coord": [
+    24.6311,
+    46.7133
+   ],
+   "blurb": "حصن طيني في وسط الرياض، ارتبط اسمه بأحداث سنة ١٩٠٢.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Masmak_castle.jpg/960px-Masmak_castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Masmak_castle.jpg",
+    "license": "Public domain",
+    "artist": "Baptiste Marcel"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q751987",
+   "sourceName": "ويكي بيانات · Q751987",
+   "inception": {
+    "y": 1865,
+    "m": null,
+    "d": null
+   }
+  },
+  {
+   "id": "Q259253",
+   "type": "place",
+   "name": "بريدة",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    26.33333,
+    43.96667
+   ],
+   "blurb": "حاضرة القصيم وسوقها الزراعي والتجاري.",
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buraidah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Buraidah.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Daydream-Pho"
+   },
+   "imageNote": "صورة حديثة للمدينة.",
+   "source": "https://www.wikidata.org/wiki/Q259253",
+   "sourceName": "ويكي بيانات · Q259253",
+   "inception": null
+  },
+  {
+   "id": "Q27138",
+   "type": "place",
+   "name": "عنيزة",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    26.084,
+    43.994
+   ],
+   "blurb": "مدينة قصيمية عُرفت بأسواقها وصلاتها التجارية.",
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/King_Abdulaziz_Road%2C_Unaizah.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:King_Abdulaziz_Road,_Unaizah.jpg",
+    "license": "Public domain",
+    "artist": "Meshal Obeidallah (talk)"
+   },
+   "imageNote": "صورة حديثة للمدينة.",
+   "source": "https://www.wikidata.org/wiki/Q27138",
+   "sourceName": "ويكي بيانات · Q27138",
+   "inception": {
+    "y": 1630,
+    "m": null,
+    "d": null
+   }
+  },
+  {
+   "id": "Q675568",
+   "type": "place",
+   "name": "حائل",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    27.51667,
+    41.68333
+   ],
+   "blurb": "حاضرة جبل شمر ومركز إمارة آل رشيد.",
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Qishlah_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Qishlah_Palace.jpg",
+    "license": "Public domain",
+    "artist": "Afas1407"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q675568",
+   "sourceName": "ويكي بيانات · Q675568",
+   "inception": null
+  },
+  {
+   "id": "Q27136",
+   "type": "place",
+   "name": "الهفوف",
+   "region": "eastern",
+   "kind": "مدينة",
+   "coord": [
+    25.3608,
+    49.5997
+   ],
+   "blurb": "المركز الحضري لواحة الأحساء، إحدى أكبر واحات النخيل في العالم.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Qasr_sahood.jpg/960px-Qasr_sahood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Qasr_sahood.jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "saudipics"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q27136",
+   "sourceName": "ويكي بيانات · Q27136",
+   "inception": null
+  },
+  {
+   "id": "Q12191403",
+   "type": "place",
+   "name": "القطيف",
+   "region": "eastern",
+   "kind": "مدينة",
+   "coord": [
+    26.57515,
+    49.99686
+   ],
+   "blurb": "مدينة ساحلية على الخليج، عُرفت بواحاتها وموانئها القديمة.",
+   "note": null,
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q12191403",
+   "sourceName": "ويكي بيانات · Q12191403",
+   "inception": null
+  },
+  {
+   "id": "Q4022355",
+   "type": "place",
+   "name": "مسجد جواثا",
+   "region": "eastern",
+   "kind": "مسجد",
+   "coord": [
+    25.46972,
+    49.67861
+   ],
+   "blurb": "من أقدم المساجد في شرق الجزيرة؛ تختلف المصادر في تفاصيل تاريخه المبكر.",
+   "note": "وصف المصدر نفسه متردد في نسبة الموقع؛ نعرضه كما ورد ولا نبني عليه استنتاجًا.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Jawatha1.jpg/960px-Jawatha1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Jawatha1.jpg",
+    "license": "CC0",
+    "artist": "O.Mustafin"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q4022355",
+   "sourceName": "ويكي بيانات · Q4022355",
+   "inception": null
+  },
+  {
+   "id": "Q190948",
+   "type": "place",
+   "name": "أبها",
+   "region": "south",
+   "kind": "مدينة",
+   "coord": [
+    18.21667,
+    42.5
+   ],
+   "blurb": "حاضرة عسير في جبال السروات على ارتفاع يقارب ٢٢٠٠ متر.",
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Abha1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Abha1.jpg",
+    "license": "Public domain",
+    "artist": "http://ar.wikipedia.org/wiki/%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85:Aimk07"
+   },
+   "imageNote": "صورة حديثة للمدينة.",
+   "source": "https://www.wikidata.org/wiki/Q190948",
+   "sourceName": "ويكي بيانات · Q190948",
+   "inception": null
+  },
+  {
+   "id": "Q27174",
+   "type": "place",
+   "name": "نجران",
+   "region": "south",
+   "kind": "مدينة",
+   "coord": [
+    17.4917,
+    44.1322
+   ],
+   "blurb": "مدينة جنوبية ذات عمق تاريخي يسبق الإسلام، على طريق تجارة قديم.",
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Najran_Fort%2C_Saudi_Arabia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Najran_Fort,_Saudi_Arabia.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Irshadpp"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q27174",
+   "sourceName": "ويكي بيانات · Q27174",
+   "inception": {
+    "y": -2000,
+    "m": null,
+    "d": null
+   }
+  },
+  {
+   "id": "Q12239256",
+   "type": "place",
+   "name": "محافظة رجال المع",
+   "region": "south",
+   "kind": "قرية تراثية",
+   "coord": [
+    18.212,
+    42.273
+   ],
+   "blurb": "قرية حجرية في عسير عُرفت بعمارتها الملوّنة وأبراجها.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Rijal_Almaa_village_2021.jpg/960px-Rijal_Almaa_village_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rijal_Almaa_village_2021.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Richard Mortel"
+   },
+   "imageNote": "صورة حديثة للقرية.",
+   "source": "https://www.wikidata.org/wiki/Q12239256",
+   "sourceName": "ويكي بيانات · Q12239256",
+   "inception": null
+  },
+  {
+   "id": "Q244232",
+   "type": "place",
+   "name": "تبوك",
+   "region": "north",
+   "kind": "مدينة",
+   "coord": [
+    28.39722,
+    36.57889
+   ],
+   "blurb": "حاضرة الشمال الغربي ومحطة على طريق الحج الشامي.",
+   "note": null,
+   "image": null,
+   "imageNote": "صورة حديثة للمدينة.",
+   "source": "https://www.wikidata.org/wiki/Q244232",
+   "sourceName": "ويكي بيانات · Q244232",
+   "inception": {
+    "y": 1915,
+    "m": null,
+    "d": null
+   }
+  },
+  {
+   "id": "Q2719371",
+   "type": "place",
+   "name": "دومة الجندل",
+   "region": "north",
+   "kind": "موقع أثري",
+   "coord": [
+    29.81142,
+    39.86831
+   ],
+   "blurb": "مستوطنة وموقع أثري في الجوف، ارتبط بمملكة قيدار، وفيه قلعة مارد.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/%D9%82%D9%84%D8%B9%D8%A9_%D9%85%D8%A7%D8%B1%D8%AF.jpg/960px-%D9%82%D9%84%D8%B9%D8%A9_%D9%85%D8%A7%D8%B1%D8%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D9%85%D8%A7%D8%B1%D8%AF.jpg",
+    "license": "Public domain",
+    "artist": "haitham alfalah"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q2719371",
+   "sourceName": "ويكي بيانات · Q2719371",
+   "inception": null
+  },
+  {
+   "id": "Q27365",
+   "type": "place",
+   "name": "تيماء",
+   "region": "north",
+   "kind": "مدينة أثرية",
+   "coord": [
+    27.62609,
+    38.5476
+   ],
+   "blurb": "واحة قديمة في شمال الجزيرة، ذُكرت في نقوش من الألف الأول قبل الميلاد.",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Old_town_of_Tayma_2020.jpg/960px-Old_town_of_Tayma_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_town_of_Tayma_2020.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Richard Mortel"
+   },
+   "imageNote": "صورة حديثة للموقع.",
+   "source": "https://www.wikidata.org/wiki/Q27365",
+   "sourceName": "ويكي بيانات · Q27365",
+   "inception": null
+  }
+ ],
+ "people": [
+  {
+   "id": "Q1319659",
+   "type": "person",
+   "name": "محمد بن سعود بن محمد بن مقرن",
+   "region": "diriyah",
+   "role": "مؤسس الدولة السعودية الأولى",
+   "blurb": "حاكم الدرعية الذي قامت في عهده الدولة السعودية الأولى.",
+   "birth": {
+    "y": 1679,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1765,
+    "m": 8,
+    "d": 20
+   },
+   "hijri": null,
+   "note": null,
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q1319659",
+   "sourceName": "ويكي بيانات · Q1319659"
+  },
+  {
+   "id": "Q69351",
+   "type": "person",
+   "name": "محمد بن عبد الوهاب",
+   "region": "diriyah",
+   "role": "عالم وإمام",
+   "blurb": "عالم نجدي التقى بمحمد بن سعود في الدرعية، وارتبط اسمه بنشأة الدولة الأولى.",
+   "birth": {
+    "y": 1703,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1792,
+    "m": 6,
+    "d": 22
+   },
+   "hijri": "١١١٥ – ١٢٠٦هـ",
+   "note": "لا توجد صورة تاريخية موثّقة له؛ ما يُتداول رسوم حديثة، فلا نعرض له صورة.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q69351",
+   "sourceName": "ويكي بيانات · Q69351"
+  },
+  {
+   "id": "Q307187",
+   "type": "person",
+   "name": "عبد العزيز بن محمد آل سعود",
+   "region": "diriyah",
+   "role": "ثاني أئمة الدولة الأولى",
+   "blurb": "توسّعت الدولة في عهده خارج نجد.",
+   "birth": {
+    "y": 1721,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1803,
+    "m": 11,
+    "d": 1
+   },
+   "hijri": null,
+   "note": null,
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q307187",
+   "sourceName": "ويكي بيانات · Q307187"
+  },
+  {
+   "id": "Q2227089",
+   "type": "person",
+   "name": "سعود الكبير بن عبد العزيز بن محمد آل سعود",
+   "region": "diriyah",
+   "role": "ثالث أئمة الدولة الأولى",
+   "blurb": "حكم في ذروة اتساع الدولة الأولى وقبيل الحملة عليها.",
+   "birth": {
+    "y": 1748,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1814,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": null,
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q2227089",
+   "sourceName": "ويكي بيانات · Q2227089"
+  },
+  {
+   "id": "Q2460824",
+   "type": "person",
+   "name": "تركي بن عبد الله بن محمد بن سعود",
+   "region": "najd",
+   "role": "مؤسس الدولة السعودية الثانية",
+   "blurb": "أعاد تأسيس الحكم السعودي واتخذ الرياض عاصمة بعد سقوط الدرعية.",
+   "birth": {
+    "y": 1769,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1834,
+    "m": 5,
+    "d": 10
+   },
+   "hijri": null,
+   "note": "الصورة المتداولة له رسم لاحق لا صورة معاصرة، فلا نعرضها.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q2460824",
+   "sourceName": "ويكي بيانات · Q2460824"
+  },
+  {
+   "id": "Q1393513",
+   "type": "person",
+   "name": "فيصل بن تركي بن عبد الله آل سعود",
+   "region": "najd",
+   "role": "ثاني حكام الدولة الثانية",
+   "blurb": "حكم فترتين متقطعتين شهدتا صراعًا داخليًا وخارجيًا.",
+   "birth": {
+    "y": 1788,
+    "m": 1,
+    "d": 1
+   },
+   "death": {
+    "y": 1865,
+    "m": 12,
+    "d": 2
+   },
+   "hijri": null,
+   "note": null,
+   "image": null,
+   "imageNote": null,
+   "source": "https://www.wikidata.org/wiki/Q1393513",
+   "sourceName": "ويكي بيانات · Q1393513"
+  },
+  {
+   "id": "Q151509",
+   "type": "person",
+   "name": "عبد العزيز آل سعود",
+   "region": "najd",
+   "role": "مؤسس المملكة",
+   "blurb": "قاد استعادة الرياض سنة ١٩٠٢ ثم مسار التوحيد حتى ١٩٣٢.",
+   "birth": {
+    "y": 1876,
+    "m": 1,
+    "d": 15
+   },
+   "death": {
+    "y": 1953,
+    "m": 11,
+    "d": 9
+   },
+   "hijri": "١٢٩٢ – ١٣٧٣هـ",
+   "note": null,
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Ibn_Saud.png/960px-Ibn_Saud.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Ibn_Saud.png",
+    "license": "Public domain",
+    "artist": "Lcxzdf56 (talk · contribs)"
+   },
+   "imageNote": "صورة فوتوغرافية، ملك عام.",
+   "source": "https://www.wikidata.org/wiki/Q151509",
+   "sourceName": "ويكي بيانات · Q151509"
+  },
+  {
+   "id": "Q3319080",
+   "type": "person",
+   "name": "محمد بن عبد الله بن علي الرشيد",
+   "region": "najd",
+   "role": "أمير جبل شمر",
+   "blurb": "من حكام إمارة آل رشيد في حائل، ومنافس للحكم السعودي في نجد.",
+   "birth": {
+    "y": 1836,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1897,
+    "m": 12,
+    "d": 1
+   },
+   "hijri": null,
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/%D9%85%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87_%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87_%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author"
+   },
+   "imageNote": "صورة منسوبة إليه، مؤلفها غير معروف.",
+   "source": "https://www.wikidata.org/wiki/Q3319080",
+   "sourceName": "ويكي بيانات · Q3319080"
+  },
+  {
+   "id": "Q3738479",
+   "type": "person",
+   "name": "فيصل الدويش",
+   "region": "najd",
+   "role": "أمير مطير وقائد في الإخوان",
+   "blurb": "أحد قادة حركة الإخوان، وطرف في أحداث السبلة.",
+   "birth": {
+    "y": 1882,
+    "m": 1,
+    "d": 1
+   },
+   "death": {
+    "y": 1931,
+    "m": 1,
+    "d": 1
+   },
+   "hijri": null,
+   "note": null,
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Faisal_al_duwaish_1930_sketch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Faisal_al_duwaish_1930_sketch.jpg",
+    "license": "Public domain",
+    "artist": "unknown since the work is 70 years ago"
+   },
+   "imageNote": "رسم تخطيطي من سنة ١٩٣٠، لا صورة فوتوغرافية.",
+   "source": "https://www.wikidata.org/wiki/Q3738479",
+   "sourceName": "ويكي بيانات · Q3738479"
+  }
+ ],
+ "events": [
+  {
+   "id": "e_state1",
+   "type": "event",
+   "name": "قيام الدولة السعودية الأولى",
+   "year": 1727,
+   "endYear": null,
+   "region": "diriyah",
+   "blurb": "تبدأ الدولة الأولى في الدرعية. المصادر تختلف: سجل ويكي بيانات للدولة يضع النشأة سنة ١٧٤٤ (سنة الاتفاق)، بينما وصف السجل نفسه وسجل الدولة الحديثة يذكران ١١٥٧هـ/١٧٢٧م.",
+   "place": "Q277505",
+   "coord": [
+    24.73333,
+    46.57556
+   ],
+   "note": "تاريخان متداولان: ١٧٢٧ و١٧٤٤. نعرض الاثنين بدل ترجيح أحدهما بلا سند.",
+   "hijri": "١١٥٧هـ",
+   "source": "https://www.wikidata.org/wiki/Q146871",
+   "sourceName": "ويكي بيانات · Q146871"
+  },
+  {
+   "id": "e_siege",
+   "type": "event",
+   "name": "حصار الدرعية وسقوط الدولة الأولى",
+   "year": 1818,
+   "endYear": null,
+   "region": "diriyah",
+   "blurb": "حملة عثمانية–مصرية بقيادة إبراهيم باشا تنتهي بسقوط الدرعية. يذكر المصدر أن الحصار امتد من أبريل إلى ١٥ سبتمبر ١٨١٨.",
+   "place": "Q277505",
+   "coord": [
+    24.73333,
+    46.57556
+   ],
+   "note": null,
+   "hijri": "١٢٣٣هـ",
+   "source": "https://www.wikidata.org/wiki/Q3656346",
+   "sourceName": "ويكي بيانات · Q3656346"
+  },
+  {
+   "id": "e_state2",
+   "type": "event",
+   "name": "قيام الدولة السعودية الثانية",
+   "year": 1818,
+   "endYear": null,
+   "region": "najd",
+   "blurb": "بعد سقوط الدرعية ينتقل مركز الحكم لاحقًا إلى الرياض على يد تركي بن عبدالله.",
+   "place": "Q3692",
+   "coord": [
+    24.65,
+    46.71
+   ],
+   "note": "سجل ويكي بيانات يضع النشأة سنة ١٨١٨؛ مصادر أخرى تؤرخها بـ١٨٢٤. تحتاج تدقيقًا.",
+   "hijri": null,
+   "source": "https://www.wikidata.org/wiki/Q146862",
+   "sourceName": "ويكي بيانات · Q146862"
+  },
+  {
+   "id": "e_rashid",
+   "type": "event",
+   "name": "تأسيس إمارة آل رشيد في حائل",
+   "year": 1836,
+   "endYear": null,
+   "region": "najd",
+   "blurb": "قيام إمارة جبل شمر التي نافست الحكم السعودي على نجد عقودًا.",
+   "place": "Q675568",
+   "coord": [
+    27.51667,
+    41.68333
+   ],
+   "note": null,
+   "hijri": null,
+   "source": "https://www.wikidata.org/wiki/Q5362837",
+   "sourceName": "ويكي بيانات · Q5362837"
+  },
+  {
+   "id": "e_riyadh",
+   "type": "event",
+   "name": "استعادة الرياض",
+   "year": 1902,
+   "endYear": null,
+   "region": "najd",
+   "blurb": "الحدث الذي انطلقت منه معارك التوحيد. سجل المصدر يؤرخه ١٣ يناير ١٩٠٢، وهو يُذكر في مراجع أخرى بـ١٥ يناير (٥ شوال ١٣١٩هـ).",
+   "place": "Q751987",
+   "coord": [
+    24.6311,
+    46.7133
+   ],
+   "note": "اختلاف في اليوم بين المصادر: ١٣ أو ١٥ يناير ١٩٠٢.",
+   "hijri": "٥ شوال ١٣١٩هـ",
+   "source": "https://www.wikidata.org/wiki/Q2943187",
+   "sourceName": "ويكي بيانات · Q2943187"
+  },
+  {
+   "id": "e_sibilla",
+   "type": "event",
+   "name": "معركة السبلة",
+   "year": 1929,
+   "endYear": null,
+   "region": "najd",
+   "blurb": "مواجهة بين الملك عبدالعزيز وقادة حركة الإخوان. سجل المصدر يحدد المدة بين ٢٩ و٣١ مارس ١٩٢٩، وتُذكر عادة بـ٣٠ مارس.",
+   "place": null,
+   "coord": null,
+   "note": "لا يوجد في المصدر إحداثي دقيق للموقع، فلا نضع لها دبوسًا على الخريطة.",
+   "hijri": "١٣٤٧هـ",
+   "source": "https://www.wikidata.org/wiki/Q3636603",
+   "sourceName": "ويكي بيانات · Q3636603"
+  },
+  {
+   "id": "e_unify",
+   "type": "event",
+   "name": "إعلان توحيد المملكة",
+   "year": 1932,
+   "endYear": null,
+   "region": "najd",
+   "blurb": "تنتهي مرحلة التوحيد بإعلان المملكة العربية السعودية. سجل حروب التوحيد يحدد المدى ١٩٠٢–١٩٣٢.",
+   "place": "Q3692",
+   "coord": [
+    24.65,
+    46.71
+   ],
+   "note": null,
+   "hijri": "١٣٥١هـ",
+   "source": "https://www.wikidata.org/wiki/Q251600",
+   "sourceName": "ويكي بيانات · Q251600"
+  }
+ ],
+ "materials": [
+  {
+   "id": "m_map1908",
+   "type": "material",
+   "name": "خريطة مكة المكرمة",
+   "region": "hijaz",
+   "kind": "خريطة",
+   "date": "١٩٠٨",
+   "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Public_Domain_Mecca_Maps_32.jpg?width=900",
+    "page": "https://commons.wikimedia.org/wiki/File:Public_Domain_Mecca_Maps_32.jpg",
+    "license": "ملك عام (حسب صفحة الملف)",
+    "artist": "منسوبة لإبراهيم رفعت؛ أم القرى / جامعة الحسين بن طلال"
+   },
+   "coord": [
+    21.4305,
+    39.818
+   ],
+   "blurb": "خريطة تاريخية لمكة تُعرض للربط البصري، لا كطبقة جغرافية دقيقة.",
+   "note": "بيانات التاريخ والمؤلف في وصف الملف تحتاج مراجعة الأصل قبل أي استنتاج.",
+   "source": "https://commons.wikimedia.org/wiki/File:Public_Domain_Mecca_Maps_32.jpg",
+   "sourceName": "ويكيميديا كومنز"
+  },
+  {
+   "id": "m_04659",
+   "type": "material",
+   "name": "منظر مرتفع للكعبة",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04659v.jpg",
+    "page": "https://www.loc.gov/item/2019694961/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.4225,
+    39.82617
+   ],
+   "blurb": "مشهد من أعلى للكعبة والمسجد الحرام في مطلع القرن العشرين.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/item/2019694961/",
+   "sourceName": "مكتبة الكونغرس"
+  },
+  {
+   "id": "m_04656",
+   "type": "material",
+   "name": "الكعبة وسط الحجاج",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04656v.jpg",
+    "page": "https://www.loc.gov/item/2019694958/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.4225,
+    39.82617
+   ],
+   "blurb": "مشهد مرتفع يُظهر الكعبة وسط الحجاج.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/item/2019694958/",
+   "sourceName": "مكتبة الكونغرس"
+  },
+  {
+   "id": "m_04657",
+   "type": "material",
+   "name": "لقطة مقرّبة للكعبة",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04657v.jpg",
+    "page": "https://www.loc.gov/item/2019694959/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.4225,
+    39.82617
+   ],
+   "blurb": "تفصيل بصري محفوظ ضمن مجموعة ماتسون.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/item/2019694959/",
+   "sourceName": "مكتبة الكونغرس"
+  },
+  {
+   "id": "m_04658",
+   "type": "material",
+   "name": "صورة للكعبة",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04658v.jpg",
+    "page": "https://www.loc.gov/item/2019694960/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.4225,
+    39.82617
+   ],
+   "blurb": "صورة إضافية من السلسلة التاريخية نفسها.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/item/2019694960/",
+   "sourceName": "مكتبة الكونغرس"
+  },
+  {
+   "id": "m_04655",
+   "type": "material",
+   "name": "جمال وخيام الحجاج",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04655v.jpg",
+    "page": "https://www.loc.gov/resource/matpc.04655/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.433,
+    39.805
+   ],
+   "blurb": "مشهد للجمال وخيام الحجاج كما يصفه فهرس المكتبة.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/resource/matpc.04655/",
+   "sourceName": "مكتبة الكونغرس"
+  },
+  {
+   "id": "m_04660",
+   "type": "material",
+   "name": "مشهد الخيام من الأعلى",
+   "region": "hijaz",
+   "kind": "صورة",
+   "date": "نحو ١٩١٠",
+   "image": {
+    "url": "https://cdn.loc.gov/service/pnp/matpc/04600/04660v.jpg",
+    "page": "https://www.loc.gov/item/2019694962/",
+    "license": "لا قيود معروفة على النشر (فهرس مكتبة الكونغرس)",
+    "artist": "قسم تصوير American Colony، مجموعة ماتسون، مكتبة الكونغرس"
+   },
+   "coord": [
+    21.433,
+    39.805
+   ],
+   "blurb": "مشهد مرتفع لخيام الحجاج في مكة.",
+   "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
+   "source": "https://www.loc.gov/item/2019694962/",
+   "sourceName": "مكتبة الكونغرس"
+  }
+ ],
+ "verified": "١٨ سبتمبر ٢٠٢٦"
+}
