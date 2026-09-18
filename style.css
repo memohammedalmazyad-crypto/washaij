@@ -178,3 +178,37 @@ a{color:inherit}
 @media(prefers-reduced-motion:no-preference){
   .row,.chip,.region,.views button{transition:background .18s,border-color .18s,color .18s}
 }
+
+/* ---------- الخريطة العتيقة ---------- */
+#map{background:#cfbd97}                       /* البحر: ورق داكن */
+#map .aged-tiles{filter:sepia(.7) saturate(.55) contrast(.98) brightness(1.02)}
+#map.close-up .aged-tiles{filter:sepia(.62) saturate(.8) contrast(1.07) brightness(.97)}
+#map.close-up ~ .map-grain{opacity:.18}          /* حبيبات أخف قرب الشوارع لتبقى الأسماء مقروءة */
+.leaflet-container .land-label{
+  background:none;border:0;box-shadow:none;padding:0;
+  color:#7a6540;font-weight:700;font-size:12px;letter-spacing:.05em;
+  text-shadow:0 1px 0 #f4ecd9,0 0 6px #f4ecd9}
+.leaflet-container .land-label::before{display:none}
+.map-grain{
+  position:absolute;inset:0;z-index:500;pointer-events:none;opacity:.3;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.map-vignette{
+  position:absolute;inset:0;z-index:501;pointer-events:none;
+  box-shadow:inset 0 0 70px 14px rgba(96,76,44,.26),inset 0 0 160px 40px rgba(120,96,58,.12)}
+.compass{position:absolute;z-index:502;top:12px;inset-inline-start:12px;width:58px;height:58px;
+  opacity:.55;pointer-events:none}
+
+/* الدبابيس بمزاج حبر على ورق */
+.pin{box-shadow:0 1px 4px rgba(70,54,30,.45);border-width:2px;border-color:#f6efdd}
+.pin-place{background:#2f4f45}
+.pin-event{background:#9d6b28}
+.pin-material{background:#7a5c3c}
+.leaflet-container .leaflet-popup-content-wrapper{background:#f7f0dd;color:#4a3d26;
+  box-shadow:0 4px 18px rgba(80,62,34,.3)}
+.leaflet-container .leaflet-popup-tip{background:#f7f0dd}
+.leaflet-container .leaflet-popup-content em{color:#8a7350;font-size:11.5px}
+.leaflet-bar a{background:#f7f0dd;color:#5b4a2e;border-bottom-color:#ddd0ae}
+.leaflet-bar a:hover{background:#efe4c9}
+.leaflet-control-attribution{background:#f7f0ddcc;color:#6b5a3c}
+
+@media(max-width:760px){ .compass{width:44px;height:44px;top:8px} }

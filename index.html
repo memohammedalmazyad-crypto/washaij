@@ -40,7 +40,20 @@
     </div>
 
     <div class="stage-body">
-      <div id="mapView" class="view"><div id="map"></div></div>
+      <div id="mapView" class="view">
+        <div id="map"></div>
+        <div class="map-grain" aria-hidden="true"></div>
+        <div class="map-vignette" aria-hidden="true"></div>
+        <svg class="compass" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="34" fill="none" stroke="#8a7350" stroke-width="1.4"/>
+          <circle cx="50" cy="50" r="27" fill="none" stroke="#8a7350" stroke-width=".7" stroke-dasharray="2 4"/>
+          <path d="M50 10 57 50 50 44 43 50Z" fill="#8a7350"/>
+          <path d="M50 90 43 50 50 56 57 50Z" fill="#8a7350" opacity=".45"/>
+          <path d="M10 50 50 43 44 50 50 57Z" fill="#8a7350" opacity=".45"/>
+          <path d="M90 50 50 57 56 50 50 43Z" fill="#8a7350" opacity=".45"/>
+          <text x="50" y="8" text-anchor="middle" font-size="11" font-weight="700" fill="#7c6742">ش</text>
+        </svg>
+      </div>
       <div id="timeView" class="view hide"><div class="timeline" id="timeline"></div></div>
       <div id="webView" class="view hide"><svg id="web" viewBox="0 0 640 460" role="img" aria-label="شبكة صلات العنصر المختار"></svg></div>
     </div>

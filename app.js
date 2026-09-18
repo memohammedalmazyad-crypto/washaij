@@ -9,7 +9,7 @@ const esc = (s) => String(s == null ? '' : s)
 
 const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية' };
 
-const state = { data:null, region:'diriyah', kind:'place', view:'map', sel:null, map:null, markers:[] };
+const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[] };
 
 /* ---------------- data helpers ---------------- */
 const all = () => {
@@ -18,7 +18,7 @@ const all = () => {
 };
 const byId = (id) => all().find(x => x.id === id);
 const region = () => state.data.regions.find(r => r.id === state.region);
-const inRegion = (x) => x.region === state.region;
+const inRegion = (x) => state.region === 'all' || x.region === state.region;
 
 const born = (p) => p.birth && p.birth.y;
 const died = (p) => p.death && p.death.y;
@@ -65,7 +65,7 @@ function selectRegion(id){
   renderRegions();
   renderList();
   const r = region();
-  if (state.map) state.map.flyTo(r.center, r.zoom, { duration:.8 });
+  frame(r, true);
   drawMarkers(); drawTimeline(); drawWeb(); renderDetail();
 }
 
@@ -223,15 +223,67 @@ function span(){
 }
 
 /* ---------------- map ---------------- */
+/** منطقة لها حدود تُلاءم حجم الشاشة؛ وإلا مركز وتقريب ثابتان */
+function frame(r, animate){
+  if (!state.map) return;
+  if (r.bounds) state.map.fitBounds(r.bounds, { padding:[12,12], animate: !!animate });
+  else if (animate) state.map.flyTo(r.center, r.zoom, { duration:.8 });
+  else state.map.setView(r.center, r.zoom);
+}
+
 function initMap(){
   if (!window.L){ $('#map').innerHTML = '<p class="empty">تعذّر تحميل الخريطة. تصفّح الفهرس والزمن.</p>'; return; }
   const r = region();
-  state.map = L.map('map', { scrollWheelZoom:false, zoomControl:false }).setView(r.center, r.zoom);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom:18,
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>' }).addTo(state.map);
+  state.map = L.map('map', { scrollWheelZoom:false, zoomControl:false, minZoom:3, maxZoom:16 })
+               .setView(r.center, r.zoom);
+  frame(r, false);
   L.control.zoom({ position:'bottomleft' }).addTo(state.map);
+
+  // تفاصيل الشوارع تظهر وحدها عند التقريب، مصبوغة لتبقى في مزاج الورق القديم
+  state.tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    minZoom:9, maxZoom:16, opacity:.75, className:'aged-tiles',
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> · حدود: Natural Earth'
+  }).addTo(state.map);
+
+  drawGraticule();
+  fetch('./land.geojson').then(x => x.json()).then(land => {
+    state.land = L.geoJSON(land, {
+      style: f => ({
+        color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
+        opacity:.85, fillColor: f.properties.focus ? '#efe2c4' : '#e7dabd', fillOpacity:1
+      }),
+      onEachFeature: (f, layer) => layer.bindTooltip(f.properties.ar,
+        { className:'land-label', permanent:false, direction:'center' })
+    }).addTo(state.map);
+    state.land.bringToBack();
+    syncBase();
+  }).catch(() => {});
+
+  state.map.on('zoomend', syncBase);
   drawMarkers();
   setTimeout(() => state.map.invalidateSize(), 250);
+}
+
+/** الأرض المرسومة تختفي تدريجيًا لتكشف الشوارع عند التقريب */
+function syncBase(){
+  if (!state.map) return;
+  const z = state.map.getZoom(), close = z >= 9;
+  document.getElementById('map').classList.toggle('close-up', close);
+  if (state.land) state.land.setStyle(f => ({
+    color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
+    opacity: close ? .5 : .85,
+    fillColor: f.properties.focus ? '#efe2c4' : '#e7dabd',
+    fillOpacity: close ? 0 : 1
+  }));
+}
+
+/** شبكة خطوط الطول والعرض — ملمح الخرائط القديمة */
+function drawGraticule(){
+  const g = L.layerGroup().addTo(state.map);
+  const opt = { color:'#a8946c', weight:.7, opacity:.55, dashArray:'2 6', interactive:false };
+  for (let lon = 25; lon <= 70; lon += 5) g.addLayer(L.polyline([[5,lon],[42,lon]], opt));
+  for (let lat = 5; lat <= 40; lat += 5) g.addLayer(L.polyline([[lat,25],[lat,70]], opt));
+  g.eachLayer(l => l.bringToBack());
 }
 
 function drawMarkers(){
@@ -381,3 +433,12 @@ fetch('./data.json')
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>
       شغّل الملفات عبر خادم محلي، لا بفتح الملف مباشرة.</p>`;
   });
+
+let fitTimer;
+addEventListener('resize', () => {
+  clearTimeout(fitTimer);
+  fitTimer = setTimeout(() => {
+    const r = state.data && region();
+    if (r && r.bounds && !state.sel) frame(r, false);
+  }, 220);
+});
