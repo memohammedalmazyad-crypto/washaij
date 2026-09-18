@@ -212,3 +212,12 @@ a{color:inherit}
 .leaflet-control-attribution{background:#f7f0ddcc;color:#6b5a3c}
 
 @media(max-width:760px){ .compass{width:44px;height:44px;top:8px} }
+
+/* أسماء المناطق على الخريطة — تظهر في العرض الشامل فقط */
+.region-name{
+  color:#6d5833;font-weight:700;font-size:13px;letter-spacing:.06em;text-align:center;
+  line-height:20px;white-space:nowrap;pointer-events:none;
+  text-shadow:0 1px 0 #f7efdb,0 0 7px #f7efdb,0 0 14px #f7efdb;
+  opacity:0;transition:opacity .25s}
+#map.wide-view .region-name{opacity:1}
+.leaflet-interactive{transition:fill-opacity .2s,stroke-opacity .2s}

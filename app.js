@@ -64,6 +64,7 @@ function selectRegion(id){
   state.sel = null;
   renderRegions();
   renderList();
+  paintRegions();
   const r = region();
   frame(r, true);
   drawMarkers(); drawTimeline(); drawWeb(); renderDetail();
@@ -250,18 +251,65 @@ function initMap(){
     state.land = L.geoJSON(land, {
       style: f => ({
         color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
-        opacity:.85, fillColor: f.properties.focus ? '#efe2c4' : '#e7dabd', fillOpacity:1
+        opacity:.85, fillColor: f.properties.focus ? '#eee1c2' : '#dacba6', fillOpacity:1
       }),
       onEachFeature: (f, layer) => layer.bindTooltip(f.properties.ar,
         { className:'land-label', permanent:false, direction:'center' })
     }).addTo(state.map);
     state.land.bringToBack();
-    syncBase();
-  }).catch(() => {});
+    return fetch('./regions.geojson').then(x => x.json()).then(drawRegions);
+  }).then(syncBase).catch(() => {});
 
   state.map.on('zoomend', syncBase);
   drawMarkers();
   setTimeout(() => state.map.invalidateSize(), 250);
+}
+
+/** لون لكل منطقة، في مدى ألوان الورق القديم */
+const REGION_TINT = {
+  najd:'#e8cf96', eastern:'#c9d3b4', south:'#e0bd8e', north:'#d5d5bd', hijaz:'#eccfae'
+};
+
+/** مناطق المشروع مرسومة على الخريطة؛ الضغط عليها يفتحها */
+function drawRegions(gj){
+  if (gj.bounds) state.data.regions.forEach(r => { if (gj.bounds[r.id]) r.bounds = gj.bounds[r.id]; });
+
+  state.regionLayer = L.geoJSON(gj, {
+    style: f => regionStyle(f.properties.rid),
+    onEachFeature: (f, layer) => {
+      const rid = f.properties.rid;
+      layer.bindTooltip(f.properties.adm, { className:'land-label', direction:'center', sticky:true });
+      layer.on('click', () => selectRegion(rid));
+      layer.on('mouseover', () => { if (state.region !== rid) layer.setStyle(regionStyle(rid, true)); });
+      layer.on('mouseout',  () => layer.setStyle(regionStyle(rid)));
+    }
+  }).addTo(state.map);
+  if (state.land) state.land.bringToBack();
+
+  // اسم كل منطقة في وسطها، يظهر في العرض الشامل فقط
+  state.regionLabels = L.layerGroup().addTo(state.map);
+  Object.entries(gj.bounds || {}).forEach(([rid, b]) => {
+    const r = state.data.regions.find(x => x.id === rid);
+    if (!r) return;
+    const at = [(b[0][0] + b[1][0]) / 2, (b[0][1] + b[1][1]) / 2];
+    state.regionLabels.addLayer(L.marker(at, {
+      interactive:false,
+      icon: L.divIcon({ className:'region-name', html:esc(r.name), iconSize:[92,20], iconAnchor:[46,10] })
+    }));
+  });
+}
+
+function regionStyle(rid, hover){
+  const on = state.region === rid;
+  return { color: on ? '#5c4a2c' : '#a08a5e', weight: on ? 2 : .8,
+           opacity: on ? .95 : .5,
+           fillColor: REGION_TINT[rid] || '#e7dabd',
+           fillOpacity: on ? .95 : (hover ? .8 : .62) };
+}
+
+function paintRegions(){
+  if (!state.regionLayer) return;
+  state.regionLayer.eachLayer(l => l.setStyle(regionStyle(l.feature.properties.rid)));
 }
 
 /** الأرض المرسومة تختفي تدريجيًا لتكشف الشوارع عند التقريب */
@@ -272,9 +320,14 @@ function syncBase(){
   if (state.land) state.land.setStyle(f => ({
     color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
     opacity: close ? .5 : .85,
-    fillColor: f.properties.focus ? '#efe2c4' : '#e7dabd',
+    fillColor: f.properties.focus ? '#eee1c2' : '#dacba6',
     fillOpacity: close ? 0 : 1
   }));
+  if (state.regionLayer) state.regionLayer.eachLayer(l => {
+    const st = regionStyle(l.feature.properties.rid);
+    l.setStyle(close ? { ...st, fillOpacity:0, opacity:.45 } : st);
+  });
+  document.getElementById('map').classList.toggle('wide-view', z <= 7);
 }
 
 /** شبكة خطوط الطول والعرض — ملمح الخرائط القديمة */
