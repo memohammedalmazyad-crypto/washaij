@@ -291,6 +291,9 @@ function renderDetail(){
     <p class="d-kicker">${esc(region().name)} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
     ${it.sourceLabel ? `<p class="src-name">الاسم في المصدر: <span>${esc(it.sourceLabel)}</span></p>` : ''}
+    ${it.arMatch ? `<p class="ar-match">الاسم العربي من <b>السجل الوطني للآثار</b> · ${esc(it.arMatch.gov)}
+      <br><em>${esc(it.arMatch.basis)}</em></p>` : ''}
+    ${it.nameNote ? `<p class="name-note">${esc(it.nameNote)}</p>` : ''}
     ${when}
     ${gradeTag}
     ${it.review ? `<p class="reviewed-by">راجعها <b>${esc(it.review.by)}</b> · ${esc(it.review.date)}
