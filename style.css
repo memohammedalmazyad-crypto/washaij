@@ -400,3 +400,11 @@ a{color:inherit}
 .leaflet-tooltip{background:#f7f0dd;border:1px solid #ddd0ae;color:#4a3d26;font-family:inherit;
   font-size:12px;line-height:1.7;box-shadow:0 3px 12px rgba(80,62,34,.25)}
 .leaflet-tooltip em{color:#8a7350;font-style:normal}
+
+/* هرم المصادر: كتاب تاريخي ← جهة رسمية ← مؤسسة حافظة ← مساند */
+.grade-book{background:#e6efe9;color:#1c5240}
+.grade-book::before{background:#2f7d5f}
+.grade-institution{background:#eef1f6;color:#3c4f73}
+.grade-institution::before{background:#5b7bb0}
+.grade-support{background:#f4efe2;color:#6f5a34}
+.grade-support::before{background:#c2a771}

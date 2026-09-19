@@ -272,14 +272,15 @@ function renderDetail(){
       blurb: 'موقع مسجّل في بيانات وزارة الثقافة المنشورة. السجل يذكر اسمه وصنفه وموقعه الإداري فقط.',
       note: 'لا إحداثي لهذا الموقع في البيانات المنشورة، فلا يظهر على الخريطة. ' +
             'توقيعه جغرافيًا يحتاج مصدرًا إضافيًا أو مسحًا ميدانيًا.',
-      grade: (src && src.grade) || 'official',
+      tier: 'official',
       source: (src && src.url) || '#',
       sourceName: src ? `${src.publisher} · ${src.title}` : 'المصدر'
     });
   }
 
-  const g = state.data.grades && state.data.grades[it.grade];
-  const gradeTag = g ? `<span class="grade grade-${esc(it.grade)}">${esc(g.label)}</span>
+  const tier = it.tier || (it.type === 'site' ? 'official' : 'support');
+  const g = state.data.tiers && state.data.tiers[tier];
+  const gradeTag = g ? `<span class="grade grade-${esc(tier)}">${esc(g.label)}</span>
     <p class="grade-why">${esc(g.note)}</p>` : '';
 
   const lic = it.image
