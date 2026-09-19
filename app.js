@@ -293,7 +293,8 @@ function renderDetail(){
     ${it.sourceLabel ? `<p class="src-name">الاسم في المصدر: <span>${esc(it.sourceLabel)}</span></p>` : ''}
     ${it.arMatch ? `<p class="ar-match">الاسم العربي من <b>السجل الوطني للآثار</b> · ${esc(it.arMatch.gov)}
       <br><em>${esc(it.arMatch.basis)}</em></p>` : ''}
-    ${it.nameNote ? `<p class="name-note">${esc(it.nameNote)}</p>` : ''}
+    ${it.translit ? `<p class="translit-tag">نقل حرفي آلي — لم يُتحقق</p>` : ''}
+    ${it.nameNote ? `<p class="name-note">${esc(it.nameNote).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')}</p>` : ''}
     ${when}
     ${gradeTag}
     ${it.review ? `<p class="reviewed-by">راجعها <b>${esc(it.review.by)}</b> · ${esc(it.review.date)}

@@ -428,3 +428,6 @@ a{color:inherit}
 .ar-match em{font-style:normal;color:var(--ink-3)}
 .name-note{background:#f7f2e6;border:1px dashed #e0d1ab;border-radius:10px;padding:9px 11px;
   font-size:11.5px;line-height:1.85;color:#6f5a34;margin:0 0 11px}
+.translit-tag{display:inline-block;background:#f6ecd9;color:#8a6420;border:1px dashed #ddc79a;
+  border-radius:99px;padding:3px 11px;font-size:11px;font-weight:700;margin:0 0 9px}
+.name-note b{color:#6b4a12}
