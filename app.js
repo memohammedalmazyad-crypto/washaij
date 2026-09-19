@@ -107,7 +107,6 @@ function selectRegion(id){
   renderRegions();
   renderList();
   paintRegions();
-  renderCoverage();
   const r = region();
   frame(r, true);
   drawMarkers(); drawTimeline(); drawWeb(); renderDetail();
@@ -295,7 +294,6 @@ function renderDetail(){
       sourceName: src ? `${src.publisher} · ${src.title}` : 'المصدر'
     });
   }
-
 
   const lic = it.image
     ? `<p class="credit"><b>الترخيص:</b> ${esc(it.image.license)}<br><b>النسب:</b> ${esc(it.image.artist)}
@@ -766,9 +764,6 @@ function drawWeb(){
   });
 }
 
-
-
-
 /* ---------------- الافتتاح والفترات ---------------- */
 function playIntro(){
   const el = $('#intro');
@@ -930,30 +925,11 @@ function loadSites(){
   return fetch('./sites.json' + VER).then(r => r.json()).then(d => {
     d.rows.forEach(r => { r.kind = r.type; r.type = 'site'; });   // النوع الأصلي يصير «صنف»
     state.sites = d;
-    renderCoverage();
-    if (state.kind === 'site' || state.q) renderList();
-  }).catch(() => { state.sites = { rows:[], byRegion:{}, total:0, source:null }; renderCoverage(); });
+      if (state.kind === 'site' || state.q) renderList();
+  }).catch(() => { state.sites = { rows:[], byRegion:{}, total:0, source:null }; });
 }
 
 /** كم موقعًا سجّلته الوزارة في هذا النطاق، وكم منها موقّع على الخريطة */
-function renderCoverage(){
-  const box = $('#coverage');
-  if (!box) return;
-  if (!state.sites){ box.innerHTML = '<p class="cov-note">…يُحمّل السجل الوطني</p>'; return; }
-  const src = state.sites.source;
-  const registered = state.region === 'all'
-    ? state.sites.total
-    : (state.sites.byRegion[state.region] || 0);
-  const located = state.data.places.filter(x => inRegion(x) && x.coord).length;
-  const pct = registered ? Math.max((located / registered) * 100, .35) : 0;
-  box.innerHTML = `
-    <div class="cov-head">
-      <b>${AR(registered.toLocaleString('en-US').replace(/,/g,'٬'))}</b>
-      <span>موقعًا مسجّلًا رسميًا${state.region === 'all' ? ' في المملكة' : ` في ${esc(region().name)}`}</span>
-      <span>· على الخريطة: <b style="font-size:14px">${AR(located)}</b></span>
-    </div>
-    <div class="cov-bar"><i style="width:${pct.toFixed(2)}%"></i></div>`;
-}
 
 /* ---------------- شريط الفترة والبحث ---------------- */
 function initFilters(){
@@ -1020,7 +996,7 @@ fetch('./data.json' + VER)
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
-    renderCoverage(); loadSites(); loadVoices(); playIntro();
+    loadSites(); loadVoices(); playIntro();
   })
   .catch(err => {
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>
