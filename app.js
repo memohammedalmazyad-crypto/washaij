@@ -163,7 +163,7 @@ function renderList(){
 const subtitle = (it) =>
   it.type === 'site'     ? `${it.kind}${it.gov ? ' · ' + it.gov : ''} · ${it.adm}`
 : it.type === 'person'   ? `${it.role} · ${yearsText(it)}`
-: it.type === 'event'    ? `${AR(it.year)} م`
+: it.type === 'event'    ? `${it.kind ? it.kind + ' · ' : ''}${AR(it.year)} م`
 : it.type === 'material' ? `${it.kind} · ${it.date}`
 : it.kind;
 
@@ -745,12 +745,10 @@ function playIntro(){
 /** فترات مسماة، حدودها مأخوذة من تواريخ أحداث موثّقة في السجل */
 const PERIODS = [
   { id:'all',    name:'كل الفترات', span:null },
-  { id:'early',  name:'صدر الإسلام',            span:[610, 750] },
-  { id:'middle', name:'ما قبل الدولة السعودية', span:[750, 1727] },
   { id:'first',  name:'الدولة السعودية الأولى', span:[1727, 1818] },
   { id:'between',name:'بين الدولتين والثانية',  span:[1818, 1902] },
   { id:'unify',  name:'التوحيد والتأسيس',       span:[1902, 1932] },
-  { id:'after',  name:'بعد التأسيس',            span:[1932, 2000] },
+  { id:'after',  name:'بعد التأسيس',            span:[1932, 1990] },
 ];
 
 function renderPeriods(){
