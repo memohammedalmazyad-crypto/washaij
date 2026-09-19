@@ -226,6 +226,16 @@ function renderDetail(){
     when = `<p class="d-when">${AR(it.year)}${it.endYear&&it.endYear!==it.year?` – ${AR(it.endYear)}`:''} م
       ${it.hijri ? `<em>· ${esc(it.hijri)}</em>` : ''}${pl ? `<em>· ${esc(pl.name)}</em>` : ''}</p>`;
     const docs = eventDocs(it);
+    if (it.narratives && it.narratives.length)
+      secs += section(`رواية من كتاب تاريخي (${AR(it.narratives.length)})`,
+        it.narratives.map(nv => `<div class="narr">
+          ${nv.ar ? `<p class="narr-ar">${esc(nv.ar)}</p>
+            <p class="narr-note">${esc(nv.arNote || '')}</p>` : ''}
+          <details><summary>النص الإنجليزي الأصلي</summary>
+            <p class="narr-en">${esc(nv.quote)}</p></details>
+          <a class="narr-src" href="${esc(nv.url)}" target="_blank" rel="noopener">${esc(nv.source)} ↗</a>
+        </div>`).join(''));
+
     secs += section(`الوثائق والمواد المرتبطة (${AR(docs.length)})`,
       docs.length
         ? `<div class="chips">${docs.map(m => chip(m, m.date)).join('')}</div>
