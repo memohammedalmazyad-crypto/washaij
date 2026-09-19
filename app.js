@@ -113,11 +113,24 @@ function selectRegion(id){
   drawMarkers(); drawTimeline(); drawWeb(); renderDetail();
 }
 
+/** ينهي البحث: يمسح الحقل والحالة معًا فلا يبقى أحدهما متأخرًا عن الآخر */
+function clearSearch(){
+  if (!state.q) return;
+  state.q = '';
+  const q = $('#q');
+  if (q) q.value = '';
+}
+
 function renderTabs(){
   $$('.tabs button').forEach(b => {
     b.classList.toggle('on', b.dataset.kind === state.kind);
     b.setAttribute('aria-selected', b.dataset.kind === state.kind);
-    b.onclick = () => { state.kind = b.dataset.kind; state.limit = 80; renderTabs(); renderList(); };
+    b.onclick = () => {
+      // البحث يعبر الأنواع، فالتبويب أثناءه كان يُعطَّل. الأوضح أن يُنهيه:
+      // ضغط التبويب يمسح البحث ويعرض نوعه، فلا زرّ ميت في الواجهة.
+      clearSearch();
+      state.kind = b.dataset.kind; state.limit = 80; renderTabs(); renderList();
+    };
   });
 }
 
@@ -135,7 +148,11 @@ function renderList(){
   const cnt = $('#count');
   const big = (n) => AR(n.toLocaleString('en-US').replace(/,/g, '٬'));
   if (cnt) cnt.textContent = `${big(items.length)} ${hits ? 'نتيجة' : 'عنصر'}`;
-  $$('.tabs button').forEach(b => b.disabled = !!hits);
+  $$('.tabs button').forEach(b => {
+    b.disabled = false;
+    b.classList.toggle('muted', !!hits);            // باهتة أثناء البحث، لا معطّلة
+    b.title = hits ? 'البحث يعرض كل الأنواع — اضغط لإنهائه والعودة إلى هذا التبويب' : '';
+  });
   if (hits && !items.length){
     $('#list').innerHTML = `<p class="empty">لا نتيجة لـ«${esc(state.q)}»${state.era.active ? ' داخل الفترة المختارة' : ''}.</p>`;
     return;

@@ -531,3 +531,9 @@ h1, h2, h3, .d-body h2, .chat-head strong, .row strong{text-wrap:balance}
   .tabs button{flex:1 1 0; min-width:0; padding-inline:3px; font-size:11.5px;
     white-space:normal; line-height:1.3; hyphens:none}
 }
+
+/* أثناء البحث تُعرض كل الأنواع معًا، فيبهت التبويب ليقول إن اختياره
+   غير فاعل الآن — لكنه يبقى قابلًا للضغط فيُنهي البحث ويعود إلى نوعه. */
+.tabs button.muted{opacity:.55}
+.tabs button.muted:hover,
+.tabs button.muted:focus-visible{opacity:1}
