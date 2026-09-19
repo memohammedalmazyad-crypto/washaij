@@ -348,7 +348,8 @@ function lifeBar(p){
 }
 
 function span(){
-  const ys = [...state.data.people.flatMap(p => [born(p), died(p)]),
+  // الشخصية المعلَنة خارج نطاق المشروع لا تمدّ المحور، وإلا امتدّ عقودًا فارغة لأجل واحد
+  const ys = [...state.data.people.filter(p => !p.outsideWindow).flatMap(p => [born(p), died(p)]),
               ...state.data.events.flatMap(e => [e.year, e.endYear])]
              .filter(v => typeof v === 'number' && isFinite(v));
   if (!ys.length) return [1700, 1960];
