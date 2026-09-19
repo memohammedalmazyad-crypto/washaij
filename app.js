@@ -541,17 +541,29 @@ function drawMarkers(){
     const size = x.type === 'event' ? 22 : x.type === 'place' ? 17 : 14;
     const group = seats[x.at.join(',')];
     let at = x.at;
-    if (group.length > 1){                       // دبابيس على الإحداثي نفسه
-      const i = group.indexOf(x.id), a = (i / group.length) * Math.PI * 2, R = 0.0016;
-      at = [x.at[0] + R*Math.cos(a), x.at[1] + R*Math.sin(a)];
+    if (group.length > 1){
+      // المكان يبقى على إحداثيه بالضبط؛ ما سواه يتحلّق حوله في أطواق
+      // يتّسع نصف قطرها مع العدد، لئلا يحجب أربعون شخصًا بلدتَهم.
+      const anchor = group.find(id => (byId(id) || {}).type === 'place');
+      const ring = group.filter(id => id !== anchor);
+      const i = ring.indexOf(x.id);
+      if (i >= 0){
+        const per = 12, lap = Math.floor(i / per), k = i % per;
+        const n = Math.min(per, ring.length - lap * per);
+        const a = (k / n) * Math.PI * 2 + lap * 0.26;
+        const R = 0.0042 * (lap + 1);
+        at = [x.at[0] + R*Math.cos(a), x.at[1] + R*Math.sin(a) / Math.cos(x.at[0]*Math.PI/180)];
+      }
     }
     const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}${x.proposed && x.tier!=='reviewed' ?' proposed':''}${x.tier==='reviewed'?' reviewed':''}`,
       iconSize:[size,size], iconAnchor:[size/2,size/2] });
-    return L.marker(at, { icon, title:x.name })
+    // المكان فوق الجميع فلا يُحجب، ثم الحدث، ثم الشخص
+    const zi = x.type === 'place' ? 600 : x.type === 'event' ? 300 : 0;
+    return L.marker(at, { icon, title:x.name, zIndexOffset:zi, riseOnHover:true })
       .addTo(state.map)
-      .bindPopup(`<strong>${esc(x.name)}</strong><br>${esc(subtitle(x))}` +
+      .bindPopup(`<span class="pop-kind">${esc(KIND_LABEL[x.type])}</span><strong>${esc(x.name)}</strong><br>${esc(subtitle(x))}` +
         (x.approx ? '<br><em>لا إحداثي لهذا الحدث في المصدر؛ الدبوس عند مركز المنطقة لا عند موقع الحدث.</em>' : '') +
-        (group.length > 1 ? '<br><em>المصدر يعطي هذا العنصر إحداثيات مطابقة لعنصر آخر؛ بوعِد الدبوس قليلًا ليظهر الاثنان.</em>' : ''))
+        (group.length > 1 ? `<br><em>يشترك هذا الإحداثي مع ${AR(group.length - 1)} عنصرًا آخر؛ بُوعِدت الدبابيس قليلًا ليظهر الجميع، والموضع الحقيقي واحد.</em>` : ''))
       .on('click', () => { state.kind = x.type; renderTabs(); renderList(); select(x.id); });
   });
 }

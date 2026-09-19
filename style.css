@@ -66,6 +66,8 @@ a{color:inherit}
 .pin-place{background:var(--ink)}
 .pin-event{background:var(--gold)}
 .pin-material{background:#8a6a4a}
+/* الشخص دبوس مجوّف أصغر، ليُقرأ فورًا أنه ليس مكانًا */
+.pin-person{background:#f7f4ee;border-color:#5b7d70;box-shadow:0 1px 5px rgba(22,53,47,.3)}
 .pin.sel{outline:3px solid var(--gold-soft);outline-offset:2px}
 .leaflet-container{font-family:inherit;background:#e9e7dd}
 .leaflet-popup-content-wrapper{border-radius:12px;font-family:inherit}
@@ -203,6 +205,7 @@ a{color:inherit}
 .pin-place{background:#2f4f45}
 .pin-event{background:#9d6b28}
 .pin-material{background:#7a5c3c}
+.pin-person{background:#f6efdd;border-color:#5f7a62}
 .leaflet-container .leaflet-popup-content-wrapper{background:#f7f0dd;color:#4a3d26;
   box-shadow:0 4px 18px rgba(80,62,34,.3)}
 .leaflet-container .leaflet-popup-tip{background:#f7f0dd}
@@ -390,6 +393,7 @@ a{color:inherit}
 
 /* ---------- بطاقة الحدث ---------- */
 .pin-event{width:22px;height:22px}
+.pop-kind{display:block;font-size:11px;letter-spacing:.04em;color:var(--ink-2);margin-bottom:3px}
 .pin.approx{background:transparent;border:2.5px dashed #9d6b28;box-shadow:none}
 .rule{margin:8px 0 0;font-size:11px;color:var(--ink-3);line-height:1.7}
 .empty-doc{background:#f6f2e7;border:1px dashed #ddcba4;border-radius:11px;padding:11px 12px;
