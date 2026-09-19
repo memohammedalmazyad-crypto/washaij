@@ -357,3 +357,46 @@ a{color:inherit}
   font-size:13px;font-weight:700}
 .chat-form button:hover{background:#21493f}
 .chat-engine{margin:0;padding:0 15px 14px;font-size:11px;color:var(--ink-3);line-height:1.7}
+
+/* ---------- الافتتاح: الشعار يندمج في الخريطة ---------- */
+.intro{position:fixed;inset:0;z-index:9000;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;background:#cfbd97;
+  transition:opacity .9s ease, background-color .9s ease}
+.intro-logo{width:min(56vw,420px);height:auto;
+  animation:introIn 1s cubic-bezier(.2,.7,.3,1) both}
+.intro-tag{font-size:clamp(12px,2.2vw,16px);font-weight:600;color:#6d5833;letter-spacing:.05em;
+  animation:introIn 1s .25s cubic-bezier(.2,.7,.3,1) both}
+@keyframes introIn{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
+.intro.done{opacity:0;pointer-events:none;background:#f7f4ee}
+.intro.done .intro-logo{transform:scale(.34) translateY(-26vh);transition:transform .9s cubic-bezier(.5,0,.2,1)}
+.intro.done .intro-tag{opacity:0;transition:opacity .4s}
+.intro.gone{display:none}
+@media(prefers-reduced-motion:reduce){
+  .intro-logo,.intro-tag{animation:none}
+  .intro,.intro.done .intro-logo{transition:opacity .3s}
+}
+
+/* ---------- الفترات المسماة ---------- */
+.periods{display:flex;gap:7px;overflow-x:auto;padding-bottom:11px;max-width:1760px;margin:0 auto;
+  scrollbar-width:thin}
+.period{flex:none;border:1px solid var(--line);border-radius:12px;padding:8px 14px;background:var(--card);
+  text-align:start;line-height:1.35;transition:.16s}
+.period b{display:block;font-size:13px;font-weight:700;color:var(--ink-2)}
+.period small{display:block;font-size:11px;color:var(--ink-3);margin-top:2px;font-variant-numeric:tabular-nums}
+.period:hover{border-color:var(--gold-soft)}
+.period.on{background:var(--ink);border-color:var(--ink)}
+.period.on b,.period.on small{color:#fff}
+.period.on small{opacity:.8}
+
+/* ---------- بطاقة الحدث ---------- */
+.pin-event{width:22px;height:22px}
+.pin.approx{background:transparent;border:2.5px dashed #9d6b28;box-shadow:none}
+.rule{margin:8px 0 0;font-size:11px;color:var(--ink-3);line-height:1.7}
+.empty-doc{background:#f6f2e7;border:1px dashed #ddcba4;border-radius:11px;padding:11px 12px;
+  font-size:12.5px;line-height:1.85;color:#6f5a34}
+.empty-doc b{color:var(--ink)}
+.chip.ask{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:700}
+.chip.ask:hover{background:#21493f;color:#fff}
+.leaflet-tooltip{background:#f7f0dd;border:1px solid #ddd0ae;color:#4a3d26;font-family:inherit;
+  font-size:12px;line-height:1.7;box-shadow:0 3px 12px rgba(80,62,34,.25)}
+.leaflet-tooltip em{color:#8a7350;font-style:normal}

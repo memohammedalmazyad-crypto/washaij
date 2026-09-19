@@ -225,9 +225,22 @@ function renderDetail(){
     const pl = it.place && byId(it.place);
     when = `<p class="d-when">${AR(it.year)}${it.endYear&&it.endYear!==it.year?` – ${AR(it.endYear)}`:''} م
       ${it.hijri ? `<em>· ${esc(it.hijri)}</em>` : ''}${pl ? `<em>· ${esc(pl.name)}</em>` : ''}</p>`;
-    secs += section(`من كان حيًّا وقتها (${AR(alive.length)})`,
-      alive.length ? `<div class="chips">${alive.map(p => chip(p, yearsText(p).replace(' م',''))).join('')}</div>`
-                   : `<p class="txt">لا شخصية موثّقة في هذا النموذج ضمن تلك السنة.</p>`);
+    const docs = eventDocs(it);
+    secs += section(`الوثائق والمواد المرتبطة (${AR(docs.length)})`,
+      docs.length
+        ? `<div class="chips">${docs.map(m => chip(m, m.date)).join('')}</div>
+           <p class="rule">القاعدة: مواد من المنطقة نفسها ومن فترة لا تبعد أكثر من ${AR(DOC_WINDOW)} سنة عن الحدث.</p>`
+        : `<p class="txt empty-doc">لا وثيقة ولا مادة أرشيفية مرتبطة بهذا الحدث في هذا النموذج.
+             موادنا الحالية كلها من الحجاز، وأحداثنا من نجد والدرعية.
+             <b>ربط الأرشيف بأحداثه هو ما يطلب هذا المشروع الحافز لأجله.</b></p>`);
+
+    secs += section(`من كان موجودًا وقتها (${AR(alive.length)})`,
+      alive.length ? `<div class="chips">${alive.map(p =>
+          `<button class="chip" data-go="${esc(p.id)}"><b>${esc(p.name)}</b><i>${esc(yearsText(p).replace(' م',''))}</i></button>` +
+          (state.voices && state.voices.voices[p.id]
+            ? `<button class="chip ask" data-ask-about="${esc(p.id)}" data-event="${esc(it.id)}">اسأله عن ${esc(it.name)} ↩</button>` : '')
+        ).join('')}</div>`
+        : `<p class="txt">لا شخصية موثّقة في هذا النموذج ضمن تلك السنة.</p>`);
     secs += section('أحداث قريبة زمنيًا',
       near.length ? `<div class="chips">${near.map(e => chip(e, AR(e.year))).join('')}</div>`
                   : `<p class="txt">لا أحداث أخرى قريبة في هذا النموذج.</p>`);
@@ -287,7 +300,12 @@ function renderDetail(){
 
   const talk = $('#detail [data-talk]');
   if (talk) talk.onclick = () => openChat(talk.dataset.talk);
-  $$('#detail .chip').forEach(b => b.onclick = () => {
+  $$('#detail [data-ask-about]').forEach(b => b.onclick = () => {
+    const ev = byId(b.dataset.event);
+    openChat(b.dataset.askAbout);
+    if (ev) setTimeout(() => sendChat(`ماذا تعرف عن ${ev.name}؟`), 60);
+  });
+  $$('#detail .chip[data-go]').forEach(b => b.onclick = () => {
     const t = byId(b.dataset.go);
     if (!t) return;
     if (t.region !== state.region) { state.region = t.region; renderRegions(); }
@@ -320,6 +338,36 @@ function frame(r, animate){
   else if (animate) state.map.flyTo(r.center, r.zoom, { duration:.8 });
   else state.map.setView(r.center, r.zoom);
 }
+
+/** الحدث بلا إحداثي في المصدر يُعرض عند مركز منطقته، موسومًا بأنه تقريبي */
+function eventCoord(e){
+  if (e.coord) return { at:e.coord, approx:false };
+  const r = state.data.regions.find(x => x.id === e.region);
+  return r ? { at:r.center, approx:true } : null;
+}
+
+/** ما الذي يجمع حدثين: المكان نفسه، أو شخصية عاشتهما معًا */
+function eventLinks(evs){
+  const out = [];
+  for (let i = 0; i < evs.length; i++) for (let j = i + 1; j < evs.length; j++){
+    const a = evs[i], b = evs[j];
+    if (a.place && a.place === b.place){
+      const pl = byId(a.place);
+      out.push({ a, b, kind:'place', why:`المكان نفسه: ${pl ? pl.name : ''}` });
+      continue;
+    }
+    const both = state.data.people.filter(p => born(p) && died(p) &&
+      born(p) <= a.year && a.year <= died(p) && born(p) <= b.year && b.year <= died(p));
+    if (both.length)
+      out.push({ a, b, kind:'person', why:`عاشهما معًا: ${both.map(x => x.name).join('، ')}` });
+  }
+  return out;
+}
+
+/** مواد من المنطقة نفسها وفترة قريبة — قاعدة معلنة، لا ربط تحريري */
+const DOC_WINDOW = 25;
+const eventDocs = (e) => state.data.materials.filter(m =>
+  m.region === e.region && m.year && Math.abs(m.year - e.year) <= DOC_WINDOW);
 
 function initMap(){
   if (!window.L){ $('#map').innerHTML = '<p class="empty">تعذّر تحميل الخريطة. تصفّح الفهرس والزمن.</p>'; return; }
@@ -431,22 +479,45 @@ function drawGraticule(){
 function drawMarkers(){
   if (!state.map) return;
   state.markers.forEach(m => state.map.removeLayer(m));
-  const visible = all().filter(x => shown(x) && x.coord);
+  if (state.links){ state.links.forEach(l => state.map.removeLayer(l)); }
+  state.links = [];
+
+  const visible = [];
+  all().filter(shown).forEach(x => {
+    if (x.type === 'event'){ const c = eventCoord(x); if (c) visible.push(Object.assign({}, x, { at:c.at, approx:c.approx })); }
+    else if (x.coord) visible.push(Object.assign({}, x, { at:x.coord, approx:false }));
+  });
+
+  // خطوط الصلة بين الأحداث تُرسم أولًا لتبقى تحت الدبابيس
+  const evs = visible.filter(x => x.type === 'event');
+  const pos = Object.fromEntries(evs.map(e => [e.id, e.at]));
+  eventLinks(evs).forEach(l => {
+    const line = L.polyline([pos[l.a.id], pos[l.b.id]], {
+      color: l.kind === 'place' ? '#8a6a4a' : '#a9762f',
+      weight: l.kind === 'place' ? 2.2 : 1.6,
+      opacity: .6, dashArray: l.kind === 'place' ? null : '5 6', interactive: true
+    }).addTo(state.map);
+    line.bindTooltip(`${esc(l.a.name)} ↔ ${esc(l.b.name)}<br><em>${esc(l.why)}</em>`, { sticky:true });
+    state.links.push(line);
+  });
+
   const seats = {};
-  visible.forEach(x => { const k = x.coord.join(','); (seats[k] = seats[k] || []).push(x.id); });
+  visible.forEach(x => { const k = x.at.join(','); (seats[k] = seats[k] || []).push(x.id); });
   state.markers = visible.map(x => {
-    const on = state.sel === x.id, size = x.type === 'place' ? 19 : 15;
-    const group = seats[x.coord.join(',')];
-    let at = x.coord;
+    const on = state.sel === x.id;
+    const size = x.type === 'event' ? 22 : x.type === 'place' ? 17 : 14;
+    const group = seats[x.at.join(',')];
+    let at = x.at;
     if (group.length > 1){                       // دبابيس على الإحداثي نفسه
       const i = group.indexOf(x.id), a = (i / group.length) * Math.PI * 2, R = 0.0016;
-      at = [x.coord[0] + R*Math.cos(a), x.coord[1] + R*Math.sin(a)];
+      at = [x.at[0] + R*Math.cos(a), x.at[1] + R*Math.sin(a)];
     }
-    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}`,
+    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}`,
       iconSize:[size,size], iconAnchor:[size/2,size/2] });
     return L.marker(at, { icon, title:x.name })
       .addTo(state.map)
       .bindPopup(`<strong>${esc(x.name)}</strong><br>${esc(subtitle(x))}` +
+        (x.approx ? '<br><em>لا إحداثي لهذا الحدث في المصدر؛ الدبوس عند مركز المنطقة لا عند موقع الحدث.</em>' : '') +
         (group.length > 1 ? '<br><em>المصدر يعطي هذا العنصر إحداثيات مطابقة لعنصر آخر؛ بوعِد الدبوس قليلًا ليظهر الاثنان.</em>' : ''))
       .on('click', () => { state.kind = x.type; renderTabs(); renderList(); select(x.id); });
   });
@@ -638,6 +709,51 @@ function drawWeb(){
 
 
 
+
+/* ---------------- الافتتاح والفترات ---------------- */
+function playIntro(){
+  const el = $('#intro');
+  if (!el) return;
+  const seen = (() => { try { return sessionStorage.getItem('washaij-intro'); } catch(e){ return null; } })();
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finish = () => {
+    el.classList.add('done');
+    setTimeout(() => el.classList.add('gone'), 1000);
+    if (state.map) setTimeout(() => state.map.invalidateSize(), 950);
+  };
+  if (seen || reduce){ el.classList.add('done', 'gone'); return; }
+  try { sessionStorage.setItem('washaij-intro', '1'); } catch(e){}
+  el.addEventListener('click', finish, { once:true });
+  setTimeout(finish, 2100);
+}
+
+/** فترات مسماة، حدودها مأخوذة من تواريخ أحداث موثّقة في السجل */
+const PERIODS = [
+  { id:'all',    name:'كل الفترات', span:null },
+  { id:'first',  name:'الدولة السعودية الأولى', span:[1727, 1818] },
+  { id:'between',name:'بين الدولتين والثانية',  span:[1818, 1902] },
+  { id:'unify',  name:'التوحيد والتأسيس',       span:[1902, 1932] },
+  { id:'after',  name:'بعد التأسيس',            span:[1932, 1960] },
+];
+
+function renderPeriods(){
+  const box = $('#periods');
+  if (!box) return;
+  const cur = state.era.active ? `${state.era.from}-${state.era.to}` : 'all';
+  box.innerHTML = PERIODS.map(p => {
+    const on = p.span ? cur === `${p.span[0]}-${p.span[1]}` : cur === 'all';
+    return `<button class="period${on ? ' on' : ''}" data-period="${p.id}" aria-pressed="${on}">
+      <b>${esc(p.name)}</b><small>${p.span ? AR(p.span[0]) + ' – ' + AR(p.span[1]) + ' م' : 'من ' + AR(1650) + ' إلى ' + AR(2000)}</small></button>`;
+  }).join('');
+  $$('.period').forEach(b => b.onclick = () => {
+    const per = PERIODS.find(x => x.id === b.dataset.period);
+    const from = $('#eraFrom'), to = $('#eraTo');
+    if (!per.span){ from.value = from.min; to.value = to.max; }
+    else { from.value = per.span[0]; to.value = per.span[1]; }
+    from.dispatchEvent(new Event('input'));
+  });
+}
+
 /* ---------------- الشخصيات المتكلّمة ---------------- */
 function loadVoices(){
   return fetch('./voices.json' + VER).then(r => r.json())
@@ -654,6 +770,23 @@ function answer(pid, q){
 
   if (v.guard && v.guard[0].split('|').some(k => n.includes(norm(k))))
     return { text: v.guard[1], sources: [], guard: true };
+
+  // سؤال عن حدث بعينه: الجواب من سجل الحدث نفسه
+  const p = state.data.people.find(x => x.id === pid);
+  if (p){
+    const mine = eventsInLife(p);
+    const hit = mine.find(e => {
+      const words = norm(e.name).split(' ').filter(w => w.length > 3);
+      return words.some(w => n.includes(w));
+    });
+    if (hit) return {
+      text: `${hit.name} سنة ${AR(hit.year)}م` + (hit.hijri ? ` (${hit.hijri})` : '') + `. ${hit.blurb}` +
+            (hit.note ? ` ${hit.note}` : '') +
+            ` وقع هذا في سنوات حياتي (${yearsText(p).replace(' م','')}).` +
+            ' وما تذكره المصادر عن دوري فيه تحديدًا ليس في هذا السجل، فلا أنسبه إلى نفسي.',
+      sources: [{ label:hit.sourceName, url:hit.source, name:hit.name }]
+    };
+  }
 
   let best = null, bestScore = 0;
   for (const t of v.topics){
@@ -760,7 +893,7 @@ function initFilters(){
   const [lo, hi] = span();
   const from = $('#eraFrom'), to = $('#eraTo');
   state.era = { from:lo, to:hi, active:false };
-  [from, to].forEach(el => { el.min = lo; el.max = hi; el.step = 10; });
+  [from, to].forEach(el => { el.min = lo; el.max = hi; el.step = 1; });   // خطوة سنة حتى لا تُقصّ حدود الفترات
   from.value = lo; to.value = hi;
 
   const paint = () => {
@@ -778,12 +911,13 @@ function initFilters(){
     if (a > b) { [a, b] = [b, a]; from.value = a; to.value = b; }
     state.era = { from:a, to:b, active: !(a === lo && b === hi) };
     state.web = null; state.sel = null;
-    paint(); renderList(); renderDetail(); drawMarkers(); drawTimeline(); drawWeb();
+    paint(); renderPeriods(); renderList(); renderDetail(); drawMarkers(); drawTimeline(); drawWeb();
   };
 
   from.addEventListener('input', apply);
   to.addEventListener('input', apply);
   $('#eraReset').addEventListener('click', () => { from.value = lo; to.value = hi; apply(); });
+  renderPeriods();
   $('#eraNote').textContent =
     'تُعرض الأحداث الواقعة داخل الفترة، والشخصيات التي عاشت جزءًا منها، والمواد المؤرخة فيها. ' +
     'والأماكن تبقى ظاهرة ما لم يذكر مصدرها نشأةً بعد نهاية الفترة.';
@@ -825,7 +959,7 @@ fetch('./data.json' + VER)
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
-    renderCoverage(); loadSites(); loadVoices();
+    renderCoverage(); loadSites(); loadVoices(); playIntro();
   })
   .catch(err => {
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>
