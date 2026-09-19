@@ -537,3 +537,7 @@ h1, h2, h3, .d-body h2, .chat-head strong, .row strong{text-wrap:balance}
 .tabs button.muted{opacity:.55}
 .tabs button.muted:hover,
 .tabs button.muted:focus-visible{opacity:1}
+
+/* الواجهة للزائر: لا شرح منهجيًّا ولا اعتذارًا عن نقص. ما لا نصّ فيه يُطوى. */
+#eraNote:empty, .region-note:empty, .view-hint:empty{display:none}
+.hint:empty{display:none}

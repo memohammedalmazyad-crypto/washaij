@@ -89,7 +89,7 @@ const placeEvents = (pl) => state.data.events.filter(e => e.place === pl.id);
 const regionPeople = (rid) => state.data.people.filter(p => p.region === rid);
 
 const yearsText = (p) => (born(p) && died(p))
-  ? `${AR(born(p))} – ${AR(died(p))} م` : 'تواريخ غير مكتملة في المصدر';
+  ? `${AR(born(p))} – ${AR(died(p))} م` : (died(p) ? `ت ${AR(died(p))} م` : '');
 
 /* ---------------- shell ---------------- */
 function renderRegions(){
@@ -159,7 +159,7 @@ function renderList(){
   }
   if (!items.length){
     $('#list').innerHTML = `<p class="empty">لا توجد ${esc(({place:'أماكن',person:'شخصيات',event:'أحداث',material:'مواد',site:'مواقع في السجل الوطني'})[state.kind])}
-      موثّقة في «${esc(region().name)}» ضمن هذا النموذج بعد.<br>النموذج يعرض ما تحقّقنا من مصدره فقط.</p>`;
+      في «${esc(region().name)}».</p>`;
     return;
   }
   const page = items.slice(0, state.limit);
@@ -209,8 +209,6 @@ function renderDetail(){
       <p class="d-kicker">${esc(r.name)}</p>
       <h2>اختر عنصرًا من الفهرس</h2>
       <p class="txt">${esc(r.blurb)}</p>
-      <p class="txt">كل بطاقة هنا تعرض تاريخها ومكانها ومصدرها. عند اختيار شخصية تظهر سنوات حياتها،
-      ومن كان معاصرًا لها، وما وقع من أحداث في تلك الفترة.</p>
     </div>`;
     return;
   }
@@ -229,14 +227,12 @@ function renderDetail(){
       ${born(it)&&died(it) ? `<em>· ${AR(died(it)-born(it))} سنة</em>` : ''}
       ${it.hijri ? `<em>· ${esc(it.hijri)}</em>` : ''}</p>`;
     if (born(it) && died(it)) when += lifeBar(it);
-    secs += section(`من كان موجودًا في حياته (${AR(cons.length)})`,
-      cons.length ? `<div class="chips">${cons.map(c => chip(c, yearsText(c).replace(' م',''))).join('')}</div>`
-                  : `<p class="txt">لا تتقاطع فترة حياته مع شخصية أخرى في هذا النموذج.</p>`);
-    secs += section(`أحداث في زمنه (${AR(evs.length)})`,
-      evs.length ? `<div class="chips">${evs.map(e => chip(e, AR(e.year))).join('')}</div>`
-                 : `<p class="txt">لا حدث موثّق في هذا النموذج ضمن سنوات حياته.</p>`);
+    if (cons.length) secs += section('من عاصره',
+      `<div class="chips">${cons.map(c => chip(c, yearsText(c).replace(' م',''))).join('')}</div>`);
+    if (evs.length) secs += section('أحداث في زمنه',
+      `<div class="chips">${evs.map(e => chip(e, AR(e.year))).join('')}</div>`);
     if (it.timeline && it.timeline.length)
-      secs += section(`محطات موثّقة في سيرته (${AR(it.timeline.length)})`,
+      secs += section('محطات من سيرته',
         `<ol class="tl">${it.timeline.map(m => `<li>
            <span class="tl-y">${AR(m.y)}</span>
            <span class="tl-t">${esc(m.t)}<em class="tl-s">${esc(m.s)}</em></span></li>`).join('')}</ol>`);
@@ -251,33 +247,21 @@ function renderDetail(){
       ${it.hijri ? `<em>· ${esc(it.hijri)}</em>` : ''}${pl ? `<em>· ${esc(pl.name)}</em>` : ''}</p>`;
     const docs = eventDocs(it);
     if (it.narratives && it.narratives.length)
-      secs += section(`رواية من كتاب تاريخي (${AR(it.narratives.length)})`,
-        it.narratives.map(nv => `<div class="narr">
-          ${nv.ar ? `<p class="narr-ar">${esc(nv.ar)}</p>
-            <p class="narr-note">${esc(nv.arNote || '')}</p>` : ''}
-          <details><summary>النص الإنجليزي الأصلي</summary>
-            <p class="narr-en">${esc(nv.quote)}</p></details>
-          <a class="narr-src" href="${esc(nv.url)}" target="_blank" rel="noopener">${esc(nv.source)} ↗</a>
-        </div>`).join(''));
+      secs += section('من كتب التاريخ',
+        it.narratives.filter(nv => nv.ar).map(nv =>
+          `<div class="narr"><p class="narr-ar">${esc(nv.ar)}</p></div>`).join(''));
 
-    secs += section(`الوثائق والمواد المرتبطة (${AR(docs.length)})`,
-      docs.length
-        ? `<div class="chips">${docs.map(m => chip(m, m.date)).join('')}</div>
-           <p class="rule">القاعدة: مواد من المنطقة نفسها ومن فترة لا تبعد أكثر من ${AR(DOC_WINDOW)} سنة عن الحدث.</p>`
-        : `<p class="txt empty-doc">لا وثيقة ولا مادة أرشيفية مرتبطة بهذا الحدث في هذا النموذج.
-             موادنا الحالية كلها من الحجاز، وأحداثنا من نجد والدرعية.
-             <b>ربط الأرشيف بأحداثه هو ما يطلب هذا المشروع الحافز لأجله.</b></p>`);
+    if (docs.length) secs += section('وثائق ومواد',
+      `<div class="chips">${docs.map(m => chip(m, m.date)).join('')}</div>`);
 
-    secs += section(`من كان موجودًا وقتها (${AR(alive.length)})`,
-      alive.length ? `<div class="chips">${alive.map(p =>
+    if (alive.length) secs += section('من كان في زمنه',
+      `<div class="chips">${alive.map(p =>
           `<button class="chip" data-go="${esc(p.id)}"><b>${esc(p.name)}</b><i>${esc(yearsText(p).replace(' م',''))}</i></button>` +
           (state.voices && state.voices.voices[p.id]
             ? `<button class="chip ask" data-ask-about="${esc(p.id)}" data-event="${esc(it.id)}">اسأله عن ${esc(it.name)} ↩</button>` : '')
-        ).join('')}</div>`
-        : `<p class="txt">لا شخصية موثّقة في هذا النموذج ضمن تلك السنة.</p>`);
-    secs += section('أحداث قريبة زمنيًا',
-      near.length ? `<div class="chips">${near.map(e => chip(e, AR(e.year))).join('')}</div>`
-                  : `<p class="txt">لا أحداث أخرى قريبة في هذا النموذج.</p>`);
+        ).join('')}</div>`);
+    if (near.length) secs += section('أحداث قريبة',
+      `<div class="chips">${near.map(e => chip(e, AR(e.year))).join('')}</div>`);
   }
 
   if (it.type === 'place'){
@@ -312,10 +296,6 @@ function renderDetail(){
     });
   }
 
-  const tier = it.tier || (it.type === 'site' ? 'official' : 'support');
-  const g = state.data.tiers && state.data.tiers[tier];
-  const gradeTag = g ? `<span class="grade grade-${esc(tier)}">${esc(g.label)}</span>
-    <p class="grade-why">${esc(g.note)}</p>` : '';
 
   const lic = it.image
     ? `<p class="credit"><b>الترخيص:</b> ${esc(it.image.license)}<br><b>النسب:</b> ${esc(it.image.artist)}
@@ -324,21 +304,11 @@ function renderDetail(){
   box.innerHTML = `${img}<div class="d-body">
     <p class="d-kicker">${esc(ownRegionName(it))} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
-    ${it.sourceLabel ? `<p class="src-name">الاسم في المصدر: <span>${esc(it.sourceLabel)}</span></p>` : ''}
-    ${it.arMatch ? `<p class="ar-match">الاسم العربي من <b>السجل الوطني للآثار</b> · ${esc(it.arMatch.gov)}
-      <br><em>${esc(it.arMatch.basis)}</em></p>` : ''}
-    ${it.translit ? `<p class="translit-tag">نقل حرفي آلي — لم يُتحقق</p>` : ''}
-    ${it.nameNote ? `<p class="name-note">${esc(it.nameNote).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')}</p>` : ''}
     ${when}
-    ${gradeTag}
-    ${it.review ? `<p class="reviewed-by">راجعها <b>${esc(it.review.by)}</b> · ${esc(it.review.date)}
-      ${it.coordStatus ? `<br><em>${esc(it.coordStatus)}</em>` : ''}
-      ${it.review.note ? `<br>${esc(it.review.note)}` : ''}</p>` : ''}
-    <p class="txt">${esc(it.blurb)}</p>
-    ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
+    ${it.blurb ? `<p class="txt">${esc(it.blurb)}</p>` : ''}
     ${secs}
     ${lic}
-    <a class="src" href="${esc(it.source)}" target="_blank" rel="noopener noreferrer">${esc(it.sourceName || 'المصدر')} ↗</a>
+    ${it.source ? `<a class="src" href="${esc(it.source)}" target="_blank" rel="noopener noreferrer">${esc(it.sourceName || 'المصدر')} ↗</a>` : ''}
   </div>`;
 
   const talk = $('#detail [data-talk]');
@@ -598,8 +568,7 @@ function drawMarkers(){
     return L.marker(at, { icon, title:x.name, zIndexOffset:zi, riseOnHover:true })
       .addTo(state.map)
       .bindPopup(`<span class="pop-kind">${esc(KIND_LABEL[x.type])}</span><strong>${esc(x.name)}</strong><br>${esc(subtitle(x))}` +
-        (x.approx ? '<br><em>لا إحداثي لهذا الحدث في المصدر؛ الدبوس عند مركز المنطقة لا عند موقع الحدث.</em>' : '') +
-        (group.length > 1 ? `<br><em>يشترك هذا الإحداثي مع ${AR(group.length - 1)} عنصرًا آخر؛ بُوعِدت الدبابيس قليلًا ليظهر الجميع، والموضع الحقيقي واحد.</em>` : ''))
+        '')
       .on('click', () => { state.kind = x.type; renderTabs(); renderList(); select(x.id); });
   });
 }
@@ -631,15 +600,14 @@ function drawTimeline(){
 
   const shownPpl = people.slice(0, 40);
   const pplRow = shownPpl.length ? `<p class="tl-head">فترات حياة${people.length > 40
-      ? ` · تُعرض ${AR(40)} من ${AR(people.length)} مؤرَّخًا` : ''}${undated
-      ? ` · و${AR(undated)} لم يُثبِت المصدر سنة مولدهم فلا تُرسم` : ''}</p>${shownPpl.map(p =>
+      ? ` · تُعرض ${AR(40)} من ${AR(people.length)}` : ''}</p>${shownPpl.map(p =>
     `<div class="tl-row"><button class="tl-bar${state.sel===p.id?' on':''}" data-id="${esc(p.id)}"
       style="inset-inline-start:${pos(born(p))}%;width:${Math.max(pos(died(p))-pos(born(p)),9)}%"
       title="${esc(p.name)} (${AR(born(p))}–${AR(died(p))})"><b>${esc(p.name)}</b></button></div>`).join('')}` : '';
 
   $('#timeline').innerHTML = `<div class="tl-axis">${ticks.join('')}</div>${evRow}${pplRow}` +
     (!events.length && !people.length
-      ? `<p class="empty">لا أحداث ولا شخصيات موثّقة زمنيًا في «${esc(region().name)}» ضمن هذا النموذج.</p>` : '');
+      ? `<p class="empty">لا شيء في «${esc(region().name)}» ضمن هذه الفترة.</p>` : '');
 
   $$('#timeline [data-id]').forEach(b => b.onclick = () => {
     const t = byId(b.dataset.id); state.kind = t.type; renderTabs(); renderList(); select(t.id);
@@ -983,12 +951,9 @@ function renderCoverage(){
     <div class="cov-head">
       <b>${AR(registered.toLocaleString('en-US').replace(/,/g,'٬'))}</b>
       <span>موقعًا مسجّلًا رسميًا${state.region === 'all' ? ' في المملكة' : ` في ${esc(region().name)}`}</span>
-      <span>· موقّع على الخريطة في هذا النموذج: <b style="font-size:14px">${AR(located)}</b></span>
-      ${src ? `<span class="cov-src">المصدر: ${esc(src.publisher)} · <a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title)} ↗</a></span>` : ''}
+      <span>· على الخريطة: <b style="font-size:14px">${AR(located)}</b></span>
     </div>
-    <div class="cov-bar"><i style="width:${pct.toFixed(2)}%"></i></div>
-    <p class="cov-note">السجل المنشور لا يتضمن إحداثيات، فلا يمكن رسم مواقعه على الخريطة.
-      توقيعها جغرافيًا وربطها بزمنها ومصادرها هو ما يقترح هذا المشروع إنجازه.</p>`;
+    <div class="cov-bar"><i style="width:${pct.toFixed(2)}%"></i></div>`;
 }
 
 /* ---------------- شريط الفترة والبحث ---------------- */
@@ -1021,9 +986,7 @@ function initFilters(){
   to.addEventListener('input', apply);
   $('#eraReset').addEventListener('click', () => { from.value = lo; to.value = hi; apply(); });
   renderPeriods();
-  $('#eraNote').textContent =
-    'تُعرض الأحداث الواقعة داخل الفترة، والشخصيات التي عاشت جزءًا منها، والمواد المؤرخة فيها. ' +
-    'والأماكن تبقى ظاهرة ما لم يذكر مصدرها نشأةً بعد نهاية الفترة.';
+  $('#eraNote').textContent = '';
   paint();
 
   const q = $('#q');
@@ -1035,11 +998,7 @@ function initFilters(){
 }
 
 /* ---------------- views ---------------- */
-const HINTS = {
-  map:'الدبابيس تشير إلى المكان الموثّق في المصدر، لا إلى موضع التصوير.',
-  time:'المحور بالميلادي. التواريخ الهجرية تظهر فقط حين يذكرها المصدر.',
-  web:'الصلات محسوبة من تقاطع التواريخ والأماكن في المصادر، لا استنتاج آلي.'
-};
+const HINTS = { map:'', time:'', web:'' };
 function setView(v){
   state.view = v;
   $$('.views button').forEach(b => { const on = b.dataset.view === v;
