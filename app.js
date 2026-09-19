@@ -149,7 +149,8 @@ function renderList(){
     const thumb = it.image
       ? `<img src="${esc(it.image.url)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'ph',textContent:'—'}))">`
       : `<span class="ph">${it.type==='person'?'ش':it.type==='event'?'ح':'م'}</span>`;
-    const badge = hits ? `<span class="badge">${esc(KIND_LABEL[it.type])}</span>` : '';
+    const badge = (hits ? `<span class="badge">${esc(KIND_LABEL[it.type])}</span>` : '')
+                + (it.featured ? '<span class="badge feat">الشخصية النموذج</span>' : '');
     return `<button class="row${state.sel===it.id?' on':''}" data-id="${esc(it.id)}" aria-pressed="${state.sel===it.id}">
       ${thumb}<span><strong>${esc(it.name)}${badge}</strong><small>${esc(subtitle(it))}</small></span></button>`;
   }).join('') + (items.length > page.length
@@ -216,6 +217,11 @@ function renderDetail(){
     secs += section(`أحداث في زمنه (${AR(evs.length)})`,
       evs.length ? `<div class="chips">${evs.map(e => chip(e, AR(e.year))).join('')}</div>`
                  : `<p class="txt">لا حدث موثّق في هذا النموذج ضمن سنوات حياته.</p>`);
+    if (it.timeline && it.timeline.length)
+      secs += section(`محطات موثّقة في سيرته (${AR(it.timeline.length)})`,
+        `<ol class="tl">${it.timeline.map(m => `<li>
+           <span class="tl-y">${AR(m.y)}</span>
+           <span class="tl-t">${esc(m.t)}<em class="tl-s">${esc(m.s)}</em></span></li>`).join('')}</ol>`);
     if (state.voices && state.voices.voices[it.id])
       secs += `<button class="talk" data-talk="${esc(it.id)}">تحدّث إليه ↩</button>`;
   }
@@ -890,6 +896,7 @@ function renderChat(){
       <div><strong>${esc(v.name)}</strong><small>${esc(v.role)} · ${esc(v.years)}</small></div>
     </div>
     <p class="chat-note">${esc(d.disclaimer)}</p>
+    ${v.disclaimerExtra ? `<p class="chat-note warn">${esc(v.disclaimerExtra)}</p>` : ''}
     <div class="chat-log" id="chatLog">${bubbles}</div>
     <div class="chat-chips">${v.suggested.map(q =>
       `<button class="chip" data-ask="${esc(q)}">${esc(q)}</button>`).join('')}</div>
