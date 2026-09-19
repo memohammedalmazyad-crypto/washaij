@@ -14,17 +14,19 @@ const AR = (n) => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
 const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية' };
+const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية',
+                     site:'موقع في السجل الوطني' };
 
 const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[],
-                era:{ from:0, to:0, active:false }, q:'' };
+                era:{ from:0, to:0, active:false }, q:'', sites:null, limit:80 };
 
 /* ---------------- data helpers ---------------- */
 const all = () => {
   const d = state.data;
   return [...d.places, ...d.people, ...d.events, ...d.materials];
 };
-const byId = (id) => all().find(x => x.id === id);
+const byId = (id) => all().find(x => x.id === id) ||
+  (state.sites ? state.sites.rows.find(x => x.id === id) : null);
 const region = () => state.data.regions.find(r => r.id === state.region);
 const inRegion = (x) => state.region === 'all' || x.region === state.region;
 
@@ -75,9 +77,11 @@ const shown = (x) => inRegion(x) && inEra(x);
 function searchHits(){
   const q = norm(state.q).trim();
   if (!q) return null;
-  return all().filter(x => inEra(x) &&
+  const pool = state.sites ? all().concat(state.sites.rows) : all();
+  return pool.filter(x => inEra(x) &&
     (norm(x.name).includes(q) || norm(x.blurb).includes(q) ||
-     norm(x.role).includes(q) || norm(x.kind).includes(q)));
+     norm(x.role).includes(q) || norm(x.kind).includes(q) ||
+     norm(x.gov).includes(q) || norm(x.type).includes(q)));
 }
 
 const placeEvents = (pl) => state.data.events.filter(e => e.place === pl.id);
@@ -98,9 +102,11 @@ function renderRegions(){
 function selectRegion(id){
   state.region = id;
   state.sel = null;
+  state.limit = 80;
   renderRegions();
   renderList();
   paintRegions();
+  renderCoverage();
   const r = region();
   frame(r, true);
   drawMarkers(); drawTimeline(); drawWeb(); renderDetail();
@@ -110,12 +116,14 @@ function renderTabs(){
   $$('.tabs button').forEach(b => {
     b.classList.toggle('on', b.dataset.kind === state.kind);
     b.setAttribute('aria-selected', b.dataset.kind === state.kind);
-    b.onclick = () => { state.kind = b.dataset.kind; renderTabs(); renderList(); };
+    b.onclick = () => { state.kind = b.dataset.kind; state.limit = 80; renderTabs(); renderList(); };
   });
 }
 
 function bucket(){
   const d = state.data;
+  if (state.kind === 'site')
+    return state.sites ? state.sites.rows.filter(inRegion) : [];
   const map = { place:d.places, person:d.people, event:d.events, material:d.materials };
   return map[state.kind].filter(shown);
 }
@@ -124,9 +132,8 @@ function renderList(){
   const hits = searchHits();
   const items = hits || bucket();
   const cnt = $('#count');
-  if (cnt) cnt.textContent = hits
-    ? `${AR(items.length)} ${items.length === 1 ? 'نتيجة' : 'نتيجة'}`
-    : `${AR(items.length)} ${items.length === 1 ? 'عنصر' : 'عنصر'}`;
+  const big = (n) => AR(n.toLocaleString('en-US').replace(/,/g, '٬'));
+  if (cnt) cnt.textContent = `${big(items.length)} ${hits ? 'نتيجة' : 'عنصر'}`;
   $$('.tabs button').forEach(b => b.disabled = !!hits);
   if (hits && !items.length){
     $('#list').innerHTML = `<p class="empty">لا نتيجة لـ«${esc(state.q)}»${state.era.active ? ' داخل الفترة المختارة' : ''}.</p>`;
@@ -137,19 +144,25 @@ function renderList(){
       موثّقة في «${esc(region().name)}» ضمن هذا النموذج بعد.<br>النموذج يعرض ما تحقّقنا من مصدره فقط.</p>`;
     return;
   }
-  $('#list').innerHTML = items.map(it => {
+  const page = items.slice(0, state.limit);
+  $('#list').innerHTML = page.map(it => {
     const thumb = it.image
       ? `<img src="${esc(it.image.url)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'ph',textContent:'—'}))">`
       : `<span class="ph">${it.type==='person'?'ش':it.type==='event'?'ح':'م'}</span>`;
     const badge = hits ? `<span class="badge">${esc(KIND_LABEL[it.type])}</span>` : '';
     return `<button class="row${state.sel===it.id?' on':''}" data-id="${esc(it.id)}" aria-pressed="${state.sel===it.id}">
       ${thumb}<span><strong>${esc(it.name)}${badge}</strong><small>${esc(subtitle(it))}</small></span></button>`;
-  }).join('');
+  }).join('') + (items.length > page.length
+    ? `<button class="more" id="more">عرض المزيد · بقي ${AR((items.length - page.length).toLocaleString('en-US').replace(/,/g,'٬'))}</button>`
+    : '');
   $$('.row').forEach(b => b.onclick = () => select(b.dataset.id));
+  const more = $('#more');
+  if (more) more.onclick = () => { state.limit += 200; renderList(); };
 }
 
 const subtitle = (it) =>
-  it.type === 'person'   ? `${it.role} · ${yearsText(it)}`
+  it.type === 'site'     ? `${it.kind}${it.gov ? ' · ' + it.gov : ''} · ${it.adm}`
+: it.type === 'person'   ? `${it.role} · ${yearsText(it)}`
 : it.type === 'event'    ? `${AR(it.year)} م`
 : it.type === 'material' ? `${it.kind} · ${it.date}`
 : it.kind;
@@ -169,7 +182,7 @@ function chip(it, extra){
 
 function renderDetail(){
   const box = $('#detail');
-  const it = state.sel && byId(state.sel);
+  let it = state.sel && byId(state.sel);
   if (!it){
     const r = region();
     box.innerHTML = `<div class="d-body">
@@ -230,6 +243,29 @@ function renderDetail(){
     when = `<p class="d-when">${esc(it.kind)} <em>· ${esc(it.date)}</em></p>`;
   }
 
+  if (it.type === 'site'){
+    const src = state.sites && state.sites.source;
+    when = `<p class="d-when">${esc(it.kind)}<em>${it.gov ? ' · ' + esc(it.gov) : ''} · ${esc(it.adm)}</em></p>`;
+    secs += section('ما يذكره السجل', `<ul class="detail-meta">
+      <li><b>الصنف</b><span>${esc(it.kind)}</span></li>
+      <li><b>المنطقة الإدارية</b><span>${esc(it.adm)}</span></li>
+      ${it.gov ? `<li><b>المحافظة</b><span>${esc(it.gov)}</span></li>` : ''}
+      <li><b>الإحداثي</b><span>غير منشور</span></li>
+      <li><b>التاريخ</b><span>غير منشور</span></li></ul>`);
+    it = Object.assign({}, it, {
+      blurb: 'موقع مسجّل في بيانات وزارة الثقافة المنشورة. السجل يذكر اسمه وصنفه وموقعه الإداري فقط.',
+      note: 'لا إحداثي لهذا الموقع في البيانات المنشورة، فلا يظهر على الخريطة. ' +
+            'توقيعه جغرافيًا يحتاج مصدرًا إضافيًا أو مسحًا ميدانيًا.',
+      grade: (src && src.grade) || 'official',
+      source: (src && src.url) || '#',
+      sourceName: src ? `${src.publisher} · ${src.title}` : 'المصدر'
+    });
+  }
+
+  const g = state.data.grades && state.data.grades[it.grade];
+  const gradeTag = g ? `<span class="grade grade-${esc(it.grade)}">${esc(g.label)}</span>
+    <p class="grade-why">${esc(g.note)}</p>` : '';
+
   const lic = it.image
     ? `<p class="credit"><b>الترخيص:</b> ${esc(it.image.license)}<br><b>النسب:</b> ${esc(it.image.artist)}
        ${it.image.page ? `<br><a href="${esc(it.image.page)}" target="_blank" rel="noopener">صفحة الملف ↗</a>` : ''}</p>` : '';
@@ -238,6 +274,7 @@ function renderDetail(){
     <p class="d-kicker">${esc(region().name)} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
     ${when}
+    ${gradeTag}
     <p class="txt">${esc(it.blurb)}</p>
     ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
     ${secs}
@@ -595,6 +632,39 @@ function drawWeb(){
 }
 
 
+/* ---------------- السجل الوطني للمواقع (وزارة الثقافة) ---------------- */
+function loadSites(){
+  return fetch('./sites.json' + VER).then(r => r.json()).then(d => {
+    d.rows.forEach(r => { r.kind = r.type; r.type = 'site'; });   // النوع الأصلي يصير «صنف»
+    state.sites = d;
+    renderCoverage();
+    if (state.kind === 'site' || state.q) renderList();
+  }).catch(() => { state.sites = { rows:[], byRegion:{}, total:0, source:null }; renderCoverage(); });
+}
+
+/** كم موقعًا سجّلته الوزارة في هذا النطاق، وكم منها موقّع على الخريطة */
+function renderCoverage(){
+  const box = $('#coverage');
+  if (!box) return;
+  if (!state.sites){ box.innerHTML = '<p class="cov-note">…يُحمّل السجل الوطني</p>'; return; }
+  const src = state.sites.source;
+  const registered = state.region === 'all'
+    ? state.sites.total
+    : (state.sites.byRegion[state.region] || 0);
+  const located = state.data.places.filter(x => inRegion(x) && x.coord).length;
+  const pct = registered ? Math.max((located / registered) * 100, .35) : 0;
+  box.innerHTML = `
+    <div class="cov-head">
+      <b>${AR(registered.toLocaleString('en-US').replace(/,/g,'٬'))}</b>
+      <span>موقعًا مسجّلًا رسميًا${state.region === 'all' ? ' في المملكة' : ` في ${esc(region().name)}`}</span>
+      <span>· موقّع على الخريطة في هذا النموذج: <b style="font-size:14px">${AR(located)}</b></span>
+      ${src ? `<span class="cov-src">المصدر: ${esc(src.publisher)} · <a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title)} ↗</a></span>` : ''}
+    </div>
+    <div class="cov-bar"><i style="width:${pct.toFixed(2)}%"></i></div>
+    <p class="cov-note">السجل المنشور لا يتضمن إحداثيات، فلا يمكن رسم مواقعه على الخريطة.
+      توقيعها جغرافيًا وربطها بزمنها ومصادرها هو ما يقترح هذا المشروع إنجازه.</p>`;
+}
+
 /* ---------------- شريط الفترة والبحث ---------------- */
 function initFilters(){
   const [lo, hi] = span();
@@ -633,7 +703,7 @@ function initFilters(){
   let t;
   q.addEventListener('input', () => {
     clearTimeout(t);
-    t = setTimeout(() => { state.q = q.value; renderList(); }, 140);
+    t = setTimeout(() => { state.q = q.value; state.limit = 80; renderList(); }, 140);
   });
 }
 
@@ -665,6 +735,7 @@ fetch('./data.json' + VER)
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
+    renderCoverage(); loadSites();
   })
   .catch(err => {
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>

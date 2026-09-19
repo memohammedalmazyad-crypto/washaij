@@ -105,6 +105,7 @@
    "imageNote": "صورة حديثة للموقع، لا مشهد تاريخي.",
    "source": "https://www.wikidata.org/wiki/Q277505",
    "sourceName": "ويكي بيانات · Q277505",
+   "grade": "open",
    "inception": null
   },
   {
@@ -128,6 +129,7 @@
    "imageNote": "صورة حديثة للموقع، لا مشهد تاريخي.",
    "source": "https://www.wikidata.org/wiki/Q22687629",
    "sourceName": "ويكي بيانات · Q22687629",
+   "grade": "open",
    "inception": null
   },
   {
@@ -151,6 +153,7 @@
    "imageNote": "صورة حديثة للمدينة، لا مشهد تاريخي.",
    "source": "https://www.wikidata.org/wiki/Q3692",
    "sourceName": "ويكي بيانات · Q3692",
+   "grade": "open",
    "inception": {
     "y": 1746,
     "m": null,
@@ -178,6 +181,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q751987",
    "sourceName": "ويكي بيانات · Q751987",
+   "grade": "open",
    "inception": {
     "y": 1865,
     "m": null,
@@ -205,6 +209,7 @@
    "imageNote": "صورة حديثة للمدينة.",
    "source": "https://www.wikidata.org/wiki/Q259253",
    "sourceName": "ويكي بيانات · Q259253",
+   "grade": "open",
    "inception": null
   },
   {
@@ -228,6 +233,7 @@
    "imageNote": "صورة حديثة للمدينة.",
    "source": "https://www.wikidata.org/wiki/Q27138",
    "sourceName": "ويكي بيانات · Q27138",
+   "grade": "open",
    "inception": {
     "y": 1630,
     "m": null,
@@ -255,6 +261,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q675568",
    "sourceName": "ويكي بيانات · Q675568",
+   "grade": "open",
    "inception": null
   },
   {
@@ -278,6 +285,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q27136",
    "sourceName": "ويكي بيانات · Q27136",
+   "grade": "open",
    "inception": null
   },
   {
@@ -296,6 +304,7 @@
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q12191403",
    "sourceName": "ويكي بيانات · Q12191403",
+   "grade": "open",
    "inception": null
   },
   {
@@ -319,6 +328,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q4022355",
    "sourceName": "ويكي بيانات · Q4022355",
+   "grade": "open",
    "inception": null
   },
   {
@@ -342,6 +352,7 @@
    "imageNote": "صورة حديثة للمدينة.",
    "source": "https://www.wikidata.org/wiki/Q190948",
    "sourceName": "ويكي بيانات · Q190948",
+   "grade": "open",
    "inception": null
   },
   {
@@ -365,6 +376,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q27174",
    "sourceName": "ويكي بيانات · Q27174",
+   "grade": "open",
    "inception": {
     "y": -2000,
     "m": null,
@@ -392,6 +404,7 @@
    "imageNote": "صورة حديثة للقرية.",
    "source": "https://www.wikidata.org/wiki/Q12239256",
    "sourceName": "ويكي بيانات · Q12239256",
+   "grade": "open",
    "inception": null
   },
   {
@@ -410,6 +423,7 @@
    "imageNote": "صورة حديثة للمدينة.",
    "source": "https://www.wikidata.org/wiki/Q244232",
    "sourceName": "ويكي بيانات · Q244232",
+   "grade": "open",
    "inception": {
     "y": 1915,
     "m": null,
@@ -437,6 +451,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q2719371",
    "sourceName": "ويكي بيانات · Q2719371",
+   "grade": "open",
    "inception": null
   },
   {
@@ -460,6 +475,7 @@
    "imageNote": "صورة حديثة للموقع.",
    "source": "https://www.wikidata.org/wiki/Q27365",
    "sourceName": "ويكي بيانات · Q27365",
+   "grade": "open",
    "inception": null
   }
  ],
@@ -486,7 +502,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q1319659",
-   "sourceName": "ويكي بيانات · Q1319659"
+   "sourceName": "ويكي بيانات · Q1319659",
+   "grade": "open"
   },
   {
    "id": "Q69351",
@@ -510,7 +527,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q69351",
-   "sourceName": "ويكي بيانات · Q69351"
+   "sourceName": "ويكي بيانات · Q69351",
+   "grade": "open"
   },
   {
    "id": "Q307187",
@@ -534,7 +552,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q307187",
-   "sourceName": "ويكي بيانات · Q307187"
+   "sourceName": "ويكي بيانات · Q307187",
+   "grade": "open"
   },
   {
    "id": "Q2227089",
@@ -558,7 +577,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q2227089",
-   "sourceName": "ويكي بيانات · Q2227089"
+   "sourceName": "ويكي بيانات · Q2227089",
+   "grade": "open"
   },
   {
    "id": "Q2460824",
@@ -582,7 +602,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q2460824",
-   "sourceName": "ويكي بيانات · Q2460824"
+   "sourceName": "ويكي بيانات · Q2460824",
+   "grade": "open"
   },
   {
    "id": "Q1393513",
@@ -606,7 +627,8 @@
    "image": null,
    "imageNote": null,
    "source": "https://www.wikidata.org/wiki/Q1393513",
-   "sourceName": "ويكي بيانات · Q1393513"
+   "sourceName": "ويكي بيانات · Q1393513",
+   "grade": "open"
   },
   {
    "id": "Q151509",
@@ -635,7 +657,8 @@
    },
    "imageNote": "صورة فوتوغرافية، ملك عام.",
    "source": "https://www.wikidata.org/wiki/Q151509",
-   "sourceName": "ويكي بيانات · Q151509"
+   "sourceName": "ويكي بيانات · Q151509",
+   "grade": "open"
   },
   {
    "id": "Q3319080",
@@ -664,7 +687,8 @@
    },
    "imageNote": "صورة منسوبة إليه، مؤلفها غير معروف.",
    "source": "https://www.wikidata.org/wiki/Q3319080",
-   "sourceName": "ويكي بيانات · Q3319080"
+   "sourceName": "ويكي بيانات · Q3319080",
+   "grade": "open"
   },
   {
    "id": "Q3738479",
@@ -693,7 +717,8 @@
    },
    "imageNote": "رسم تخطيطي من سنة ١٩٣٠، لا صورة فوتوغرافية.",
    "source": "https://www.wikidata.org/wiki/Q3738479",
-   "sourceName": "ويكي بيانات · Q3738479"
+   "sourceName": "ويكي بيانات · Q3738479",
+   "grade": "open"
   }
  ],
  "events": [
@@ -713,7 +738,8 @@
    "note": "تاريخان متداولان: ١٧٢٧ و١٧٤٤. نعرض الاثنين بدل ترجيح أحدهما بلا سند.",
    "hijri": "١١٥٧هـ",
    "source": "https://www.wikidata.org/wiki/Q146871",
-   "sourceName": "ويكي بيانات · Q146871"
+   "sourceName": "ويكي بيانات · Q146871",
+   "grade": "open"
   },
   {
    "id": "e_siege",
@@ -731,7 +757,8 @@
    "note": null,
    "hijri": "١٢٣٣هـ",
    "source": "https://www.wikidata.org/wiki/Q3656346",
-   "sourceName": "ويكي بيانات · Q3656346"
+   "sourceName": "ويكي بيانات · Q3656346",
+   "grade": "open"
   },
   {
    "id": "e_state2",
@@ -749,7 +776,8 @@
    "note": "سجل ويكي بيانات يضع النشأة سنة ١٨١٨؛ مصادر أخرى تؤرخها بـ١٨٢٤. تحتاج تدقيقًا.",
    "hijri": null,
    "source": "https://www.wikidata.org/wiki/Q146862",
-   "sourceName": "ويكي بيانات · Q146862"
+   "sourceName": "ويكي بيانات · Q146862",
+   "grade": "open"
   },
   {
    "id": "e_rashid",
@@ -767,7 +795,8 @@
    "note": null,
    "hijri": null,
    "source": "https://www.wikidata.org/wiki/Q5362837",
-   "sourceName": "ويكي بيانات · Q5362837"
+   "sourceName": "ويكي بيانات · Q5362837",
+   "grade": "open"
   },
   {
    "id": "e_riyadh",
@@ -785,7 +814,8 @@
    "note": "اختلاف في اليوم بين المصادر: ١٣ أو ١٥ يناير ١٩٠٢.",
    "hijri": "٥ شوال ١٣١٩هـ",
    "source": "https://www.wikidata.org/wiki/Q2943187",
-   "sourceName": "ويكي بيانات · Q2943187"
+   "sourceName": "ويكي بيانات · Q2943187",
+   "grade": "open"
   },
   {
    "id": "e_sibilla",
@@ -800,7 +830,8 @@
    "note": "لا يوجد في المصدر إحداثي دقيق للموقع، فلا نضع لها دبوسًا على الخريطة.",
    "hijri": "١٣٤٧هـ",
    "source": "https://www.wikidata.org/wiki/Q3636603",
-   "sourceName": "ويكي بيانات · Q3636603"
+   "sourceName": "ويكي بيانات · Q3636603",
+   "grade": "open"
   },
   {
    "id": "e_unify",
@@ -818,7 +849,8 @@
    "note": null,
    "hijri": "١٣٥١هـ",
    "source": "https://www.wikidata.org/wiki/Q251600",
-   "sourceName": "ويكي بيانات · Q251600"
+   "sourceName": "ويكي بيانات · Q251600",
+   "grade": "open"
   }
  ],
  "materials": [
@@ -843,7 +875,8 @@
    "blurb": "خريطة تاريخية لمكة تُعرض للربط البصري، لا كطبقة جغرافية دقيقة.",
    "note": "بيانات التاريخ والمؤلف في وصف الملف تحتاج مراجعة الأصل قبل أي استنتاج.",
    "source": "https://commons.wikimedia.org/wiki/File:Public_Domain_Mecca_Maps_32.jpg",
-   "sourceName": "ويكيميديا كومنز"
+   "sourceName": "ويكيميديا كومنز",
+   "grade": "open"
   },
   {
    "id": "m_04659",
@@ -866,7 +899,8 @@
    "blurb": "مشهد من أعلى للكعبة والمسجد الحرام في مطلع القرن العشرين.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/item/2019694961/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   },
   {
    "id": "m_04656",
@@ -889,7 +923,8 @@
    "blurb": "مشهد مرتفع يُظهر الكعبة وسط الحجاج.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/item/2019694958/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   },
   {
    "id": "m_04657",
@@ -912,7 +947,8 @@
    "blurb": "تفصيل بصري محفوظ ضمن مجموعة ماتسون.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/item/2019694959/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   },
   {
    "id": "m_04658",
@@ -935,7 +971,8 @@
    "blurb": "صورة إضافية من السلسلة التاريخية نفسها.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/item/2019694960/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   },
   {
    "id": "m_04655",
@@ -958,7 +995,8 @@
    "blurb": "مشهد للجمال وخيام الحجاج كما يصفه فهرس المكتبة.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/resource/matpc.04655/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   },
   {
    "id": "m_04660",
@@ -981,8 +1019,23 @@
    "blurb": "مشهد مرتفع لخيام الحجاج في مكة.",
    "note": "موضع الدبوس هو المكان المصوَّر، لا موقع المصوّر.",
    "source": "https://www.loc.gov/item/2019694962/",
-   "sourceName": "مكتبة الكونغرس"
+   "sourceName": "مكتبة الكونغرس",
+   "grade": "institutional"
   }
  ],
+ "grades": {
+  "official": {
+   "label": "مصدر رسمي سعودي",
+   "note": "جهة حكومية سعودية نشرته أو أتاحته رسميًا."
+  },
+  "institutional": {
+   "label": "مؤسسة حافظة",
+   "note": "مكتبة أو أرشيف مؤسسي يحفظ الأصل ويعلن وضعه."
+  },
+  "open": {
+   "label": "مصدر مفتوح — قيد الاعتماد",
+   "note": "بيانات مفتوحة مرخّصة، مقبولة للنموذج، ويُسعى إلى استبدالها بمصدر سعودي معتمد في النسخة الإنتاجية."
+  }
+ },
  "verified": "١٨ سبتمبر ٢٠٢٦"
 }

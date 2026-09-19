@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="./style.css?v=6">
+  <link rel="stylesheet" href="./style.css?v=8">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script defer src="./app.js?v=6"></script>
+  <script defer src="./app.js?v=8"></script>
 </head>
 <body>
 <header class="topbar">
@@ -81,7 +81,8 @@
       </div>
     </div>
 
-    <div class="region-note" id="regionNote"></div>
+    <div class="coverage" id="coverage"></div>
+      <div class="region-note" id="regionNote"></div>
   </section>
 
   <section class="browser" aria-label="الفهرس">
@@ -94,6 +95,7 @@
       <button role="tab" data-kind="person" aria-selected="false">شخصيات</button>
       <button role="tab" data-kind="event" aria-selected="false">أحداث</button>
       <button role="tab" data-kind="material" aria-selected="false">مواد</button>
+      <button role="tab" data-kind="site" aria-selected="false">السجل الوطني</button>
     </div>
     <div class="list" id="list"></div>
   </section>
