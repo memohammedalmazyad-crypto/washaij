@@ -517,3 +517,8 @@ h1, h2, h3, .d-body h2, .chat-head strong, .row strong{text-wrap:balance}
 #count, .d-when, .era-read, .tl-y, .row small, .chip i, .cov b{
   font-variant-numeric:tabular-nums;
 }
+
+/* ١٦ (تتمّة) · خمسة تبويبات في لوحة ضيّقة تعطي ٣٧ بكسل عرضًا فتلتفّ
+   تسمياتها؛ نطلقها أفقيًّا بدل عصرها، فيصير كل هدفٍ أوسع من الحدّ. */
+.tabs{overflow-x:auto; scrollbar-width:thin; gap:4px}
+.tabs button{flex:0 0 auto; min-width:66px; padding-inline:12px; white-space:nowrap}
