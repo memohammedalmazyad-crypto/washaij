@@ -881,19 +881,68 @@ function answer(pid, q){
 function openChat(pid){
   const v = state.voices && state.voices.voices[pid];
   if (!v) return;
-  state.chat = { pid, msgs: [{ who:'them', text: v.opening, sources: [] }] };
+  state.chat = { pid, msgs: [{ who:'them', text: v.opening, sources: [], opening:true }], busy:false };
   renderDetail();
 }
 const closeChat = () => { state.chat = null; renderDetail(); };
 
+const scrollChat = () => setTimeout(() => {
+  const l = $('#chatLog'); if (l) l.scrollTop = l.scrollHeight;
+}, 30);
+
 function sendChat(q){
   const c = state.chat;
-  if (!c || !q.trim()) return;
-  const a = answer(c.pid, q);
+  if (!c || !q.trim() || c.busy) return;
   c.msgs.push({ who:'me', text:q.trim() });
+  const ep = window.WASHAIJ_CHAT;
+  if (ep) { askModel(c, q.trim(), ep); return; }
+  const a = answer(c.pid, q);
   if (a) c.msgs.push({ who:'them', text:a.text, sources:a.sources, refused:a.refused, guard:a.guard });
-  renderDetail();
-  setTimeout(() => { const l = $('#chatLog'); if (l) l.scrollTop = l.scrollHeight; }, 30);
+  renderDetail(); scrollChat();
+}
+
+/** يسأل النموذج عبر الوسيط ويكتب الجواب حرفًا حرفًا */
+async function askModel(c, q, endpoint){
+  c.busy = true;
+  const bubble = { who:'them', text:'', typing:true };
+  c.msgs.push(bubble);
+  renderDetail(); scrollChat();
+
+  const history = c.msgs
+    .filter(m => !m.typing && !m.opening)
+    .map(m => ({ role: m.who === 'me' ? 'user' : 'assistant', content: m.text }));
+
+  try {
+    const res = await fetch(endpoint, {
+      method:'POST', headers:{ 'Content-Type':'application/json' },
+      body: JSON.stringify({ pid: c.pid, messages: history })
+    });
+    if (!res.ok || !res.body) throw new Error('تعذّر الاتصال');
+    const reader = res.body.getReader(), dec = new TextDecoder();
+    let buf = '';
+    for (;;){
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream:true });
+      const parts = buf.split('\n\n'); buf = parts.pop();
+      for (const p of parts){
+        const line = p.trim();
+        if (!line.startsWith('data:')) continue;
+        let ev; try { ev = JSON.parse(line.slice(5)); } catch { continue; }
+        if (ev.t){ bubble.text += ev.t; bubble.typing = false; renderDetail(); scrollChat(); }
+        if (ev.error) throw new Error(ev.error);
+      }
+    }
+    if (!bubble.text){ bubble.text = 'لم يصلني جواب.'; bubble.refused = true; }
+  } catch (e) {
+    // الوسيط متعذّر: نعود إلى المحرّك المحلي بلا انقطاع للزائر
+    const a = answer(c.pid, q);
+    bubble.text = a ? a.text : 'تعذّر الاتصال.';
+    bubble.sources = a && a.sources; bubble.refused = a && a.refused; bubble.guard = a && a.guard;
+  } finally {
+    bubble.typing = false; c.busy = false;
+    renderDetail(); scrollChat();
+  }
 }
 
 function renderChat(){
@@ -905,6 +954,7 @@ function renderChat(){
       ? `<div class="bub-src">${m.sources.map(s => s.url
           ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.label)} ↗</a>`
           : `<span>${esc(s.name || s.label)}</span>`).join('')}</div>` : '';
+    if (m.typing) return '<div class="bub them typing"><i></i><i></i><i></i></div>';
     return `<div class="bub them${cls}">${esc(m.text)}${srcs}</div>`;
   }).join('');
 
