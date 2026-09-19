@@ -38,8 +38,6 @@ a{color:inherit}
 }
 .region:hover{border-color:var(--gold-soft);color:var(--ink)}
 .region.on{background:var(--ink);border-color:var(--ink);color:#fff}
-.region.focus-region::after{content:"★";margin-inline-start:7px;color:var(--gold-soft);font-size:11px}
-.region.on.focus-region::after{color:var(--gold-soft)}
 
 /* ---------- layout ---------- */
 .layout{

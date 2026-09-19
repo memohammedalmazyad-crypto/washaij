@@ -94,7 +94,7 @@ const yearsText = (p) => (born(p) && died(p))
 /* ---------------- shell ---------------- */
 function renderRegions(){
   $('#regions').innerHTML = state.data.regions.map(r =>
-    `<button class="region${r.id===state.region?' on':''}${r.focus?' focus-region':''}"
+    `<button class="region${r.id===state.region?' on':''}"
       data-region="${r.id}" aria-pressed="${r.id===state.region}">${esc(r.name)}</button>`).join('');
   $$('.region').forEach(b => b.onclick = () => selectRegion(b.dataset.region));
   $('#regionNote').textContent = region().blurb;
