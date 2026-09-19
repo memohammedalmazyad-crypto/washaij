@@ -81,6 +81,16 @@
    "zoom": 10,
    "secondary": true,
    "blurb": "مواد أرشيفية مصوَّرة من مطلع القرن العشرين، محفوظة في مكتبة الكونغرس."
+  },
+  {
+   "id": "adjacent",
+   "name": "الجوار",
+   "note": "بلدات خارج الجزيرة أو على تخومها، تشابكت بها تراجم نجد — كالزبير والبصرة والبحرين وصنعاء.",
+   "center": [
+    23.0,
+    47.0
+   ],
+   "zoom": 5
   }
  ],
  "places": [
@@ -1074,6 +1084,367 @@
     "from": "Sivrab (Jabal)",
     "basis": "نقل حرفي آلي من رسم لوريمر اللاتيني"
    }
+  },
+  {
+   "id": "pl_alam_مكة",
+   "type": "place",
+   "name": "مكة",
+   "region": "hijaz",
+   "kind": "مدينة",
+   "coord": [
+    21.389,
+    39.857
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ45 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 45
+  },
+  {
+   "id": "pl_alam_المدينة",
+   "type": "place",
+   "name": "المدينة",
+   "region": "hijaz",
+   "kind": "مدينة",
+   "coord": [
+    24.468,
+    39.611
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ27 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 27
+  },
+  {
+   "id": "pl_alam_الأحساء",
+   "type": "place",
+   "name": "الأحساء",
+   "region": "eastern",
+   "kind": "إقليم",
+   "coord": [
+    25.383,
+    49.587
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ7 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 7
+  },
+  {
+   "id": "pl_alam_الطائف",
+   "type": "place",
+   "name": "الطائف",
+   "region": "hijaz",
+   "kind": "مدينة",
+   "coord": [
+    21.27,
+    40.416
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ7 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 7
+  },
+  {
+   "id": "pl_alam_عسير",
+   "type": "place",
+   "name": "عسير",
+   "region": "south",
+   "kind": "إقليم",
+   "coord": [
+    18.22,
+    42.5
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ4 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 4
+  },
+  {
+   "id": "pl_alam_صنعاء",
+   "type": "place",
+   "name": "صنعاء",
+   "region": "adjacent",
+   "kind": "مدينة",
+   "coord": [
+    15.355,
+    44.207
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ3 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 3
+  },
+  {
+   "id": "pl_alam_البحرين",
+   "type": "place",
+   "name": "البحرين",
+   "region": "adjacent",
+   "kind": "إقليم",
+   "coord": [
+    26.066,
+    50.557
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ3 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 3
+  },
+  {
+   "id": "pl_alam_العيينة",
+   "type": "place",
+   "name": "العيينة",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    24.9,
+    46.36
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ3 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 3
+  },
+  {
+   "id": "pl_alam_المجمعة",
+   "type": "place",
+   "name": "المجمعة",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    25.9,
+    45.36
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ2 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 2
+  },
+  {
+   "id": "pl_alam_حضرموت",
+   "type": "place",
+   "name": "حضرموت",
+   "region": "adjacent",
+   "kind": "إقليم",
+   "coord": [
+    15.93,
+    48.79
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ2 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 2
+  },
+  {
+   "id": "pl_alam_جدة",
+   "type": "place",
+   "name": "جدة",
+   "region": "hijaz",
+   "kind": "مدينة",
+   "coord": [
+    21.543,
+    39.173
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ2 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 2
+  },
+  {
+   "id": "pl_alam_البصرة",
+   "type": "place",
+   "name": "البصرة",
+   "region": "adjacent",
+   "kind": "مدينة",
+   "coord": [
+    30.508,
+    47.783
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ2 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 2
+  },
+  {
+   "id": "pl_alam_الزبير",
+   "type": "place",
+   "name": "الزبير",
+   "region": "adjacent",
+   "kind": "مدينة",
+   "coord": [
+    30.39,
+    47.708
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ2 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 2
+  },
+  {
+   "id": "pl_alam_المبرز",
+   "type": "place",
+   "name": "المبرز",
+   "region": "eastern",
+   "kind": "مدينة",
+   "coord": [
+    25.42,
+    49.6
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
+  },
+  {
+   "id": "pl_alam_ينبع",
+   "type": "place",
+   "name": "ينبع",
+   "region": "hijaz",
+   "kind": "مدينة",
+   "coord": [
+    24.089,
+    38.063
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
+  },
+  {
+   "id": "pl_alam_حوطة_سدير",
+   "type": "place",
+   "name": "حوطة سدير",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    25.56,
+    45.52
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
+  },
+  {
+   "id": "pl_alam_العارض",
+   "type": "place",
+   "name": "العارض",
+   "region": "najd",
+   "kind": "إقليم",
+   "coord": [
+    24.7,
+    46.7
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
+  },
+  {
+   "id": "pl_alam_البكيرية",
+   "type": "place",
+   "name": "البكيرية",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    26.14,
+    43.66
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
+  },
+  {
+   "id": "pl_alam_الزلفي",
+   "type": "place",
+   "name": "الزلفي",
+   "region": "najd",
+   "kind": "مدينة",
+   "coord": [
+    26.3,
+    44.82
+   ],
+   "blurb": null,
+   "note": "تذكرها تراجم «الأعلام» موطنًا لـ1 من الأعلام في هذا السجل. الإحداثي من معجم المشروع الجغرافي — إحداثي البلدة الحديث، لا من الكتاب.",
+   "coordSource": "معجم المشروع الجغرافي (لا من الكتاب)",
+   "image": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "anchors": 1
   }
  ],
  "people": [
@@ -1138,7 +1509,7 @@
    "id": "p_alam_90_1935",
    "type": "person",
    "name": "إبراهيم بن عبد القادر بن عمر البري",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنفي أديب",
    "blurb": null,
    "birth": {
@@ -1158,7 +1529,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_95_1775",
@@ -1383,7 +1755,7 @@
    "id": "p_alam_351_1898",
    "type": "person",
    "name": "أحمد بن صالح بن طعان الستري البحراني",
-   "region": "arabia",
+   "region": null,
    "role": "فاضل إمامي",
    "blurb": null,
    "birth": {
@@ -1403,13 +1775,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_382_1762",
    "type": "person",
    "name": "أحمد بن عبد الرحيم الفاروقي الدهلوي الهندي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنفي من المحدّثين",
    "blurb": null,
    "birth": {
@@ -1433,7 +1806,8 @@
    "outsideScope": {
     "place": "دهلي",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_397_1818",
@@ -1473,7 +1847,7 @@
    "id": "p_alam_425_1940",
    "type": "person",
    "name": "أحمد بن عبد الله القاري",
-   "region": "arabia",
+   "region": null,
    "role": "قاض حجازي",
    "blurb": null,
    "birth": {
@@ -1493,7 +1867,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_443_1892",
@@ -1529,7 +1904,7 @@
    "id": "p_alam_481_1868",
    "type": "person",
    "name": "أحمد بن علي بن حسين بن مشرف الوهيبي التميمي",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه مالكي",
    "blurb": null,
    "birth": null,
@@ -1626,7 +2001,7 @@
    "id": "p_alam_498_1779",
    "type": "person",
    "name": "أحمد بن عمر بن عثمان. أَبُو الصفاء الشاكر",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر صوفي أصله من حماة وقام بسياحة طويلة إلى العراق والحجاز ومصر وفاس ",
    "blurb": null,
    "birth": {
@@ -1650,13 +2025,14 @@
    "outsideScope": {
     "place": "دمشق",
     "basis": "سكن"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_503_1944",
    "type": "person",
    "name": "أحمد بن العياشي سكيرج الخزرجي الأنصاري",
-   "region": "arabia",
+   "region": null,
    "role": "قاض",
    "blurb": null,
    "birth": {
@@ -1676,13 +2052,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_514_1960",
    "type": "person",
    "name": "أحمد فتحي",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر مصري",
    "blurb": null,
    "birth": null,
@@ -1703,7 +2080,8 @@
    "outsideScope": {
     "place": "الاسكندريه",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_653_1730",
@@ -1741,7 +2119,7 @@
    "id": "p_alam_663_1815",
    "type": "person",
    "name": "أحمد بن محمد بن المختار بن أحمد الشَّرِيف التجاني",
-   "region": "arabia",
+   "region": null,
    "role": "شيخ (الطائفة التجانية) بالمغرب",
    "blurb": null,
    "birth": {
@@ -1761,7 +2139,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_665_1825",
@@ -1801,7 +2180,7 @@
    "id": "p_alam_668_1864",
    "type": "person",
    "name": "أحمد بن محمد بن رمضان",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه مالكي",
    "blurb": null,
    "birth": null,
@@ -1819,13 +2198,14 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "حدٌّ أدنى",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_670_1890",
    "type": "person",
    "name": "أحمد بن محمد بن علي بن محمد الحلواني",
-   "region": "arabia",
+   "region": null,
    "role": "عالم بالقرآت",
    "blurb": null,
    "birth": {
@@ -1845,7 +2225,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_674_1909",
@@ -2050,7 +2431,7 @@
    "id": "p_alam_1014_1972",
    "type": "person",
    "name": "أنور بن سعيد بن أنيس العطار",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر رقيق",
    "blurb": null,
    "birth": {
@@ -2070,13 +2451,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1052_1909",
    "type": "person",
    "name": "باقر بن غلام علي التستري",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه متزهد",
    "blurb": null,
    "birth": null,
@@ -2097,13 +2479,14 @@
    "outsideScope": {
     "place": "النجف",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1134_1853",
    "type": "person",
    "name": "أبو بكر بن محمد بن عمر المُلَّا الحنفي",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه له نظم",
    "blurb": null,
    "birth": {
@@ -2171,7 +2554,7 @@
    "id": "p_alam_1290_1899",
    "type": "person",
    "name": "جعفر بن إسماعيل بن زين العابدين البرزنجي",
-   "region": "arabia",
+   "region": null,
    "role": "قاضي من أعيان المدينة المنورة",
    "blurb": null,
    "birth": {
@@ -2191,7 +2574,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1291_1923",
@@ -2421,7 +2805,7 @@
    "id": "p_alam_1412_1758",
    "type": "person",
    "name": "حامد بن يوسف بن حامد",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه من علماء الحنفية",
    "blurb": null,
    "birth": {
@@ -2441,13 +2825,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1484_1899",
    "type": "person",
    "name": "حسن حسني الفخري الأعرجي الموصلي",
-   "region": "arabia",
+   "region": null,
    "role": "قاض",
    "blurb": null,
    "birth": {
@@ -2467,13 +2852,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1489_1820",
    "type": "person",
    "name": "حسن بن خالد بن عز الدين بن محسن التهامي اليماني الحازمي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه مجتهد من سلالة أسرة حسنية في عسير تدعى (الحوازمة) برع في التفسير ",
    "blurb": null,
    "birth": {
@@ -2493,7 +2879,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1555_1935",
@@ -2525,7 +2912,7 @@
    "id": "p_alam_1580_1767",
    "type": "person",
    "name": "حسن بن محمد بن علي بن خلف الدمستاني",
-   "region": "arabia",
+   "region": null,
    "role": "فاضل إمامي",
    "blurb": null,
    "birth": null,
@@ -2542,13 +2929,14 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1583_1928",
    "type": "person",
    "name": "الحسن بن محمد بن قاسم",
-   "region": "arabia",
+   "region": null,
    "role": "مؤرخ مغربي",
    "blurb": null,
    "birth": null,
@@ -2570,13 +2958,14 @@
    "outsideScope": {
     "place": "فاس",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_1672_1811",
    "type": "person",
    "name": "حسين بن غنّام (أو ابن أبي بكر بن غنام) النجدي الأحسائي",
-   "region": "east",
+   "region": "eastern",
    "role": "مؤرخ",
    "blurb": null,
    "birth": null,
@@ -2789,7 +3178,7 @@
    "id": "p_alam_2003_1943",
    "type": "person",
    "name": "رشيد بن مطر الهاشمي البغدادي",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر عراقي",
    "blurb": null,
    "birth": {
@@ -2809,13 +3198,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_2099_1970",
    "type": "person",
    "name": "زيد بن الحسين بن علي الهاشمي",
-   "region": "arabia",
+   "region": null,
    "role": "أمير",
    "blurb": null,
    "birth": {
@@ -2835,7 +3225,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_2120_1799",
@@ -2872,7 +3263,7 @@
    "id": "p_alam_2230_1826",
    "type": "person",
    "name": "سعيد بن مسلط الناجحي المغيدي",
-   "region": "arabia",
+   "region": null,
    "role": "أمير من آل ناجح من بني مغيد (إحدى قبائل عسير السراة) ولد في قرية السّق",
    "blurb": null,
    "birth": null,
@@ -2889,7 +3280,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_2274_1941",
@@ -2997,7 +3389,7 @@
    "id": "p_alam_2304_1955",
    "type": "person",
    "name": "سليمان بن عبد الرحمن بن محمد ابن عمر",
-   "region": "east",
+   "region": "eastern",
    "role": "قاض",
    "blurb": null,
    "birth": {
@@ -3090,7 +3482,7 @@
    "id": "p_alam_2407_1954",
    "type": "person",
    "name": "شريف بن توفيق بن حسن",
-   "region": "arabia",
+   "region": null,
    "role": "طبيب",
    "blurb": null,
    "birth": {
@@ -3110,7 +3502,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_2428_1890",
@@ -3301,7 +3694,7 @@
    "id": "p_alam_2621_1897",
    "type": "person",
    "name": "الطّيب بن أبي بكر بن الطيب بن كيران النوازلي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه مالكي",
    "blurb": null,
    "birth": null,
@@ -3318,7 +3711,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_2643_1923",
@@ -3895,7 +4289,7 @@
    "id": "p_alam_3024_1923",
    "type": "person",
    "name": "عبد العزيز صبري الخياري",
-   "region": "arabia",
+   "region": null,
    "role": "أديب شاعر",
    "blurb": null,
    "birth": null,
@@ -3913,7 +4307,8 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "حدٌّ أدنى",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3034_1822",
@@ -3980,7 +4375,7 @@
    "id": "p_alam_3066_1731",
    "type": "person",
    "name": "عبد الغني بن إسماعيل بن عبد الغني النابلسي",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر",
    "blurb": null,
    "birth": {
@@ -4004,13 +4399,14 @@
    "outsideScope": {
     "place": "دمشق",
     "basis": "مولد"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3079_1792",
    "type": "person",
    "name": "عبد القادر بن أحمد بن عبد القادر بن الناصر",
-   "region": "arabia",
+   "region": null,
    "role": "محدث مجتهد",
    "blurb": null,
    "birth": {
@@ -4034,13 +4430,14 @@
    "outsideScope": {
     "place": "فاس",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3090_1765",
    "type": "person",
    "name": "عبد القادر بن عبد الله بن إسماعيل العبدلاني",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه متصوف",
    "blurb": null,
    "birth": {
@@ -4064,13 +4461,14 @@
    "outsideScope": {
     "place": "الكرخ",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3090_1910",
    "type": "person",
    "name": "عبد القادر بن عبد الله البزاز العبادي المعروف بشنون",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر فكه هجَّاء من أهل الكرخ ببغداد",
    "blurb": null,
    "birth": null,
@@ -4091,7 +4489,8 @@
    "outsideScope": {
     "place": "الكرخ",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3140_1967",
@@ -4162,7 +4561,7 @@
    "id": "p_alam_3191_1922",
    "type": "person",
    "name": "عبد الله بن بكر بن علي بن عبد الحفيظ ابن كمال",
-   "region": "arabia",
+   "region": null,
    "role": "قاض",
    "blurb": null,
    "birth": {
@@ -4182,7 +4581,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3209_1855",
@@ -4310,7 +4710,7 @@
    "id": "p_alam_3237_1731",
    "type": "person",
    "name": "عبد الله بن سعيد بن سعد بن زيد بن محسن",
-   "region": "arabia",
+   "region": null,
    "role": "أمير حسني",
    "blurb": null,
    "birth": null,
@@ -4327,7 +4727,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3241_1940",
@@ -4420,7 +4821,7 @@
    "id": "p_alam_3301_1912",
    "type": "person",
    "name": "عبد الله بن عودة بن عبد الله صوفان ابن عيسى القدّومي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنبلي",
    "blurb": null,
    "birth": {
@@ -4440,7 +4841,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3305_1889",
@@ -4631,7 +5033,7 @@
    "id": "p_alam_3385_1943",
    "type": "person",
    "name": "عبد الله بن معتوق بن درويش البلادي التاروتي القطيفي",
-   "region": "east",
+   "region": "eastern",
    "role": "شاعر مكثر من أهل القطيف",
    "blurb": null,
    "birth": {
@@ -4719,7 +5121,7 @@
    "id": "p_alam_3419_1769",
    "type": "person",
    "name": "عبد المحسن بن أسعد الأسعد",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه من قدماء الأسرة الا سعدية بالمدينة المنورة",
    "blurb": null,
    "birth": {
@@ -4739,7 +5141,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3421_1945",
@@ -4870,7 +5273,7 @@
    "id": "p_alam_3469_1967",
    "type": "person",
    "name": "عبد المنعم الغلامي",
-   "region": "arabia",
+   "region": null,
    "role": "مؤرخ عراقي من أهل الموصل",
    "blurb": null,
    "birth": {
@@ -4894,7 +5297,8 @@
    "outsideScope": {
     "place": "الموصل",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3470_1760",
@@ -4931,7 +5335,7 @@
    "id": "p_alam_3479_1840",
    "type": "person",
    "name": "عبد النبي بن علي بن أحمد الكاظمي",
-   "region": "arabia",
+   "region": null,
    "role": "فاضل إمامي",
    "blurb": null,
    "birth": {
@@ -4951,7 +5355,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3483_1893",
@@ -5084,7 +5489,7 @@
    "id": "p_alam_3523_1791",
    "type": "person",
    "name": "عبد الوهاب بن محمد بن عبد الله بن فيروز التميمي الأحسائي",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه حنبلي",
    "blurb": null,
    "birth": {
@@ -5262,7 +5667,7 @@
    "id": "p_alam_3607_1798",
    "type": "person",
    "name": "عثمان بن محمَّد الأزهري الشهير بالشامي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنفي له \" أوائل - خ \" في الحديث (٢)",
    "blurb": null,
    "birth": null,
@@ -5280,13 +5685,14 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "تقريبية",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3607_1885",
    "type": "person",
    "name": "عثمان بن محمد شطا الدمياط الشافعيّ أبو بكر البكري",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه متصوف مصري استقر بمكة",
    "blurb": null,
    "birth": null,
@@ -5304,7 +5710,8 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "حدٌّ أدنى",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_3608_1913",
@@ -5378,7 +5785,7 @@
    "id": "p_alam_3772_1945",
    "type": "person",
    "name": "علي بن جعفر بن محمد العوامي",
-   "region": "east",
+   "region": "eastern",
    "role": "قاض إمامي",
    "blurb": null,
    "birth": {
@@ -5542,7 +5949,7 @@
    "id": "p_alam_3933_1834",
    "type": "person",
    "name": "عليّ بن مجثّل",
-   "region": "arabia",
+   "region": null,
    "role": "أمير بلاد \" عسير \" في جنوب الحجاز",
    "blurb": null,
    "birth": null,
@@ -5559,13 +5966,14 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_4006_1769",
    "type": "person",
    "name": "علي بن محمد بن علي بن العربيّ السقاط",
-   "region": "arabia",
+   "region": null,
    "role": "مفتي الحنفية في دمشق وأحد علماء عصره",
    "blurb": null,
    "birth": null,
@@ -5582,7 +5990,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_4103_1944",
@@ -5614,7 +6023,7 @@
    "id": "p_alam_4274_1920",
    "type": "person",
    "name": "عيسى بن عبد الله بن عيسى بن حسن",
-   "region": "east",
+   "region": "eastern",
    "role": "قاض ضرير من فقهاء نجد من قبيلة سبيع",
    "blurb": null,
    "birth": {
@@ -6003,7 +6412,7 @@
    "id": "p_alam_4876_1969",
    "type": "person",
    "name": "محمد بن إبراهيم بن عبد اللطيف",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنبلي",
    "blurb": null,
    "birth": {
@@ -6023,7 +6432,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_4997_1737",
@@ -6094,7 +6504,7 @@
    "id": "p_alam_5023_1930",
    "type": "person",
    "name": "محمد بن أحمد",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه مالكي",
    "blurb": null,
    "birth": {
@@ -6114,7 +6524,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5115_1911",
@@ -6152,7 +6563,7 @@
    "id": "p_alam_5141_1795",
    "type": "person",
    "name": "محمد التاودي بن محمد الطَّالِب ابن محمد بن علي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه المالكية في عصره",
    "blurb": null,
    "birth": {
@@ -6172,7 +6583,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5154_1937",
@@ -6212,7 +6624,7 @@
    "id": "p_alam_5173_1927",
    "type": "person",
    "name": "محمد بن جعفر بن إدريس الكَتَّاني الحسني الفاسي",
-   "region": "arabia",
+   "region": null,
    "role": "مؤرخ محدث",
    "blurb": null,
    "birth": {
@@ -6232,7 +6644,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5188_1920",
@@ -6272,7 +6685,7 @@
    "id": "p_alam_5192_1944",
    "type": "person",
    "name": "محمد حبيب الله بن عبد الله بن أحمد ما ي أبي الجكني الشنقيطي",
-   "region": "arabia",
+   "region": null,
    "role": "عالم بالحديث",
    "blurb": null,
    "birth": {
@@ -6292,13 +6705,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5239_1910",
    "type": "person",
    "name": "محمد بن حسن بن عبد الرحمن الحفظي",
-   "region": "arabia",
+   "region": null,
    "role": "مؤرخ",
    "blurb": null,
    "birth": null,
@@ -6316,7 +6730,8 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "تقريبية",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5268_1773",
@@ -6356,7 +6771,7 @@
    "id": "p_alam_5279_1971",
    "type": "person",
    "name": "محمد بن حسين بن عمر بن عبد الله بن أبي بكر بن محمد نصيف",
-   "region": "arabia",
+   "region": null,
    "role": "عالم (جدة) وصدرها في عصره",
    "blurb": null,
    "birth": {
@@ -6376,7 +6791,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5284_1831",
@@ -6478,7 +6894,7 @@
    "id": "p_alam_5292_1932",
    "type": "person",
    "name": "محمد بن حيدر النعمي التهامي الحسني",
-   "region": "arabia",
+   "region": null,
    "role": "مؤرخ",
    "blurb": null,
    "birth": null,
@@ -6495,13 +6911,14 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5311_1888",
    "type": "person",
    "name": "محمد بن خليل بن إبراهيم",
-   "region": "arabia",
+   "region": null,
    "role": "عالم بالحديث",
    "blurb": null,
    "birth": {
@@ -6525,7 +6942,8 @@
    "outsideScope": {
     "place": "طرابلس",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5359_1863",
@@ -6840,7 +7258,7 @@
    "id": "p_alam_5451_1915",
    "type": "person",
    "name": "محمد صالح بن أحمد بن صالح ابن طعان بن ناصر الستري (نسبة الى سترة من قرى الأحساء)",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه إمامي",
    "blurb": null,
    "birth": null,
@@ -6905,7 +7323,7 @@
    "id": "p_alam_5454_1935",
    "type": "person",
    "name": "محمد الصبحي المعاز",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر",
    "blurb": null,
    "birth": null,
@@ -6926,7 +7344,8 @@
    "outsideScope": {
     "place": "دمشق",
     "basis": "مولد"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5472_1803",
@@ -6963,7 +7382,7 @@
    "id": "p_alam_5474_1929",
    "type": "person",
    "name": "محمد بن طاهر المجذوب",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر سوداني",
    "blurb": null,
    "birth": {
@@ -6983,7 +7402,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5488_1916",
@@ -7020,7 +7440,7 @@
    "id": "p_alam_5491_1872",
    "type": "person",
    "name": "محمد بن عائض بن مرعي",
-   "region": "arabia",
+   "region": null,
    "role": "أمير بلاد (عسير)",
    "blurb": null,
    "birth": null,
@@ -7037,7 +7457,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5550_1943",
@@ -7134,7 +7555,7 @@
    "id": "p_alam_5678_1801",
    "type": "person",
    "name": "محمد بن عبد الله بن محمد بن فيروز التميمي الأحسائي",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه حنبلي",
    "blurb": null,
    "birth": {
@@ -7322,7 +7743,7 @@
    "id": "p_alam_5759_1931",
    "type": "person",
    "name": "محمد بن عقيل بن عبد الله بن عمر",
-   "region": "arabia",
+   "region": null,
    "role": "رحالة",
    "blurb": null,
    "birth": {
@@ -7342,7 +7763,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5838_1760",
@@ -7430,7 +7852,7 @@
    "id": "p_alam_5845_1848",
    "type": "person",
    "name": "محمد بن علي بن حسين العمراني الصنعاني",
-   "region": "arabia",
+   "region": null,
    "role": "عالم بالحديث",
    "blurb": null,
    "birth": {
@@ -7450,13 +7872,14 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5857_1916",
    "type": "person",
    "name": "محمد علي بن ميرزا محمد الشاه عبد العظيمي النجفي",
-   "region": "arabia",
+   "region": null,
    "role": "فاضل إمامي",
    "blurb": null,
    "birth": {
@@ -7480,7 +7903,8 @@
    "outsideScope": {
     "place": "النجف",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5867_1948",
@@ -7615,7 +8039,7 @@
    "id": "p_alam_5992_1853",
    "type": "person",
    "name": "محمد بن مال الله بن معصوم القطيفي الحائري الموسوي",
-   "region": "east",
+   "region": "eastern",
    "role": "شاعر",
    "blurb": null,
    "birth": null,
@@ -7677,7 +8101,7 @@
    "id": "p_alam_6244_1963",
    "type": "person",
    "name": "محمد مصطفى حمام",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر",
    "blurb": null,
    "birth": null,
@@ -7694,7 +8118,8 @@
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
    "factsOnly": true,
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_6456_1881",
@@ -7765,7 +8190,7 @@
    "id": "p_alam_6466_1931",
    "type": "person",
    "name": "محمود بن علي بن محمد الببلاوي",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه حنفي مصري أزهري",
    "blurb": null,
    "birth": {
@@ -7789,13 +8214,14 @@
    "outsideScope": {
     "place": "القاهره",
     "basis": "وفاة"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_6634_1901",
    "type": "person",
    "name": "مصطفى زين الدين الحمصي",
-   "region": "arabia",
+   "region": null,
    "role": "شاعر",
    "blurb": null,
    "birth": {
@@ -7819,7 +8245,8 @@
    "outsideScope": {
     "place": "حمص",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_6656_1791",
@@ -7974,7 +8401,7 @@
    "id": "p_alam_6963_1963",
    "type": "person",
    "name": "ناجي بن عبد الله الأصيل",
-   "region": "arabia",
+   "region": null,
    "role": "طبيب",
    "blurb": null,
    "birth": {
@@ -7998,7 +8425,8 @@
    "outsideScope": {
     "place": "بغداد",
     "basis": "أهله"
-   }
+   },
+   "regionUnknown": true
   },
   {
    "id": "p_alam_6997_1934",
@@ -8028,7 +8456,7 @@
    "id": "p_alam_7171_1892",
    "type": "person",
    "name": "هاشم بن أحمد بن الحسين بن سليمان الموسوي الأحسائي ثم البحراني",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه إمامي",
    "blurb": null,
    "birth": null,
@@ -8059,7 +8487,7 @@
    "id": "p_alam_7485_1775",
    "type": "person",
    "name": "يحيى بن محمد بن عبد العلي بن يحيى البحراني",
-   "region": "arabia",
+   "region": null,
    "role": "فقيه إمامي",
    "blurb": null,
    "birth": null,
@@ -8077,7 +8505,8 @@
    "tier": "book",
    "factsOnly": true,
    "deathPrecision": "حدٌّ أدنى",
-   "birthKnown": false
+   "birthKnown": false,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_7583_1927",
@@ -8343,7 +8772,7 @@
    "id": "p_alam_2288_1850",
    "type": "person",
    "name": "سليمان بن أحمد بن الحسين",
-   "region": "east",
+   "region": "eastern",
    "role": "فقيه إمامي",
    "blurb": null,
    "birth": null,
@@ -8637,7 +9066,7 @@
    "id": "p_alam_5682_1890",
    "type": "person",
    "name": "محمد بن عبد الله بن عبد الرحمن",
-   "region": "arabia",
+   "region": null,
    "role": "إمام زيدي يلقب بشرف الدين",
    "blurb": null,
    "birth": {
@@ -8657,7 +9086,8 @@
    "source": "https://shamela.ws/book/12286",
    "sourceName": "الأعلام · خير الدين الزركلي",
    "tier": "book",
-   "factsOnly": true
+   "factsOnly": true,
+   "regionUnknown": true
   },
   {
    "id": "p_alam_5691_1962",
