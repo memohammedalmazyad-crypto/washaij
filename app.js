@@ -18,7 +18,7 @@ const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', mate
                      site:'موقع في السجل الوطني' };
 
 const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[],
-                era:{ from:0, to:0, active:false }, q:'', sites:null, limit:80 };
+                era:{ from:0, to:0, active:false }, q:'', sites:null, limit:80, voices:null, chat:null };
 
 /* ---------------- data helpers ---------------- */
 const all = () => {
@@ -182,6 +182,7 @@ function chip(it, extra){
 
 function renderDetail(){
   const box = $('#detail');
+  if (state.chat && state.voices){ box.innerHTML = renderChat(); wireChat(); return; }
   let it = state.sel && byId(state.sel);
   if (!it){
     const r = region();
@@ -215,6 +216,8 @@ function renderDetail(){
     secs += section(`أحداث في زمنه (${AR(evs.length)})`,
       evs.length ? `<div class="chips">${evs.map(e => chip(e, AR(e.year))).join('')}</div>`
                  : `<p class="txt">لا حدث موثّق في هذا النموذج ضمن سنوات حياته.</p>`);
+    if (state.voices && state.voices.voices[it.id])
+      secs += `<button class="talk" data-talk="${esc(it.id)}">تحدّث إليه ↩</button>`;
   }
 
   if (it.type === 'event'){
@@ -282,6 +285,8 @@ function renderDetail(){
     <a class="src" href="${esc(it.source)}" target="_blank" rel="noopener noreferrer">${esc(it.sourceName || 'المصدر')} ↗</a>
   </div>`;
 
+  const talk = $('#detail [data-talk]');
+  if (talk) talk.onclick = () => openChat(talk.dataset.talk);
   $$('#detail .chip').forEach(b => b.onclick = () => {
     const t = byId(b.dataset.go);
     if (!t) return;
@@ -632,6 +637,91 @@ function drawWeb(){
 }
 
 
+
+/* ---------------- الشخصيات المتكلّمة ---------------- */
+function loadVoices(){
+  return fetch('./voices.json' + VER).then(r => r.json())
+    .then(v => { state.voices = v; renderDetail(); })
+    .catch(() => {});
+}
+
+/** يطابق السؤال بموضوع موثّق؛ وما لا يطابق تعتذر عنه الشخصية */
+function answer(pid, q){
+  const v = state.voices && state.voices.voices[pid];
+  if (!v) return { text:'السجل غير محمّل بعد.', sources:[] };
+  const n = norm(q);
+  if (!n.trim()) return null;
+
+  if (v.guard && v.guard[0].split('|').some(k => n.includes(norm(k))))
+    return { text: v.guard[1], sources: [], guard: true };
+
+  let best = null, bestScore = 0;
+  for (const t of v.topics){
+    let score = 0;
+    for (const k of t.keys.split('|')){
+      const key = norm(k);
+      if (key && n.includes(key)) score += key.length;   // المطابقة الأطول أرجح
+    }
+    if (score > bestScore){ bestScore = score; best = t; }
+  }
+  if (!best) return { text: v.refusal, sources: [], refused: true };
+  return { text: best.a, sources: (best.s || []).filter(Boolean) };
+}
+
+function openChat(pid){
+  const v = state.voices && state.voices.voices[pid];
+  if (!v) return;
+  state.chat = { pid, msgs: [{ who:'them', text: `${v.opening} اسألني عمّا توثّقه المصادر.`, sources: [] }] };
+  renderDetail();
+}
+const closeChat = () => { state.chat = null; renderDetail(); };
+
+function sendChat(q){
+  const c = state.chat;
+  if (!c || !q.trim()) return;
+  const a = answer(c.pid, q);
+  c.msgs.push({ who:'me', text:q.trim() });
+  if (a) c.msgs.push({ who:'them', text:a.text, sources:a.sources, refused:a.refused, guard:a.guard });
+  renderDetail();
+  setTimeout(() => { const l = $('#chatLog'); if (l) l.scrollTop = l.scrollHeight; }, 30);
+}
+
+function renderChat(){
+  const c = state.chat, v = state.voices.voices[c.pid], d = state.voices;
+  const bubbles = c.msgs.map(m => {
+    if (m.who === 'me') return `<div class="bub me">${esc(m.text)}</div>`;
+    const cls = m.refused ? ' refused' : m.guard ? ' guard' : '';
+    const srcs = (m.sources || []).length
+      ? `<div class="bub-src">${m.sources.map(s => s.url
+          ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.label)} ↗</a>`
+          : `<span>${esc(s.name || s.label)}</span>`).join('')}</div>` : '';
+    return `<div class="bub them${cls}">${esc(m.text)}${srcs}</div>`;
+  }).join('');
+
+  return `<div class="chat">
+    <div class="chat-head">
+      <button class="chat-back" id="chatBack" aria-label="رجوع">→</button>
+      <div><strong>${esc(v.name)}</strong><small>${esc(v.role)} · ${esc(v.years)}</small></div>
+    </div>
+    <p class="chat-note">${esc(d.disclaimer)}</p>
+    <div class="chat-log" id="chatLog">${bubbles}</div>
+    <div class="chat-chips">${v.suggested.map(q =>
+      `<button class="chip" data-ask="${esc(q)}">${esc(q)}</button>`).join('')}</div>
+    <form class="chat-form" id="chatForm">
+      <input id="chatIn" type="text" placeholder="اسأله…" autocomplete="off" aria-label="اكتب سؤالك">
+      <button type="submit" aria-label="أرسل">أرسل</button>
+    </form>
+    <p class="chat-engine">${esc(d.engine)}</p>
+  </div>`;
+}
+
+function wireChat(){
+  const back = $('#chatBack'); if (back) back.onclick = closeChat;
+  $$('#detail .chip[data-ask]').forEach(b => b.onclick = () => sendChat(b.dataset.ask));
+  const f = $('#chatForm');
+  if (f) f.onsubmit = (e) => { e.preventDefault(); const i = $('#chatIn'); sendChat(i.value); i.value = ''; i.focus(); };
+}
+
 /* ---------------- السجل الوطني للمواقع (وزارة الثقافة) ---------------- */
 function loadSites(){
   return fetch('./sites.json' + VER).then(r => r.json()).then(d => {
@@ -735,7 +825,7 @@ fetch('./data.json' + VER)
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
-    renderCoverage(); loadSites();
+    renderCoverage(); loadSites(); loadVoices();
   })
   .catch(err => {
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>
