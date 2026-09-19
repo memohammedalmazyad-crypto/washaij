@@ -531,3 +531,30 @@ h1, h2, h3, .d-body h2, .chat-head strong, .row strong{text-wrap:balance}
 /* الواجهة للزائر: لا شرح منهجيًّا ولا اعتذارًا عن نقص. ما لا نصّ فيه يُطوى. */
 #eraNote:empty, .region-note:empty, .view-hint:empty{display:none}
 .hint:empty{display:none}
+
+/* ---------- من كان في زمن الحدث ---------- */
+/* صفٌّ واحد لكل شخص: اسمه وسنواته يفتحانه، وسهمٌ صغير بجانبه يسأله عن
+   هذا الحدث. كان لكل شخص رقاقتان فيمتلئ الطول بثلاثين زرًّا. */
+.who{list-style:none;margin:0;padding:0;display:grid;gap:5px;
+  grid-template-columns:repeat(auto-fill,minmax(212px,1fr))}
+.who li{display:flex;gap:4px;align-items:stretch;min-width:0}
+.who-go{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px;
+  text-align:start;padding:7px 10px;border:1px solid var(--line);border-radius:9px;
+  background:var(--card);
+  transition:background-color .15s,border-color .15s}
+.who-go b{font-size:12.5px;font-weight:600;color:var(--ink);line-height:1.45;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.who-go i{font-style:normal;font-size:11px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.who-go:hover{background:var(--gold-wash);border-color:var(--gold-soft)}
+.who-ask{flex:0 0 auto;width:38px;border:1px solid var(--line);border-radius:9px;
+  background:var(--card);color:var(--gold);font-size:15px;line-height:1;
+  transition:background-color .15s,border-color .15s,color .15s}
+.who-ask:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.more-who{display:block;width:100%;margin-top:7px;padding:8px;
+  border:1px dashed var(--line);border-radius:9px;
+  font-size:12px;font-weight:600;color:var(--ink-2)}
+.more-who:hover{background:var(--gold-wash);border-color:var(--gold-soft)}
+@media (prefers-reduced-motion:no-preference){
+  .who-go:active, .who-ask:active, .more-who:active{scale:.96}
+}

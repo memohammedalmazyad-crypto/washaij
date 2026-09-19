@@ -186,6 +186,7 @@ const subtitle = (it) =>
 : it.kind;
 
 function select(id){
+  if (state.sel !== id) state.whoAll = false;
   state.sel = id;
   renderList(); renderDetail(); drawWeb();
   const it = byId(id);
@@ -227,7 +228,7 @@ function renderDetail(){
       ${it.hijri ? `<em>· ${esc(it.hijri)}</em>` : ''}</p>`;
     if (born(it) && died(it)) when += lifeBar(it);
     if (cons.length) secs += section('من عاصره',
-      `<div class="chips">${cons.map(c => chip(c, yearsText(c).replace(' م',''))).join('')}</div>`);
+      `<div class="chips">${cons.slice(0,12).map(c => chip(c, yearsText(c).replace(' م',''))).join('')}</div>`);
     if (evs.length) secs += section('أحداث في زمنه',
       `<div class="chips">${evs.map(e => chip(e, AR(e.year))).join('')}</div>`);
     if (it.timeline && it.timeline.length)
@@ -253,14 +254,23 @@ function renderDetail(){
     if (docs.length) secs += section('وثائق ومواد',
       `<div class="chips">${docs.map(m => chip(m, m.date)).join('')}</div>`);
 
-    if (alive.length) secs += section('من كان في زمنه',
-      `<div class="chips">${alive.map(p =>
-          `<button class="chip" data-go="${esc(p.id)}"><b>${esc(p.name)}</b><i>${esc(yearsText(p).replace(' م',''))}</i></button>` +
-          (state.voices && state.voices.voices[p.id]
-            ? `<button class="chip ask" data-ask-about="${esc(p.id)}" data-event="${esc(it.id)}">اسأله عن ${esc(it.name)} ↩</button>` : '')
-        ).join('')}</div>`);
+    if (alive.length){
+      const cap = state.whoAll ? alive.length : 6;
+      const rows = alive.slice(0, cap).map(p =>
+        `<li><button class="who-go" data-go="${esc(p.id)}">
+           <b>${esc(p.name)}</b><i>${esc(yearsText(p).replace(' م',''))}</i></button>` +
+        (state.voices && state.voices.voices[p.id]
+          ? `<button class="who-ask" data-ask-about="${esc(p.id)}" data-event="${esc(it.id)}"
+               title="اسأله عن ${esc(it.name)}" aria-label="اسأله عن ${esc(it.name)}">↩</button>` : '') +
+        `</li>`).join('');
+      secs += section('من كان في زمنه', `<ul class="who">${rows}</ul>` +
+        (alive.length > cap
+          ? `<button class="more-who" id="moreWho">عرض الباقي · ${AR(alive.length - cap)}</button>`
+          : (state.whoAll && alive.length > 6
+              ? `<button class="more-who" id="moreWho">طيّ القائمة</button>` : '')));
+    }
     if (near.length) secs += section('أحداث قريبة',
-      `<div class="chips">${near.map(e => chip(e, AR(e.year))).join('')}</div>`);
+      `<div class="chips">${near.slice(0,12).map(e => chip(e, AR(e.year))).join('')}</div>`);
   }
 
   if (it.type === 'place'){
@@ -309,14 +319,17 @@ function renderDetail(){
     ${it.source ? `<a class="src" href="${esc(it.source)}" target="_blank" rel="noopener noreferrer">${esc(it.sourceName || 'المصدر')} ↗</a>` : ''}
   </div>`;
 
+  const mw = $('#moreWho');
+  if (mw) mw.onclick = () => { state.whoAll = !state.whoAll; renderDetail(); };
+
   const talk = $('#detail [data-talk]');
   if (talk) talk.onclick = () => openChat(talk.dataset.talk);
-  $$('#detail [data-ask-about]').forEach(b => b.onclick = () => {
+  $$('#detail [data-ask-about], #detail .who-ask').forEach(b => b.onclick = () => {
     const ev = byId(b.dataset.event);
     openChat(b.dataset.askAbout);
     if (ev) setTimeout(() => sendChat(`ماذا تعرف عن ${ev.name}؟`), 60);
   });
-  $$('#detail .chip[data-go]').forEach(b => b.onclick = () => {
+  $$('#detail .chip[data-go], #detail .who-go').forEach(b => b.onclick = () => {
     const t = byId(b.dataset.go);
     if (!t) return;
     // بعض الأشخاص بلا منطقة محدَّدة؛ لا ننقل الشريط إلى قيمة لا وجود لها
@@ -900,16 +913,16 @@ function renderChat(){
       <button class="chat-back" id="chatBack" aria-label="رجوع">→</button>
       <div><strong>${esc(v.name)}</strong><small>${esc(v.role)} · ${esc(v.years)}</small></div>
     </div>
-    <p class="chat-note">${esc(d.disclaimer)}</p>
+    ${d.disclaimer ? `<p class="chat-note">${esc(d.disclaimer)}</p>` : ''}
     ${v.disclaimerExtra ? `<p class="chat-note warn">${esc(v.disclaimerExtra)}</p>` : ''}
     <div class="chat-log" id="chatLog">${bubbles}</div>
-    <div class="chat-chips">${v.suggested.map(q =>
+    <div class="chat-chips">${(v.suggested || []).map(q =>
       `<button class="chip" data-ask="${esc(q)}">${esc(q)}</button>`).join('')}</div>
     <form class="chat-form" id="chatForm">
       <input id="chatIn" type="text" placeholder="اسأله…" autocomplete="off" aria-label="اكتب سؤالك">
       <button type="submit" aria-label="أرسل">أرسل</button>
     </form>
-    <p class="chat-engine">${esc(d.engine)}</p>
+    ${d.engine ? `<p class="chat-engine">${esc(d.engine)}</p>` : ''}
   </div>`;
 }
 
