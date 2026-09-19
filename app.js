@@ -27,7 +27,8 @@ const all = () => {
 };
 const byId = (id) => all().find(x => x.id === id) ||
   (state.sites ? state.sites.rows.find(x => x.id === id) : null);
-const region = () => state.data.regions.find(r => r.id === state.region);
+const region = () => state.data.regions.find(r => r.id === state.region)
+  || state.data.regions[0];   // لا منطقة مطابقة ← «الجزيرة كاملة» بدل انهيار
 const inRegion = (x) => state.region === 'all' || x.region === state.region;
 
 /** تطبيع عربي للبحث: تشكيل وهمزات وتاء مربوطة وألف مقصورة */
@@ -140,7 +141,7 @@ function renderList(){
     return;
   }
   if (!items.length){
-    $('#list').innerHTML = `<p class="empty">لا توجد ${esc(({place:'أماكن',person:'شخصيات',event:'أحداث',material:'مواد'})[state.kind])}
+    $('#list').innerHTML = `<p class="empty">لا توجد ${esc(({place:'أماكن',person:'شخصيات',event:'أحداث',material:'مواد',site:'مواقع في السجل الوطني'})[state.kind])}
       موثّقة في «${esc(region().name)}» ضمن هذا النموذج بعد.<br>النموذج يعرض ما تحقّقنا من مصدره فقط.</p>`;
     return;
   }
@@ -304,7 +305,7 @@ function renderDetail(){
        ${it.image.page ? `<br><a href="${esc(it.image.page)}" target="_blank" rel="noopener">صفحة الملف ↗</a>` : ''}</p>` : '';
 
   box.innerHTML = `${img}<div class="d-body">
-    <p class="d-kicker">${esc(region().name)} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
+    <p class="d-kicker">${esc(ownRegionName(it))} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
     ${it.sourceLabel ? `<p class="src-name">الاسم في المصدر: <span>${esc(it.sourceLabel)}</span></p>` : ''}
     ${it.arMatch ? `<p class="ar-match">الاسم العربي من <b>السجل الوطني للآثار</b> · ${esc(it.arMatch.gov)}
@@ -333,9 +334,17 @@ function renderDetail(){
   $$('#detail .chip[data-go]').forEach(b => b.onclick = () => {
     const t = byId(b.dataset.go);
     if (!t) return;
-    if (t.region !== state.region) { state.region = t.region; renderRegions(); }
+    // بعض الأشخاص بلا منطقة محدَّدة؛ لا ننقل الشريط إلى قيمة لا وجود لها
+    const known = t.region && state.data.regions.some(r => r.id === t.region);
+    if (known && t.region !== state.region) { state.region = t.region; renderRegions(); }
     state.kind = t.type; renderTabs(); renderList(); select(t.id);
   });
+}
+
+/** منطقة العنصر نفسه لا المنطقة المختارة في الشريط — فالبحث يعبر المناطق */
+function ownRegionName(it){
+  const r = it.region && state.data.regions.find(x => x.id === it.region);
+  return r ? r.name : 'لم يحدّد المصدر منطقته';
 }
 
 const section = (title, html) => `<div class="d-sec"><h3>${esc(title)}</h3>${html}</div>`;
@@ -543,6 +552,8 @@ function drawMarkers(){
 
   const seats = {};
   visible.forEach(x => { const k = x.at.join(','); (seats[k] = seats[k] || []).push(x.id); });
+  // نوع كل عنصر مرة واحدة؛ نداء byId داخل الحلقة كان يعيد بناء السجل كله لكل دبوس
+  const typeOf = new Map(visible.map(x => [x.id, x.type]));
   state.markers = visible.map(x => {
     const on = state.sel === x.id;
     const size = x.type === 'event' ? 22 : x.type === 'place' ? 17 : 14;
@@ -551,7 +562,7 @@ function drawMarkers(){
     if (group.length > 1){
       // المكان يبقى على إحداثيه بالضبط؛ ما سواه يتحلّق حوله في أطواق
       // يتّسع نصف قطرها مع العدد، لئلا يحجب أربعون شخصًا بلدتَهم.
-      const anchor = group.find(id => (byId(id) || {}).type === 'place');
+      const anchor = group.find(id => typeOf.get(id) === 'place');
       const ring = group.filter(id => id !== anchor);
       const i = ring.indexOf(x.id);
       if (i >= 0){
@@ -580,7 +591,9 @@ function drawMarkers(){
 function drawTimeline(){
   const [lo, hi] = span(), W = hi - lo;
   const pos = (y) => ((y - lo) / W) * 100;
-  const people = state.data.people.filter(shown).filter(p => born(p) && died(p)).sort((a,b) => born(a)-born(b));
+  const inScope = state.data.people.filter(shown);
+  const people = inScope.filter(p => born(p) && died(p)).sort((a,b) => born(a)-born(b));
+  const undated = inScope.length - people.length;
   const events = state.data.events.filter(shown).sort((a,b) => a.year - b.year);
 
   const ticks = [];
@@ -601,7 +614,8 @@ function drawTimeline(){
 
   const shownPpl = people.slice(0, 40);
   const pplRow = shownPpl.length ? `<p class="tl-head">فترات حياة${people.length > 40
-      ? ` · تُعرض ${AR(40)} من ${AR(people.length)}` : ''}</p>${shownPpl.map(p =>
+      ? ` · تُعرض ${AR(40)} من ${AR(people.length)} مؤرَّخًا` : ''}${undated
+      ? ` · و${AR(undated)} لم يُثبِت المصدر سنة مولدهم فلا تُرسم` : ''}</p>${shownPpl.map(p =>
     `<div class="tl-row"><button class="tl-bar${state.sel===p.id?' on':''}" data-id="${esc(p.id)}"
       style="inset-inline-start:${pos(born(p))}%;width:${Math.max(pos(died(p))-pos(born(p)),9)}%"
       title="${esc(p.name)} (${AR(born(p))}–${AR(died(p))})"><b>${esc(p.name)}</b></button></div>`).join('')}` : '';
@@ -821,6 +835,9 @@ function loadVoices(){
     .catch(() => {});
 }
 
+/** نصّ رفضٍ أخير، فلا تخرج فقاعةٌ فارغة إن نقص الحقل من السجل */
+const FALLBACK_REFUSAL = 'ليس في السجل الذي أتكلّم منه سندٌ لهذا، فلا أقوله.';
+
 /** يطابق السؤال بموضوع موثّق؛ وما لا يطابق تعتذر عنه الشخصية */
 function answer(pid, q){
   const v = state.voices && state.voices.voices[pid];
@@ -831,23 +848,7 @@ function answer(pid, q){
   if (v.guard && v.guard[0].split('|').some(k => n.includes(norm(k))))
     return { text: v.guard[1], sources: [], guard: true };
 
-  // سؤال عن حدث بعينه: الجواب من سجل الحدث نفسه
-  const p = state.data.people.find(x => x.id === pid);
-  if (p){
-    const mine = eventsInLife(p);
-    const hit = mine.find(e => {
-      const words = norm(e.name).split(' ').filter(w => w.length > 3);
-      return words.some(w => n.includes(w));
-    });
-    if (hit) return {
-      text: `${hit.name} سنة ${AR(hit.year)}م` + (hit.hijri ? ` (${hit.hijri})` : '') + `. ${hit.blurb}` +
-            (hit.note ? ` ${hit.note}` : '') +
-            ` وقع هذا في سنوات حياتي (${yearsText(p).replace(' م','')}).` +
-            ' وما تذكره المصادر عن دوري فيه تحديدًا ليس في هذا السجل، فلا أنسبه إلى نفسي.',
-      sources: [{ label:hit.sourceName, url:hit.source, name:hit.name }]
-    };
-  }
-
+  // أقوى موضوع موثّق عند هذه الشخصية
   let best = null, bestScore = 0;
   for (const t of v.topics){
     let score = 0;
@@ -857,7 +858,31 @@ function answer(pid, q){
     }
     if (score > bestScore){ bestScore = score; best = t; }
   }
-  if (!best) return { text: v.refusal, sources: [], refused: true };
+
+  // سؤال عن حدث بعينه: الجواب من سجل الحدث نفسه — بشرط مطابقةٍ دالّة،
+  // لا كلمةٍ عابرة، وإلا ابتلع الحدثُ أسئلةً حقّها موضوعُ رفضٍ صريح.
+  const p = state.data.people.find(x => x.id === pid);
+  if (p){
+    let hit = null, hitScore = 0;
+    for (const e of eventsInLife(p)){
+      const words = norm(e.name).split(' ').filter(w => w.length > 3);
+      const got = words.filter(w => n.includes(w));
+      // كلمتان دالّتان، أو كلمة واحدة طويلة لا تلتبس
+      const ok = got.length >= 2 || got.some(w => w.length >= 6);
+      const sc = ok ? got.reduce((a,w) => a + w.length, 0) : 0;
+      if (sc > hitScore){ hitScore = sc; hit = e; }
+    }
+    if (hit && hitScore >= bestScore) return {
+      text: `${hit.name} سنة ${AR(hit.year)}م` + (hit.hijri ? ` (${hit.hijri})` : '') +
+            (hit.blurb ? `. ${hit.blurb}` : '.') +
+            (hit.note ? ` ${hit.note}` : '') +
+            ` وقع هذا في سنوات حياتي (${yearsText(p).replace(' م','')}).` +
+            ' وما تذكره المصادر عن دوري فيه تحديدًا ليس في هذا السجل، فلا أنسبه إلى نفسي.',
+      sources: [{ label:hit.sourceName, url:hit.source, name:hit.name }]
+    };
+  }
+
+  if (!best) return { text: v.refusal || FALLBACK_REFUSAL, sources: [], refused: true };
   return { text: best.a, sources: (best.s || []).filter(Boolean) };
 }
 
