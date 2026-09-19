@@ -557,8 +557,9 @@ function drawMarkers(){
     }
     const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}${x.proposed && x.tier!=='reviewed' ?' proposed':''}${x.tier==='reviewed'?' reviewed':''}`,
       iconSize:[size,size], iconAnchor:[size/2,size/2] });
-    // المكان فوق الجميع فلا يُحجب، ثم الحدث، ثم الشخص
-    const zi = x.type === 'place' ? 600 : x.type === 'event' ? 300 : 0;
+    // ليفلت يشتقّ zIndex من خط العرض بقيم تبلغ عشرات الألوف،
+    // فالإزاحة تحتاج أن تكون أكبر منها لتغلبها لا لتُبتلع فيها.
+    const zi = x.type === 'place' ? 4e6 : x.type === 'event' ? 2e6 : 0;
     return L.marker(at, { icon, title:x.name, zIndexOffset:zi, riseOnHover:true })
       .addTo(state.map)
       .bindPopup(`<span class="pop-kind">${esc(KIND_LABEL[x.type])}</span><strong>${esc(x.name)}</strong><br>${esc(subtitle(x))}` +
