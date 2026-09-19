@@ -881,7 +881,7 @@ function answer(pid, q){
 function openChat(pid){
   const v = state.voices && state.voices.voices[pid];
   if (!v) return;
-  state.chat = { pid, msgs: [{ who:'them', text: `${v.opening} اسألني عمّا توثّقه المصادر.`, sources: [] }] };
+  state.chat = { pid, msgs: [{ who:'them', text: v.opening, sources: [] }] };
   renderDetail();
 }
 const closeChat = () => { state.chat = null; renderDetail(); };
