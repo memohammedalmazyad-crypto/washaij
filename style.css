@@ -520,5 +520,14 @@ h1, h2, h3, .d-body h2, .chat-head strong, .row strong{text-wrap:balance}
 
 /* ١٦ (تتمّة) · خمسة تبويبات في لوحة ضيّقة تعطي ٣٧ بكسل عرضًا فتلتفّ
    تسمياتها؛ نطلقها أفقيًّا بدل عصرها، فيصير كل هدفٍ أوسع من الحدّ. */
-.tabs{overflow-x:auto; scrollbar-width:thin; gap:4px}
-.tabs button{flex:0 0 auto; min-width:66px; padding-inline:12px; white-space:nowrap}
+.tabs{gap:4px}
+.tabs button{flex:1 1 auto; min-width:62px; padding-inline:10px; white-space:nowrap}
+
+/* على الجوال لا يتّسع الشريط لخمسة تبويبات بلا التفاف، وتمريره أفقيًّا
+   يُخفي «السجل الوطني» خلف الحافة. فنسمح للتسمية بالالتفاف ونوزّع العرض
+   بالتساوي: الجميع ظاهر، وكل هدفٍ يبقى فوق ٤٤ بكسل لأن الحشو الرأسي ثابت. */
+@media (max-width:440px){
+  .tabs{padding-inline:6px}
+  .tabs button{flex:1 1 0; min-width:0; padding-inline:3px; font-size:11.5px;
+    white-space:normal; line-height:1.3; hyphens:none}
+}
