@@ -4412,6 +4412,5776 @@
    "source": "https://www.wikidata.org/wiki/Q99659194",
    "sourceName": "ويكي بيانات · Q99659194",
    "tier": "support"
+  },
+  {
+   "id": "p_alam_69_1781",
+   "type": "person",
+   "name": "إبراهيم بن سعيد المنوفي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1781,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 69 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_77_1925",
+   "type": "person",
+   "name": "إبراهيم بن صالح بن إبراهيم بن محمد ابن عبد الرحمن ابن عيسى",
+   "region": "najd",
+   "role": "مؤرخ نجدي",
+   "blurb": null,
+   "birth": {
+    "y": 1854,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1925,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 77 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_90_1935",
+   "type": "person",
+   "name": "إبراهيم بن عبد القادر بن عمر البري",
+   "region": "arabia",
+   "role": "فقيه حنفي أديب",
+   "blurb": null,
+   "birth": {
+    "y": 1864,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1935,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 90 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_95_1775",
+   "type": "person",
+   "name": "إبراهيم بن عبد الله بن إبراهيم بن سيف ابن عبد الله المشرقي المدني الشمري الفرضيّ",
+   "region": "najd",
+   "role": "عالم بالفرائض",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1775,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المجمعة، ص 95 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_154_1873",
+   "type": "person",
+   "name": "إبراهيم بن محمد سعيد بن مبارك الفتة",
+   "region": "arabia",
+   "role": "قاض فاضل",
+   "blurb": null,
+   "birth": {
+    "y": 1790,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 154 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_156_1935",
+   "type": "person",
+   "name": "إبراهيم بن محمد بن سالم بن ضويان",
+   "region": "najd",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1858,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1935,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص شقراء، ص 156 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_172_1974",
+   "type": "person",
+   "name": "إبراهيم بن هاشم الفلالي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1906,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1974,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 172 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_206_1891",
+   "type": "person",
+   "name": "أحمد بن إبراهيم بن علي بن عبد المولى الربعي المشهدي",
+   "region": "najd",
+   "role": "فقيه إمامي نجفي صنف (شرح الشرائع -خ) ثلاثة مجلداتن منه في خزانة حفيده ",
+   "blurb": null,
+   "birth": {
+    "y": 1843,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1891,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص سدير، ص 206 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_206_1911",
+   "type": "person",
+   "name": "أحمد بن إبراهيم بن حمد ابن عيسى السديري النجدي",
+   "region": "najd",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1837,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1911,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص سدير، ص 206 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_255_1734",
+   "type": "person",
+   "name": "أحمد بن أبي بكر بن أحمد بن محمود العريضي البطحيشي",
+   "region": "najd",
+   "role": "فقيه حنفي عالم بالرياضيات",
+   "blurb": null,
+   "birth": {
+    "y": 1684,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1734,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 255 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_351_1898",
+   "type": "person",
+   "name": "أحمد بن صالح بن طعان الستري البحراني",
+   "region": "arabia",
+   "role": "فاضل إمامي",
+   "blurb": null,
+   "birth": {
+    "y": 1835,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1898,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 351 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_382_1762",
+   "type": "person",
+   "name": "أحمد بن عبد الرحيم الفاروقي الدهلوي الهندي",
+   "region": "arabia",
+   "role": "فقيه حنفي من المحدّثين",
+   "blurb": null,
+   "birth": {
+    "y": 1699,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1762,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 382 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_397_1818",
+   "type": "person",
+   "name": "أحمد بن عبد القادر بن بكري العجيلي",
+   "region": "arabia",
+   "role": "مؤرخ أديب متفقه من أهل عسير",
+   "blurb": null,
+   "birth": {
+    "y": 1720,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1818,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 397 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_425_1940",
+   "type": "person",
+   "name": "أحمد بن عبد الله القاري",
+   "region": "arabia",
+   "role": "قاض حجازي",
+   "blurb": null,
+   "birth": {
+    "y": 1891,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1940,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 425 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_443_1892",
+   "type": "person",
+   "name": "أحمد عزت (باشا) ابن محمود الفاروقي العمري",
+   "region": "najd",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1828,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1892,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 443 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_481_1868",
+   "type": "person",
+   "name": "أحمد بن علي بن حسين بن مشرف الوهيبي التميمي",
+   "region": "arabia",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1868,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الأحساء، ص 481 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_482_1920",
+   "type": "person",
+   "name": "أحمد بن علي باصبرين الحضرميّ الشافعيّ",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1920,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جدة، ص 482 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_483_1928",
+   "type": "person",
+   "name": "أحمد بن علي بن حسن بن صالح النجار",
+   "region": "arabia",
+   "role": "قاض فاضل",
+   "blurb": null,
+   "birth": {
+    "y": 1855,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1928,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 483 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_498_1779",
+   "type": "person",
+   "name": "أحمد بن عمر بن عثمان. أَبُو الصفاء الشاكر",
+   "region": "arabia",
+   "role": "شاعر صوفي أصله من حماة وقام بسياحة طويلة إلى العراق والحجاز ومصر وفاس ",
+   "blurb": null,
+   "birth": {
+    "y": 1709,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1779,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 498 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_503_1944",
+   "type": "person",
+   "name": "أحمد بن العياشي سكيرج الخزرجي الأنصاري",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1878,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جدة، ص 503 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_514_1960",
+   "type": "person",
+   "name": "أحمد فتحي",
+   "region": "arabia",
+   "role": "شاعر مصري",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1960,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص السعودية، ص 514 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_653_1730",
+   "type": "person",
+   "name": "أحمد بن محمد بن أحمد بن عبد الرحمن العشماوي",
+   "region": "arabia",
+   "role": "عالم بالنسب",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1730,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 653 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_663_1815",
+   "type": "person",
+   "name": "أحمد بن محمد بن المختار بن أحمد الشَّرِيف التجاني",
+   "region": "arabia",
+   "role": "شيخ (الطائفة التجانية) بالمغرب",
+   "blurb": null,
+   "birth": {
+    "y": 1737,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1815,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 663 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_665_1825",
+   "type": "person",
+   "name": "أحمد بن محمد الخلوتي",
+   "region": "arabia",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": {
+    "y": 1761,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1825,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 665 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_668_1864",
+   "type": "person",
+   "name": "أحمد بن محمد بن رمضان",
+   "region": "arabia",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1864,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 668 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_670_1890",
+   "type": "person",
+   "name": "أحمد بن محمد بن علي بن محمد الحلواني",
+   "region": "arabia",
+   "role": "عالم بالقرآت",
+   "blurb": null,
+   "birth": {
+    "y": 1813,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1890,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 670 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_674_1909",
+   "type": "person",
+   "name": "أحمد بن محمد بن أحمد الحضراوي المكيّ الهاشمي",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1836,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1909,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 674 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_676_1921",
+   "type": "person",
+   "name": "أحمد بن محمد بن الحسن البنَّاني",
+   "region": "arabia",
+   "role": "قاض فاضل من أهل الرباط مولدا ووفاة",
+   "blurb": null,
+   "birth": {
+    "y": 1844,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1921,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 676 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_717_1810",
+   "type": "person",
+   "name": "أحمد بن ناصر بن عثمان بن معمر",
+   "region": "najd",
+   "role": "قاض",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1810,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 717 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_856_1871",
+   "type": "person",
+   "name": "إسماعيل بن أحمد الأحمدي",
+   "region": "arabia",
+   "role": "فقيه طرابلس الشام ومحدثها في عصره",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1871,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 856 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_905_1832",
+   "type": "person",
+   "name": "إسماعيل بن محمد باشة التميمي",
+   "region": "najd",
+   "role": "فقيه مالكي من دعاة الحكومة العثمانية وخصوم الدعوة الإصلاحية بنجد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1832,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 905 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_908_1791",
+   "type": "person",
+   "name": "إسماعيل بن مصطفى بن محمود",
+   "region": "najd",
+   "role": "قاض حنفي عثماني",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1791,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 908 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_974_1898",
+   "type": "person",
+   "name": "أمين بن حسن الحلواني المدني",
+   "region": "arabia",
+   "role": "رحالة فاضل",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1898,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 974 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1014_1972",
+   "type": "person",
+   "name": "أنور بن سعيد بن أنيس العطار",
+   "region": "arabia",
+   "role": "شاعر رقيق",
+   "blurb": null,
+   "birth": {
+    "y": 1908,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1972,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص السعودية، ص 1014 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1052_1909",
+   "type": "person",
+   "name": "باقر بن غلام علي التستري",
+   "region": "arabia",
+   "role": "فقيه متزهد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1909,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1052 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1134_1853",
+   "type": "person",
+   "name": "أبو بكر بن محمد بن عمر المُلَّا الحنفي",
+   "region": "najd",
+   "role": "فقيه له نظم",
+   "blurb": null,
+   "birth": {
+    "y": 1784,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1853,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 1134 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1135_1930",
+   "type": "person",
+   "name": "أبو بكر بن محمد بن عارف بن عبد القادر بن محمد علي خوقير",
+   "region": "arabia",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1865,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1930,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1135 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1290_1899",
+   "type": "person",
+   "name": "جعفر بن إسماعيل بن زين العابدين البرزنجي",
+   "region": "arabia",
+   "role": "قاضي من أعيان المدينة المنورة",
+   "blurb": null,
+   "birth": {
+    "y": 1834,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1899,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 1290 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1291_1923",
+   "type": "person",
+   "name": "جعفر بن أبي بكر بن جعفر لبني",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1864,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1923,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1291 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1310_1768",
+   "type": "person",
+   "name": "جعفر بن محمد باعلوي البيتي السقافي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1698,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1768,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 1310 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1311_1923",
+   "type": "person",
+   "name": "جعفر بن محمد (أبي المكارم) العوامي",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": {
+    "y": 1864,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1923,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 1311 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1325_1867",
+   "type": "person",
+   "name": "جمال بن عبد الله بن الشيخ عمر المكيّ",
+   "region": "arabia",
+   "role": "واعظ محدث حنفي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1867,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1325 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1328_1867",
+   "type": "person",
+   "name": "جمال بن عمر المكيّ",
+   "region": "arabia",
+   "role": "فقيه حنفي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1867,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1328 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1338_1951",
+   "type": "person",
+   "name": "جميل (أو محمد جميل) بن محيي الدين بن أحمد بن محمد الخاني الدمشقيّ",
+   "region": "najd",
+   "role": "طبيب",
+   "blurb": null,
+   "birth": {
+    "y": 1891,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1951,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 1338 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1402_1958",
+   "type": "person",
+   "name": "حافظ بن أحمد بن علي الحكمي",
+   "region": "arabia",
+   "role": "فقيه أديب",
+   "blurb": null,
+   "birth": {
+    "y": 1923,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1958,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 1402 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1412_1758",
+   "type": "person",
+   "name": "حامد بن يوسف بن حامد",
+   "region": "arabia",
+   "role": "فقيه من علماء الحنفية",
+   "blurb": null,
+   "birth": {
+    "y": 1700,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1758,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 1412 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1484_1899",
+   "type": "person",
+   "name": "حسن حسني الفخري الأعرجي الموصلي",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1831,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1899,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 1484 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1489_1820",
+   "type": "person",
+   "name": "حسن بن خالد بن عز الدين بن محسن التهامي اليماني الحازمي",
+   "region": "arabia",
+   "role": "فقيه مجتهد من سلالة أسرة حسنية في عسير تدعى (الحوازمة) برع في التفسير ",
+   "blurb": null,
+   "birth": {
+    "y": 1774,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1820,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 1489 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1555_1935",
+   "type": "person",
+   "name": "حسن كامل بن توفيق الصباح",
+   "region": "najd",
+   "role": "عالم بالكهرباء",
+   "blurb": null,
+   "birth": {
+    "y": 1894,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1935,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 1555 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1580_1767",
+   "type": "person",
+   "name": "حسن بن محمد بن علي بن خلف الدمستاني",
+   "region": "arabia",
+   "role": "فاضل إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1767,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 1580 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1583_1928",
+   "type": "person",
+   "name": "الحسن بن محمد بن قاسم",
+   "region": "arabia",
+   "role": "مؤرخ مغربي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1928,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 1583 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1672_1811",
+   "type": "person",
+   "name": "حسين بن غنّام (أو ابن أبي بكر بن غنام) النجدي الأحسائي",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1811,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 1672 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1702_1950",
+   "type": "person",
+   "name": "حسين بن نفيسة النجدي",
+   "region": "najd",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1950,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 1702 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1736_1844",
+   "type": "person",
+   "name": "حمد بن محمد بن ناصر بن عثمان (لعبون) بن ناصر المدلجي الوائلي النجدي",
+   "region": "najd",
+   "role": "فاضل من المشتغلين بالتأريخ",
+   "blurb": null,
+   "birth": {
+    "y": 1768,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1844,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 1736 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1737_1839",
+   "type": "person",
+   "name": "حمد بن ناصر بن عثمان بن معمر التميمي",
+   "region": "najd",
+   "role": "فقيه حنبلي نجدي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1839,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 1737 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1749_1972",
+   "type": "person",
+   "name": "حمزة شحاتة المكيّ",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1910,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1972,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 1749 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1803_1848",
+   "type": "person",
+   "name": "خالد بن سعود بن عبد العزيز بن محمد",
+   "region": "najd",
+   "role": "أمير من آل سعود",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1848,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 1803 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_1962_1881",
+   "type": "person",
+   "name": "راشد بن علي بن عبد الله بن محمد بن سليمان",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1881,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 1962 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2003_1943",
+   "type": "person",
+   "name": "رشيد بن مطر الهاشمي البغدادي",
+   "region": "arabia",
+   "role": "شاعر عراقي",
+   "blurb": null,
+   "birth": {
+    "y": 1885,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1943,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 2003 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2099_1970",
+   "type": "person",
+   "name": "زيد بن الحسين بن علي الهاشمي",
+   "region": "arabia",
+   "role": "أمير",
+   "blurb": null,
+   "birth": {
+    "y": 1898,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1970,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 2099 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2120_1799",
+   "type": "person",
+   "name": "زين العابدين بن محمد البرزنجي",
+   "region": "arabia",
+   "role": "مؤرخ من أعيان المدينة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1799,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2120 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2230_1826",
+   "type": "person",
+   "name": "سعيد بن مسلط الناجحي المغيدي",
+   "region": "arabia",
+   "role": "أمير من آل ناجح من بني مغيد (إحدى قبائل عسير السراة) ولد في قرية السّق",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1826,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 2230 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2274_1941",
+   "type": "person",
+   "name": "سليم بن حسن اليعقوبي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1880,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1941,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 2274 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2299_1930",
+   "type": "person",
+   "name": "سليمان بن سحمان بن مصلح بن حمدان النّجدي",
+   "region": "najd",
+   "role": "كاتب فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1852,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1930,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2299 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2302_1945",
+   "type": "person",
+   "name": "سليمان بن صالح الدخيل",
+   "region": "najd",
+   "role": "من مؤرخي نجد",
+   "blurb": null,
+   "birth": {
+    "y": 1877,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1945,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2302 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2304_1955",
+   "type": "person",
+   "name": "سليمان بن عبد الرحمن بن محمد ابن عمر",
+   "region": "najd",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1883,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1955,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عنيزة، ص 2304 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2311_1795",
+   "type": "person",
+   "name": "سليمان بن عبد الوهاب بن سليمان التميمي النجدي",
+   "region": "najd",
+   "role": "أخو الشيخ زعيم النهضة الإصلاحية محمد بن عبد الوهاب",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1795,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 2311 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2312_1944",
+   "type": "person",
+   "name": "سليمان بن عطية بن سليمان المزيني",
+   "region": "arabia",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1900,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص حائل، ص 2312 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2407_1954",
+   "type": "person",
+   "name": "شريف بن توفيق بن حسن",
+   "region": "arabia",
+   "role": "طبيب",
+   "blurb": null,
+   "birth": {
+    "y": 1891,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1954,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 2407 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2428_1890",
+   "type": "person",
+   "name": "شفيق (بك) بن منصور (باشا) بن أحمد يكن",
+   "region": "najd",
+   "role": "عالم بالقانون والرياضيات",
+   "blurb": null,
+   "birth": {
+    "y": 1856,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1890,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 2428 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2493_1845",
+   "type": "person",
+   "name": "صالح بن درويش بن زينيّ",
+   "region": "najd",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1776,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1845,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2493 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2506_1803",
+   "type": "person",
+   "name": "صالح بن محمد بن نوح بن عبد الله العَمْري المعروف بالفلّاني",
+   "region": "arabia",
+   "role": "عالم بالحديث مجتهد",
+   "blurb": null,
+   "birth": {
+    "y": 1753,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1803,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2506 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2513_1873",
+   "type": "person",
+   "name": "صالح بن مهدي بن حمزة الكواز",
+   "region": "najd",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1818,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2513 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2576_1815",
+   "type": "person",
+   "name": "طامي بن شعيب المتحمي",
+   "region": "arabia",
+   "role": "أمير",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1815,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 2576 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2583_1825",
+   "type": "person",
+   "name": "طاهر بن حسين بن طاهر بن محمد الحسيني العلويّ",
+   "region": "najd",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1770,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1825,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2583 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2621_1897",
+   "type": "person",
+   "name": "الطّيب بن أبي بكر بن الطيب بن كيران النوازلي",
+   "region": "arabia",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1897,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 2621 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2643_1923",
+   "type": "person",
+   "name": "عابد بن حسين المالكي",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1859,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1923,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 2643 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2706_1766",
+   "type": "person",
+   "name": "عباس بن علي بن نور الدين بن أبي الحسن المكيّ الحسيني الموسوي",
+   "region": "arabia",
+   "role": "أديب رحالة",
+   "blurb": null,
+   "birth": {
+    "y": 1699,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1766,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 2706 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2726_1958",
+   "type": "person",
+   "name": "عبد الإله بن علي بن الحسين بن علي الهاشمي",
+   "region": "arabia",
+   "role": "أمير",
+   "blurb": null,
+   "birth": {
+    "y": 1913,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1958,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 2726 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2743_1908",
+   "type": "person",
+   "name": "عبد الجليل بن عبد السلام بن عبد الله بن عبد السلام برادة",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1827,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1908,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2743 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2745_1854",
+   "type": "person",
+   "name": "عبد الجليل بن ياسين بن إبراهيم بن طه بن خليل الطباطبائي الحسني البصري",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1776,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1854,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص آل سعود، ص 2745 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2754_1881",
+   "type": "person",
+   "name": "عبد الحفيظ بن عثمان القاري",
+   "region": "arabia",
+   "role": "فقيه حنفي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1881,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 2754 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2771_1965",
+   "type": "person",
+   "name": "عبد الحميد بدوي",
+   "region": "arabia",
+   "role": "عالم بالقضاء المدني والتشريع",
+   "blurb": null,
+   "birth": {
+    "y": 1887,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1965,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2771 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2845_1786",
+   "type": "person",
+   "name": "عبد الرحمن بن عبد العزيز المغربي التادلي المدني المالكي السمّاني طريقة",
+   "region": "arabia",
+   "role": "لغويّ قدم المدينة المنورة حوالي سنة ١١٧٥ وتصوف بها على يد الشيخ محمد ا",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1786,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2845 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2848_1783",
+   "type": "person",
+   "name": "عبد الرحمن بن عبد الكريم بن يوسف الأنصاري",
+   "region": "arabia",
+   "role": "الخزرجي الحنفي المدني المعروف بالأنصاري: مؤرخ المدينة في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1712,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1783,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2848 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2877_1876",
+   "type": "person",
+   "name": "عبد الرحمن بن عواد",
+   "region": "arabia",
+   "role": "قاض حجازي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1876,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص ينبع، ص 2877 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2880_1928",
+   "type": "person",
+   "name": "عبد الرحمن بن فيصل بن تركي بن عبد الله",
+   "region": "najd",
+   "role": "إمام سعودي",
+   "blurb": null,
+   "birth": {
+    "y": 1852,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1928,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2880 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2912_1846",
+   "type": "person",
+   "name": "عبد الرحمن بن محمد بن عبد الرحمن الكزبري",
+   "region": "najd",
+   "role": "عالم بالحديث",
+   "blurb": null,
+   "birth": {
+    "y": 1771,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1846,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 2912 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2913_1870",
+   "type": "person",
+   "name": "عبد الرحمن بن محمد بن عبد الله بن محمد بن إبراهيم بن مانع الوهيبي التميمي",
+   "region": "najd",
+   "role": "قاض",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1870,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص شقراء، ص 2913 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2921_1972",
+   "type": "person",
+   "name": "عبد الرحمن بن محمد بن قاسم العاصمي القحطاني نسبا",
+   "region": "najd",
+   "role": "فقيه حنبلي من أعيانهم في نجد",
+   "blurb": null,
+   "birth": {
+    "y": 1901,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1972,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 2921 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2973_1936",
+   "type": "person",
+   "name": "عبد الستار بن عبد الوهاب بن خدايار بن عظيم حسين يار بن احمد يار المباركشاهوي الب",
+   "region": "arabia",
+   "role": "عالم بالتراجم",
+   "blurb": null,
+   "birth": {
+    "y": 1869,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1936,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 2973 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_2991_1788",
+   "type": "person",
+   "name": "عبد السلام بن محمد أمين بن شمس الدين الداغستاني",
+   "region": "arabia",
+   "role": "فقيه حنفي",
+   "blurb": null,
+   "birth": {
+    "y": 1718,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1788,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 2991 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3018_1825",
+   "type": "person",
+   "name": "عبد العزيز بن حمد بن إبراهيم بن حمد الوهبي التميمي",
+   "region": "najd",
+   "role": "قاض من رجال السياسة في نجد",
+   "blurb": null,
+   "birth": {
+    "y": 1776,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1825,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3018 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3019_1940",
+   "type": "person",
+   "name": "عبد العزيز بن حمد بن عبد اللطيف من آل مبارك",
+   "region": "najd",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": {
+    "y": 1862,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1940,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3019 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3024_1923",
+   "type": "person",
+   "name": "عبد العزيز صبري الخياري",
+   "region": "arabia",
+   "role": "أديب شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1923,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 3024 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3034_1822",
+   "type": "person",
+   "name": "عبد العزيز بن عبد الله بن محمد الحصين الناصري التميمي النجدي الحنبلي",
+   "region": "najd",
+   "role": "فقيه من أهل الوقف (من قرى الوشم) ولي القضاء في الوشم وأرسله الإمام عبد",
+   "blurb": null,
+   "birth": {
+    "y": 1741,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1822,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3034 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3051_1890",
+   "type": "person",
+   "name": "عبد العزيز بن محمد بن عبد الله التميمي القاضي",
+   "region": "najd",
+   "role": "زجال",
+   "blurb": null,
+   "birth": {
+    "y": 1853,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1890,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عنيزة، ص 3051 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3066_1731",
+   "type": "person",
+   "name": "عبد الغني بن إسماعيل بن عبد الغني النابلسي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1641,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1731,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 3066 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3079_1792",
+   "type": "person",
+   "name": "عبد القادر بن أحمد بن عبد القادر بن الناصر",
+   "region": "arabia",
+   "role": "محدث مجتهد",
+   "blurb": null,
+   "birth": {
+    "y": 1723,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1792,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3079 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3090_1765",
+   "type": "person",
+   "name": "عبد القادر بن عبد الله بن إسماعيل العبدلاني",
+   "region": "arabia",
+   "role": "فقيه متصوف",
+   "blurb": null,
+   "birth": {
+    "y": 1730,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1765,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 3090 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3090_1910",
+   "type": "person",
+   "name": "عبد القادر بن عبد الله البزاز العبادي المعروف بشنون",
+   "region": "arabia",
+   "role": "شاعر فكه هجَّاء من أهل الكرخ ببغداد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1910,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 3090 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3140_1967",
+   "type": "person",
+   "name": "عبد اللطيف بن إبراهيم بن عبد اللطيف",
+   "region": "najd",
+   "role": "فقيه حنبلي نجدي من أهل الرياض مولدا ووفاة",
+   "blurb": null,
+   "birth": {
+    "y": 1897,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1967,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3140 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3175_1849",
+   "type": "person",
+   "name": "عبد الله بن أحمد بن محمد",
+   "region": "najd",
+   "role": "أمير البحرين",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1849,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3175 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3191_1922",
+   "type": "person",
+   "name": "عبد الله بن بكر بن علي بن عبد الحفيظ ابن كمال",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1922,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 3191 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3209_1855",
+   "type": "person",
+   "name": "عبد الله بن حسين بن طاهر العلويّ",
+   "region": "arabia",
+   "role": "فقيه نحوي",
+   "blurb": null,
+   "birth": {
+    "y": 1778,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1855,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3209 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3210_1899",
+   "type": "person",
+   "name": "عبد الله بن حسين المخضوب",
+   "region": "najd",
+   "role": "قاضي بلد الخرج بنجد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1899,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الخرج، ص 3210 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3212_1951",
+   "type": "person",
+   "name": "عبد الله بن الحسين بن علي بن محمد الحسني الهاشمي",
+   "region": "arabia",
+   "role": "أمير شرقي الأردن",
+   "blurb": null,
+   "birth": {
+    "y": 1882,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1951,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3212 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3222_1810",
+   "type": "person",
+   "name": "عبد الله بن داود الزبيري",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1810,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الأحساء، ص 3222 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3237_1731",
+   "type": "person",
+   "name": "عبد الله بن سعيد بن سعد بن زيد بن محسن",
+   "region": "arabia",
+   "role": "أمير حسني",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1731,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3237 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3241_1940",
+   "type": "person",
+   "name": "عبد الله بن سليمان بن سعود ابن بليهد",
+   "region": "najd",
+   "role": "فقيه حنبلي نجدي",
+   "blurb": null,
+   "birth": {
+    "y": 1867,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1940,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3241 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3257_1865",
+   "type": "person",
+   "name": "عبد الله بن عبد الرحمن أبا بطين",
+   "region": "najd",
+   "role": "فقيه الديار النجدية في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1780,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1865,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3257 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3263_1954",
+   "type": "person",
+   "name": "عبد الله بن عبد العزيز بن عبد الرحمن العنقري التميمي النجدي",
+   "region": "najd",
+   "role": "قاض حنبلي كانت لأسلافه إمارة في \" ثرمداء \" من قرى \" الوشم \" بنجد",
+   "blurb": null,
+   "birth": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1954,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3263 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3301_1912",
+   "type": "person",
+   "name": "عبد الله بن عودة بن عبد الله صوفان ابن عيسى القدّومي",
+   "region": "arabia",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1830,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1912,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3301 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3305_1889",
+   "type": "person",
+   "name": "عبد الله فكري \" باشا \" بن محمد بليغ ابن عبد الله بن محمد",
+   "region": "arabia",
+   "role": "وزير مصري",
+   "blurb": null,
+   "birth": {
+    "y": 1834,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1889,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3305 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3306_1890",
+   "type": "person",
+   "name": "عبد الله بن فيصل بن تركي",
+   "region": "najd",
+   "role": "إمام",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1890,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3306 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3358_1784",
+   "type": "person",
+   "name": "عبد الله بن محمد بن الحسن الجشتيمي",
+   "region": "najd",
+   "role": "فقيه مغربي سوسي",
+   "blurb": null,
+   "birth": {
+    "y": 1730,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1784,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 3358 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3366_1929",
+   "type": "person",
+   "name": "عبد الله بن محمد بن عبد العزيز البسام",
+   "region": "najd",
+   "role": "تاجر نجدي له محاولة اشتغال في التاريخ من أهل عنيزة (في القصيم) من حفدة",
+   "blurb": null,
+   "birth": {
+    "y": 1854,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1929,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3366 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3368_1944",
+   "type": "person",
+   "name": "عبد الله بن محمد نيازي",
+   "region": "arabia",
+   "role": "فقيه مدرس",
+   "blurb": null,
+   "birth": {
+    "y": 1883,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3368 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3372_1969",
+   "type": "person",
+   "name": "عبد الله بن محمد بن حمد القرعاوي",
+   "region": "najd",
+   "role": "داعية إسلامي نجدي من قبيلة \" عنزة \" أصله من بلدة عنيزة في القصيم ونسبت",
+   "blurb": null,
+   "birth": {
+    "y": 1898,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1969,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3372 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3385_1943",
+   "type": "person",
+   "name": "عبد الله بن معتوق بن درويش البلادي التاروتي القطيفي",
+   "region": "arabia",
+   "role": "شاعر مكثر من أهل القطيف",
+   "blurb": null,
+   "birth": {
+    "y": 1857,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1943,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 3385 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3386_1937",
+   "type": "person",
+   "name": "عبد الله بن المغيرة",
+   "region": "najd",
+   "role": "مؤرخ رحالة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1937,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3386 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3402_1737",
+   "type": "person",
+   "name": "عبد الله بن يحيى بن الحسين بن يحيى بن أحمد ابن الإمام المؤيد باللَّه محمد بن الق",
+   "region": "najd",
+   "role": "أديب عالم من أبناء الأئمة الزيدية في اليمن",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1737,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 3402 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3419_1769",
+   "type": "person",
+   "name": "عبد المحسن بن أسعد الأسعد",
+   "region": "arabia",
+   "role": "فقيه من قدماء الأسرة الا سعدية بالمدينة المنورة",
+   "blurb": null,
+   "birth": {
+    "y": 1725,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1769,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3419 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3421_1945",
+   "type": "person",
+   "name": "عبد المحسن بن عبيد بن عبد المحسن ابن عبيد",
+   "region": "najd",
+   "role": "فقيه حنبلي من أهل بريدة في بجد",
+   "blurb": null,
+   "birth": {
+    "y": 1901,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1945,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص بريدة، ص 3421 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3421_1774",
+   "type": "person",
+   "name": "عبد المحسن بن علي الأشيقري",
+   "region": "najd",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1774,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الوشم، ص 3421 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3425_1931",
+   "type": "person",
+   "name": "عبد المحسن بن يعقوب الصحاف",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1874,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1931,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3425 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3461_1921",
+   "type": "person",
+   "name": "عبد الملك بن محمد بن حريب الطائفي",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1858,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1921,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 3461 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3469_1967",
+   "type": "person",
+   "name": "عبد المنعم الغلامي",
+   "region": "arabia",
+   "role": "مؤرخ عراقي من أهل الموصل",
+   "blurb": null,
+   "birth": {
+    "y": 1899,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1967,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جزيرة العرب، ص 3469 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3470_1760",
+   "type": "person",
+   "name": "عبد المنعم بن محمد (تاج الدين) ابن عبد المحسن بن سالم القلعي",
+   "region": "arabia",
+   "role": "فقيه حنفي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1760,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3470 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3479_1840",
+   "type": "person",
+   "name": "عبد النبي بن علي بن أحمد الكاظمي",
+   "region": "arabia",
+   "role": "فاضل إمامي",
+   "blurb": null,
+   "birth": {
+    "y": 1784,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1840,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3479 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3483_1893",
+   "type": "person",
+   "name": "عبد الهادي بن أحمد",
+   "region": "arabia",
+   "role": "قاض من المعنيين بالتراجم",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1893,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3483 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3501_1960",
+   "type": "person",
+   "name": "عبد الواسع بن يحيى الواسعي الصنعاني",
+   "region": "arabia",
+   "role": "مؤرخ من العارفين بالحديث",
+   "blurb": null,
+   "birth": {
+    "y": 1878,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1960,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 3501 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3513_1740",
+   "type": "person",
+   "name": "عبد الوهاب بن سليمان بن علي بن مشرف التميمي النجدي",
+   "region": "najd",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1740,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3513 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3514_1809",
+   "type": "person",
+   "name": "عبد الوهاب بن عامر المتحمي الرفيدي العسيري",
+   "region": "arabia",
+   "role": "أمير عسير",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1809,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 3514 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3523_1791",
+   "type": "person",
+   "name": "عبد الوهاب بن محمد بن عبد الله بن فيروز التميمي الأحسائي",
+   "region": "najd",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1759,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1791,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3523 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3579_1750",
+   "type": "person",
+   "name": "عثمان بن حمد بن معمّر النجدي",
+   "region": "najd",
+   "role": "رئيس \" العيينة \" من بلاد نجد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1750,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3579 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3584_1826",
+   "type": "person",
+   "name": "عثمان بن سند النجدي الوائلي البصري",
+   "region": "najd",
+   "role": "مؤرخ أديب",
+   "blurb": null,
+   "birth": {
+    "y": 1766,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1826,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3584 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3585_1947",
+   "type": "person",
+   "name": "عثمان بن صالح بن عثمان الوهبي التميمي",
+   "region": "najd",
+   "role": "متأدب متفقه من أهل بلدة عنيزة",
+   "blurb": null,
+   "birth": {
+    "y": 1891,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1947,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عنيزة، ص 3585 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3591_1865",
+   "type": "person",
+   "name": "علي بن عبد العزيز بن منصور الناصري العامري التميمي الحنبلي",
+   "region": "najd",
+   "role": "قاض نجدي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1865,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 3591 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3593_1873",
+   "type": "person",
+   "name": "عثمان بن عبد الله بن عثمان بن حمد بن بشر النجدي الحنبلي",
+   "region": "najd",
+   "role": "مؤرخ نجد وآل سعود",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1873,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 3593 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3607_1798",
+   "type": "person",
+   "name": "عثمان بن محمَّد الأزهري الشهير بالشامي",
+   "region": "arabia",
+   "role": "فقيه حنفي له \" أوائل - خ \" في الحديث (٢)",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1798,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3607 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3607_1885",
+   "type": "person",
+   "name": "عثمان بن محمد شطا الدمياط الشافعيّ أبو بكر البكري",
+   "region": "arabia",
+   "role": "فقيه متصوف مصري استقر بمكة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1885,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 3607 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3608_1913",
+   "type": "person",
+   "name": "عثمان بن محمَّد بن أبي بكر بن محمد الراضي",
+   "region": "arabia",
+   "role": "أديب الديار الحجازية وشاعرها في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1844,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1913,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 3608 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3744_1730",
+   "type": "person",
+   "name": "علي بن أحمد بن محمد المالِكي المغربي الحريشيّ",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1633,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1730,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3744 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3772_1945",
+   "type": "person",
+   "name": "علي بن جعفر بن محمد العوامي",
+   "region": "arabia",
+   "role": "قاض إمامي",
+   "blurb": null,
+   "birth": {
+    "y": 1896,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1945,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 3772 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3793_1895",
+   "type": "person",
+   "name": "علي بن حسن بن صالح النجار الطائفي",
+   "region": "arabia",
+   "role": "طبيب",
+   "blurb": null,
+   "birth": {
+    "y": 1813,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1895,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 3793 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3809_1921",
+   "type": "person",
+   "name": "علي بن الحسين البلادي",
+   "region": "arabia",
+   "role": "أديب إمامي مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1921,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 3809 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3858_1797",
+   "type": "person",
+   "name": "علي بن عبد البر بن علي",
+   "region": "arabia",
+   "role": "فقيه شافعيّ أزهري عارف بالحديث عالم بالفرائض مصري من تلاميذ مرتضى الزب",
+   "blurb": null,
+   "birth": {
+    "y": 1756,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1797,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 3858 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3890_1901",
+   "type": "person",
+   "name": "علي بن عبد الله بن علي البحراني نزيل مسقط",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1901,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الطائف، ص 3890 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_3933_1834",
+   "type": "person",
+   "name": "عليّ بن مجثّل",
+   "region": "arabia",
+   "role": "أمير بلاد \" عسير \" في جنوب الحجاز",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1834,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 3933 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4006_1769",
+   "type": "person",
+   "name": "علي بن محمد بن علي بن العربيّ السقاط",
+   "region": "arabia",
+   "role": "مفتي الحنفية في دمشق وأحد علماء عصره",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1769,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 4006 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4103_1944",
+   "type": "person",
+   "name": "عمر بن طوسون بن محمد سعيد ابن محمد علي",
+   "region": "najd",
+   "role": "مؤرخ باحث",
+   "blurb": null,
+   "birth": {
+    "y": 1872,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 4103 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4274_1920",
+   "type": "person",
+   "name": "عيسى بن عبد الله بن عيسى بن حسن",
+   "region": "najd",
+   "role": "قاض ضرير من فقهاء نجد من قبيلة سبيع",
+   "blurb": null,
+   "birth": {
+    "y": 1825,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1920,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 4274 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4323_1822",
+   "type": "person",
+   "name": "غنام بن محمد بن غنام النجدي الحنبلي",
+   "region": "najd",
+   "role": "فقيه فرضي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1822,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 4323 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4357_1972",
+   "type": "person",
+   "name": "فألح بن مهدي بن سعد بن مبارك",
+   "region": "najd",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1933,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1972,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 4357 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4410_1900",
+   "type": "person",
+   "name": "فضل \" باشا \" بن علوي بن محمد بن سهل الحسيني المليباري المكيّ",
+   "region": "arabia",
+   "role": "أمير ظفار",
+   "blurb": null,
+   "birth": {
+    "y": 1824,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1900,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 4410 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4430_1972",
+   "type": "person",
+   "name": "فهد بن سعد بن عبد الرحمن بن فيصل",
+   "region": "najd",
+   "role": "أمير",
+   "blurb": null,
+   "birth": {
+    "y": 1914,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1972,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 4430 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4430_1951",
+   "type": "person",
+   "name": "فهد بن صالح بن محمد العسكر",
+   "region": "najd",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1910,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1951,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 4430 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4445_1954",
+   "type": "person",
+   "name": "فوزان بن سابق بن فوزان آل عثمان",
+   "region": "najd",
+   "role": "معمر",
+   "blurb": null,
+   "birth": {
+    "y": 1858,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1954,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القصيم، ص 4445 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4451_1865",
+   "type": "person",
+   "name": "فيصل بن تركي بن عبد الله بن محمد ابن سعود",
+   "region": "najd",
+   "role": "إمام شجاع حازم",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1865,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 4451 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4462_1957",
+   "type": "person",
+   "name": "فيصل بن عبد العزيز بن فيصل ابن حمد المبارك الحريملي النجدي",
+   "region": "najd",
+   "role": "قاض حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1895,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1957,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 4462 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4817_1850",
+   "type": "person",
+   "name": "محسن وكنيته حسام الدين",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1777,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1850,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 4817 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4870_1733",
+   "type": "person",
+   "name": "محمد بن إبراهيم بن حسن",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1670,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1733,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 4870 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4872_1914",
+   "type": "person",
+   "name": "محمد بن إبراهيم بن محمود",
+   "region": "najd",
+   "role": "فقيه نجد في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1834,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1914,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 4872 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4876_1969",
+   "type": "person",
+   "name": "محمد بن إبراهيم بن عبد اللطيف",
+   "region": "arabia",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1893,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1969,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص السعودية، ص 4876 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_4997_1737",
+   "type": "person",
+   "name": "محمد بن أحمد بن سعيد الحنفي المكيّ",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1737,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 4997 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5013_1860",
+   "type": "person",
+   "name": "محمد بن أحمد بن قاسم النيفر",
+   "region": "arabia",
+   "role": "قاض",
+   "blurb": null,
+   "birth": {
+    "y": 1807,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1860,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5013 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5023_1930",
+   "type": "person",
+   "name": "محمد بن أحمد",
+   "region": "arabia",
+   "role": "فقيه مالكي",
+   "blurb": null,
+   "birth": {
+    "y": 1866,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1930,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5023 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5115_1911",
+   "type": "person",
+   "name": "محمد بن البشير بن محمد حسن ظافر المدني الأزهري",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1911,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5115 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5141_1795",
+   "type": "person",
+   "name": "محمد التاودي بن محمد الطَّالِب ابن محمد بن علي",
+   "region": "arabia",
+   "role": "فقيه المالكية في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1700,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1795,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5141 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5154_1937",
+   "type": "person",
+   "name": "محمد توفيق بن أحمد بن علي العسيري العباسي",
+   "region": "arabia",
+   "role": "شاعر مصري",
+   "blurb": null,
+   "birth": {
+    "y": 1887,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1937,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 5154 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5173_1927",
+   "type": "person",
+   "name": "محمد بن جعفر بن إدريس الكَتَّاني الحسني الفاسي",
+   "region": "arabia",
+   "role": "مؤرخ محدث",
+   "blurb": null,
+   "birth": {
+    "y": 1857,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1927,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5173 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5188_1920",
+   "type": "person",
+   "name": "محمد بن حامد بن عمر السقاف العلويّ",
+   "region": "arabia",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1848,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1920,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5188 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5192_1944",
+   "type": "person",
+   "name": "محمد حبيب الله بن عبد الله بن أحمد ما ي أبي الجكني الشنقيطي",
+   "region": "arabia",
+   "role": "عالم بالحديث",
+   "blurb": null,
+   "birth": {
+    "y": 1878,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5192 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5239_1910",
+   "type": "person",
+   "name": "محمد بن حسن بن عبد الرحمن الحفظي",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1910,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 5239 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5268_1773",
+   "type": "person",
+   "name": "محمد بن حسين العلويّ الشافعيّ الشريف الجفري",
+   "region": "arabia",
+   "role": "متأدب مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1726,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1773,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5268 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5279_1971",
+   "type": "person",
+   "name": "محمد بن حسين بن عمر بن عبد الله بن أبي بكر بن محمد نصيف",
+   "region": "arabia",
+   "role": "عالم (جدة) وصدرها في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1885,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1971,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جدة، ص 5279 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5284_1831",
+   "type": "person",
+   "name": "محمد بن حَمَد البسام التميمي",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1831,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5284 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5284_1831",
+   "type": "person",
+   "name": "محمد بن حَمَد بن محمد بن ناصر بن عثمان (الملقب لعبون) بن ناصر بن حمد بن إبراهيم ",
+   "region": "najd",
+   "role": "من كبار شعراء النبط (الزجل) ولد في (ثادق) من بلاد نجد وحفظ بها القرآن ",
+   "blurb": null,
+   "birth": {
+    "y": 1790,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1831,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 5284 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5290_1750",
+   "type": "person",
+   "name": "محمد حياة بن إبراهيم السندي المدني",
+   "region": "arabia",
+   "role": "عالم بالحديث",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1750,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5290 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5292_1932",
+   "type": "person",
+   "name": "محمد بن حيدر النعمي التهامي الحسني",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1932,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جازان، ص 5292 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5311_1888",
+   "type": "person",
+   "name": "محمد بن خليل بن إبراهيم",
+   "region": "arabia",
+   "role": "عالم بالحديث",
+   "blurb": null,
+   "birth": {
+    "y": 1809,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1888,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5311 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5359_1863",
+   "type": "person",
+   "name": "محمَّد بن سالم بن سعيد بابصيل",
+   "region": "arabia",
+   "role": "فقيه شافعيّ متصوف",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1863,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5359 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5368_1765",
+   "type": "person",
+   "name": "محمد بن سعود بن محمّد بن مقرن بن مرخان",
+   "region": "najd",
+   "role": "أول من لقب بالإمامة من آل سعود",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1765,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5368 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5374_1761",
+   "type": "person",
+   "name": "محمد سعيد بن محمد سنبل المجلائي",
+   "region": "arabia",
+   "role": "فقيه شافعيّ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1761,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5374 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5375_1815",
+   "type": "person",
+   "name": "محمد سعيد بن علي بن أحمد الأسطواني",
+   "region": "najd",
+   "role": "قاض حنفي نحوي دمشقي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1815,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 5375 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5380_1908",
+   "type": "person",
+   "name": "محمد سعيد بن أحمد بن محمد الحضراوي",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1908,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5380 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5380_1916",
+   "type": "person",
+   "name": "محمد سعيد بن محمود",
+   "region": "najd",
+   "role": "شاعر عراقي",
+   "blurb": null,
+   "birth": {
+    "y": 1850,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1916,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5380 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5394_1737",
+   "type": "person",
+   "name": "محمد بن سلامة بن إبراهيم بن خليل ابن محمد",
+   "region": "arabia",
+   "role": "مفسر شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1737,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5394 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5410_1757",
+   "type": "person",
+   "name": "محمد بن سليمان بن محمد بن زائد الكفوري",
+   "region": "arabia",
+   "role": "فقيه مالكي مصري",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1757,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5410 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5410_1780",
+   "type": "person",
+   "name": "محمد بن سليمان الكردي",
+   "region": "arabia",
+   "role": "فقيه الشافعية بالديار الحجازية في عصره",
+   "blurb": null,
+   "birth": {
+    "y": 1715,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1780,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5410 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5412_1917",
+   "type": "person",
+   "name": "محمد بن سليمان حسب الله",
+   "region": "najd",
+   "role": "فقيه شافعيّ",
+   "blurb": null,
+   "birth": {
+    "y": 1828,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1917,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 5412 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5451_1915",
+   "type": "person",
+   "name": "محمد صالح بن أحمد بن صالح ابن طعان بن ناصر الستري (نسبة الى سترة من قرى الأحساء)",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1915,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الأحساء، ص 5451 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5453_1973",
+   "type": "person",
+   "name": "محمد صالح نصيف",
+   "region": "arabia",
+   "role": "صحفي حجازي من أهل جدة",
+   "blurb": null,
+   "birth": {
+    "y": 1895,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1973,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص جدة، ص 5453 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5454_1935",
+   "type": "person",
+   "name": "محمد الصبحي المعاز",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1935,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5454 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5472_1803",
+   "type": "person",
+   "name": "محمد طاهر بن محمد سعيد سنبل",
+   "region": "arabia",
+   "role": "عالم بفقه الحنفية من أهل مكة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1803,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5472 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5474_1929",
+   "type": "person",
+   "name": "محمد بن طاهر المجذوب",
+   "region": "arabia",
+   "role": "شاعر سوداني",
+   "blurb": null,
+   "birth": {
+    "y": 1842,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1929,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5474 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5488_1916",
+   "type": "person",
+   "name": "محمد الطيب بن محمد صالح بن محمد عبد الله العَلَوي",
+   "region": "arabia",
+   "role": "عالم بالعربية والمنطق",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1916,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5488 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5491_1872",
+   "type": "person",
+   "name": "محمد بن عائض بن مرعي",
+   "region": "arabia",
+   "role": "أمير بلاد (عسير)",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1872,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص عسير، ص 5491 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5550_1943",
+   "type": "person",
+   "name": "محمد بن عبد الرحمن بن فيصل",
+   "region": "najd",
+   "role": "أمير",
+   "blurb": null,
+   "birth": {
+    "y": 1881,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1943,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5550 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5580_1965",
+   "type": "person",
+   "name": "محمد بن عبد العزيز بن محمد بن عبد الله بن محمد بن إبراهيم بن مانع ابن شبرمة الوه",
+   "region": "najd",
+   "role": "فقيه",
+   "blurb": null,
+   "birth": {
+    "y": 1883,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1965,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5580 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5676_1774",
+   "type": "person",
+   "name": "محمد بن عبد الله الصديقي القيصري",
+   "region": "najd",
+   "role": "فقيه أصولي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1774,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 5676 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5678_1801",
+   "type": "person",
+   "name": "محمد بن عبد الله بن محمد بن فيروز التميمي الأحسائي",
+   "region": "arabia",
+   "role": "فقيه حنبلي",
+   "blurb": null,
+   "birth": {
+    "y": 1729,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1801,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الأحساء، ص 5678 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5680_1868",
+   "type": "person",
+   "name": "محمد بن عبد الله بن محمد بن إبراهيم التميمي",
+   "region": "najd",
+   "role": "من أكبر شعراء النبط (وهو كالزجل) بنجد",
+   "blurb": null,
+   "birth": {
+    "y": 1809,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1868,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5680 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5681_1878",
+   "type": "person",
+   "name": "محمد بن عبد الله بن علي بن عثمان بن حميد العامري",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1820,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1878,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 5681 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5687_1944",
+   "type": "person",
+   "name": "محمد بن عبد الله بن عثيمين",
+   "region": "najd",
+   "role": "شاعر نجدي",
+   "blurb": null,
+   "birth": {
+    "y": 1854,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1944,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5687 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5721_1792",
+   "type": "person",
+   "name": "محمد بن عبد الوهاب بن سليمان التميمي النجدي",
+   "region": "najd",
+   "role": "زعيم النهضة الدينية الإصلاحية الحديثة في جزيرة العرب",
+   "blurb": null,
+   "birth": {
+    "y": 1703,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1792,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 5721 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5741_1935",
+   "type": "person",
+   "name": "محمد بن عثمان بن محمد البقمي الأزدي (من أزد شنوءة)",
+   "region": "najd",
+   "role": "قاض ضرير",
+   "blurb": null,
+   "birth": {
+    "y": 1895,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1935,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 5741 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5759_1931",
+   "type": "person",
+   "name": "محمد بن عقيل بن عبد الله بن عمر",
+   "region": "arabia",
+   "role": "رحالة",
+   "blurb": null,
+   "birth": {
+    "y": 1863,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1931,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5759 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5838_1760",
+   "type": "person",
+   "name": "محمد بن علي بن فضل بن عبد الله",
+   "region": "arabia",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1689,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1760,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5838 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5843_1817",
+   "type": "person",
+   "name": "محمد بن علي بن حسين بن محمد الأعسم النجفي",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1817,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 5843 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5843_1831",
+   "type": "person",
+   "name": "محمد بن علي بن سلوم التميمي النجدي",
+   "region": "najd",
+   "role": "عالم بالفرائض والهيئة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1831,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 5843 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5845_1848",
+   "type": "person",
+   "name": "محمد بن علي بن حسين العمراني الصنعاني",
+   "region": "arabia",
+   "role": "عالم بالحديث",
+   "blurb": null,
+   "birth": {
+    "y": 1780,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1848,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5845 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5857_1916",
+   "type": "person",
+   "name": "محمد علي بن ميرزا محمد الشاه عبد العظيمي النجفي",
+   "region": "arabia",
+   "role": "فاضل إمامي",
+   "blurb": null,
+   "birth": {
+    "y": 1842,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1916,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5857 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5867_1948",
+   "type": "person",
+   "name": "محمد علي بن حسين بن إبراهيم المالكي المكيّ",
+   "region": "arabia",
+   "role": "فقيه نحوي مغربي الأصل",
+   "blurb": null,
+   "birth": {
+    "y": 1870,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1948,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5867 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5903_1860",
+   "type": "person",
+   "name": "محمد بن عمر بن حسن الفاخري",
+   "region": "najd",
+   "role": "مؤرخ",
+   "blurb": null,
+   "birth": {
+    "y": 1772,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1860,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص النجدي، ص 5903 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5924_1910",
+   "type": "person",
+   "name": "محمد فألح بن محمد بن عبد الله بن فألح",
+   "region": "arabia",
+   "role": "عالم بالحديث واللغة",
+   "blurb": null,
+   "birth": {
+    "y": 1842,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1910,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 5924 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5990_1931",
+   "type": "person",
+   "name": "محمد ماجد بن محمد صالح ابن الشيخ فيض الله الكردي المكيّ",
+   "region": "arabia",
+   "role": "فاضل",
+   "blurb": null,
+   "birth": {
+    "y": 1875,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1931,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 5990 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_5992_1853",
+   "type": "person",
+   "name": "محمد بن مال الله بن معصوم القطيفي الحائري الموسوي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1853,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 5992 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6200_1795",
+   "type": "person",
+   "name": "محمد بن محمود بن صالح بن حسن الطربزوني",
+   "region": "arabia",
+   "role": "فقيه حنفي أديب",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1795,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 6200 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6244_1963",
+   "type": "person",
+   "name": "محمد مصطفى حمام",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1963,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص السعودية، ص 6244 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6456_1881",
+   "type": "person",
+   "name": "محمود صفوت بن مصطفى آغا الزيله لي الشهير بالساعاتي",
+   "region": "arabia",
+   "role": "شاعر مصري",
+   "blurb": null,
+   "birth": {
+    "y": 1825,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1881,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 6456 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6466_1893",
+   "type": "person",
+   "name": "محمود بن علي أصغر الطباطبائي التبريزي",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1893,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص مكة، ص 6466 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6466_1931",
+   "type": "person",
+   "name": "محمود بن علي بن محمد الببلاوي",
+   "region": "arabia",
+   "role": "فقيه حنفي مصري أزهري",
+   "blurb": null,
+   "birth": {
+    "y": 1880,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1931,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 6466 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6634_1901",
+   "type": "person",
+   "name": "مصطفى زين الدين الحمصي",
+   "region": "arabia",
+   "role": "شاعر",
+   "blurb": null,
+   "birth": {
+    "y": 1832,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1901,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الحجاز، ص 6634 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6656_1791",
+   "type": "person",
+   "name": "مصطفى بن محمد بن رحمة الله بن عبد المحسن الأيوبي الأنصاري",
+   "region": "arabia",
+   "role": "فقيه دمشقي",
+   "blurb": null,
+   "birth": {
+    "y": 1722,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1791,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 6656 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6689_1813",
+   "type": "person",
+   "name": "مطلق بن محمد المطيري",
+   "region": "najd",
+   "role": "قائد شجاع من عمال الإمام (سعود بن عبد العزيز) في نجد",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1813,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 6689 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6775_1941",
+   "type": "person",
+   "name": "مقبل بن عبد العزيز الذكير",
+   "region": "najd",
+   "role": "مؤرخ نجدي",
+   "blurb": null,
+   "birth": {
+    "y": 1882,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1941,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 6775 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6832_1951",
+   "type": "person",
+   "name": "منصور بن عبد العزيز بن عبد الرحمن بن فيصل",
+   "region": "najd",
+   "role": "أمير",
+   "blurb": null,
+   "birth": {
+    "y": 1920,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1951,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 6832 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6879_1875",
+   "type": "person",
+   "name": "مهنا بن صالح العنزي",
+   "region": "najd",
+   "role": "أمير بريدة",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1875,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص بريدة، ص 6879 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6963_1963",
+   "type": "person",
+   "name": "ناجي بن عبد الله الأصيل",
+   "region": "arabia",
+   "role": "طبيب",
+   "blurb": null,
+   "birth": {
+    "y": 1897,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1963,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص المدينة، ص 6963 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_6997_1934",
+   "type": "person",
+   "name": "نايف بن محمد بن فيصل بن حزام",
+   "region": "najd",
+   "role": "شجاع نجدي من زعماء البادية",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1934,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 6997 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_7171_1892",
+   "type": "person",
+   "name": "هاشم بن أحمد بن الحسين بن سليمان الموسوي الأحسائي ثم البحراني",
+   "region": "najd",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1892,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص نجد، ص 7171 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_7485_1775",
+   "type": "person",
+   "name": "يحيى بن محمد بن عبد العلي بن يحيى البحراني",
+   "region": "arabia",
+   "role": "فقيه إمامي",
+   "blurb": null,
+   "birth": null,
+   "death": {
+    "y": 1775,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص القطيف، ص 7485 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
+  },
+  {
+   "id": "p_alam_7583_1927",
+   "type": "person",
+   "name": "يعقوب بن نقولا صروف",
+   "region": "najd",
+   "role": "عالم بالفلسفة والرياضيات والفلك",
+   "blurb": null,
+   "birth": {
+    "y": 1852,
+    "m": null,
+    "d": null
+   },
+   "death": {
+    "y": 1927,
+    "m": null,
+    "d": null
+   },
+   "hijri": null,
+   "note": "وقائع الترجمة (الاسم والتاريخان والصفة) من «الأعلام» ج/ص الرياض، ص 7583 من النسخة الرقمية. لم يُنقل نصّ الترجمة — الكتاب محمي حتى ٣١ ديسمبر ٢٠٢٦، والوقائع المجردة لا تُحمى.",
+   "image": null,
+   "imageNote": null,
+   "source": "https://shamela.ws/book/12286",
+   "sourceName": "الأعلام · خير الدين الزركلي",
+   "tier": "book",
+   "factsOnly": true
   }
  ],
  "events": [
