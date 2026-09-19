@@ -510,6 +510,12 @@ function drawMarkers(){
     state.links.push(line);
   });
 
+  visible.filter(x => x.proposed && x.uncertaintyKm && state.sel === x.id).forEach(x => {
+    state.links.push(L.circle(x.at, { radius:x.uncertaintyKm*1000, color:'#a9762f', weight:1.2,
+      opacity:.75, dashArray:'4 5', fillColor:'#c79a5c', fillOpacity:.1 }).addTo(state.map)
+      .bindTooltip(`هامش عدم اليقين ±${AR(x.uncertaintyKm)} كم`, { sticky:true }));
+  });
+
   const seats = {};
   visible.forEach(x => { const k = x.at.join(','); (seats[k] = seats[k] || []).push(x.id); });
   state.markers = visible.map(x => {
@@ -521,7 +527,7 @@ function drawMarkers(){
       const i = group.indexOf(x.id), a = (i / group.length) * Math.PI * 2, R = 0.0016;
       at = [x.at[0] + R*Math.cos(a), x.at[1] + R*Math.sin(a)];
     }
-    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}`,
+    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}${x.proposed?' proposed':''}`,
       iconSize:[size,size], iconAnchor:[size/2,size/2] });
     return L.marker(at, { icon, title:x.name })
       .addTo(state.map)

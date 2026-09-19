@@ -408,3 +408,9 @@ a{color:inherit}
 .grade-institution::before{background:#5b7bb0}
 .grade-support{background:#f4efe2;color:#6f5a34}
 .grade-support::before{background:#c2a771}
+
+/* موضع مقترح آليًا: دبوس مجوّف بحدّ متقطّع، ودائرة تُظهر هامش الخطأ عند اختياره */
+.pin.proposed{background:#f7f0dd;border:2.5px dashed #a9762f;box-shadow:0 1px 5px rgba(120,90,40,.4)}
+.pin.proposed.sel{background:#e9c98f}
+.grade-proposed{background:#f7efdc;color:#8a6420}
+.grade-proposed::before{background:#a9762f}
