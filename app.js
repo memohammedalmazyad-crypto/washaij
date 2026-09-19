@@ -346,22 +346,30 @@ function eventCoord(e){
   return r ? { at:r.center, approx:true } : null;
 }
 
-/** ما الذي يجمع حدثين: المكان نفسه، أو شخصية عاشتهما معًا */
-function eventLinks(evs){
+/** ما الذي يجمع حدثين: المكان نفسه دائمًا، وصلة الأشخاص للحدث المختار فقط
+ *  — لأن ربط كل حدثين تشاركا شخصية يُنتج مئات الخطوط ويطمس الخريطة. */
+function eventLinks(evs, selId){
   const out = [];
+  const share = (a, b) => state.data.people.filter(p => born(p) && died(p) &&
+    born(p) <= a.year && a.year <= died(p) && born(p) <= b.year && b.year <= died(p));
+
   for (let i = 0; i < evs.length; i++) for (let j = i + 1; j < evs.length; j++){
     const a = evs[i], b = evs[j];
     if (a.place && a.place === b.place){
       const pl = byId(a.place);
       out.push({ a, b, kind:'place', why:`المكان نفسه: ${pl ? pl.name : ''}` });
-      continue;
     }
-    const both = state.data.people.filter(p => born(p) && died(p) &&
-      born(p) <= a.year && a.year <= died(p) && born(p) <= b.year && b.year <= died(p));
-    if (both.length)
-      out.push({ a, b, kind:'person', why:`عاشهما معًا: ${both.map(x => x.name).join('، ')}` });
   }
-  return out;
+  if (selId){
+    const sel = evs.find(e => e.id === selId);
+    if (sel) evs.forEach(o => {
+      if (o.id === sel.id) return;
+      const both = share(sel, o);
+      if (both.length) out.push({ a:sel, b:o, kind:'person',
+        why:`عاشهما معًا ${AR(both.length)}: ${both.slice(0,4).map(x => x.name).join('، ')}${both.length > 4 ? '، وغيرهم' : ''}` });
+    });
+  }
+  return out.slice(0, 60);
 }
 
 /** مواد من المنطقة نفسها وفترة قريبة — قاعدة معلنة، لا ربط تحريري */
@@ -491,7 +499,7 @@ function drawMarkers(){
   // خطوط الصلة بين الأحداث تُرسم أولًا لتبقى تحت الدبابيس
   const evs = visible.filter(x => x.type === 'event');
   const pos = Object.fromEntries(evs.map(e => [e.id, e.at]));
-  eventLinks(evs).forEach(l => {
+  eventLinks(evs, state.sel).forEach(l => {
     const line = L.polyline([pos[l.a.id], pos[l.b.id]], {
       color: l.kind === 'place' ? '#8a6a4a' : '#a9762f',
       weight: l.kind === 'place' ? 2.2 : 1.6,
@@ -546,7 +554,9 @@ function drawTimeline(){
       `<button class="tl-ev${state.sel===e.id?' on':''}" data-id="${esc(e.id)}" title="${esc(e.name)}"
         style="inset-inline-start:${x}%;top:${lvl*17}px"><i></i><u></u><b>${AR(e.year)}</b></button>`).join('')}</div>` : '';
 
-  const pplRow = people.length ? `<p class="tl-head">فترات حياة</p>${people.map(p =>
+  const shownPpl = people.slice(0, 40);
+  const pplRow = shownPpl.length ? `<p class="tl-head">فترات حياة${people.length > 40
+      ? ` · تُعرض ${AR(40)} من ${AR(people.length)}` : ''}</p>${shownPpl.map(p =>
     `<div class="tl-row"><button class="tl-bar${state.sel===p.id?' on':''}" data-id="${esc(p.id)}"
       style="inset-inline-start:${pos(born(p))}%;width:${Math.max(pos(died(p))-pos(born(p)),9)}%"
       title="${esc(p.name)} (${AR(born(p))}–${AR(died(p))})"><b>${esc(p.name)}</b></button></div>`).join('')}` : '';
@@ -587,13 +597,15 @@ function webModel(){
     (state.region === 'all' ? [...places,...people,...events,...mats].some(x => x.region === r.id)
                             : r.id === state.region));
 
+  const crowded = (places.length + people.length + events.length + mats.length) > 90;
   const nodes = [
     ...regions.map(r => ({ id:'r_'+r.id, kind:'region', name:r.name, rid:r.id, r:20 })),
     ...places.map(x => ({ id:x.id, kind:'place',    name:x.name, rid:x.region, r:12 })),
-    ...people.map(x => ({ id:x.id, kind:'person',   name:x.name, rid:x.region, r:12 })),
+    ...(crowded ? [] : people.map(x => ({ id:x.id, kind:'person', name:x.name, rid:x.region, r:12 }))),
     ...events.map(x => ({ id:x.id, kind:'event',    name:x.name, rid:x.region, r:11 })),
-    ...mats.map(x   => ({ id:x.id, kind:'material', name:x.name, rid:x.region, r:8  })),
+    ...(crowded ? [] : mats.map(x => ({ id:x.id, kind:'material', name:x.name, rid:x.region, r:8 }))),
   ];
+  state.webCrowded = crowded;
   const has = new Set(nodes.map(n => n.id));
   const edges = [];
   const link = (a, b, w) => { if (has.has(a) && has.has(b)) edges.push([a, b, w]); };
@@ -650,7 +662,8 @@ function drawWeb(){
       state.web = { key, nodes:[], edges:[] };
       return;
     }
-    layout(m.nodes, m.edges, W, H, 300);
+    const iters = Math.max(70, Math.min(300, Math.round(26000 / Math.max(m.nodes.length, 1))));
+    layout(m.nodes, m.edges, W, H, iters);
     state.web = { key, ...m };
   }
   const { nodes, edges } = state.web;
@@ -690,7 +703,9 @@ function drawWeb(){
   }).join('');
 
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-  svg.innerHTML = eSvg + nSvg;
+  svg.innerHTML = eSvg + nSvg + (state.webCrowded
+    ? `<text class="web-empty" x="${W/2}" y="${H-8}">النطاق واسع، فتُعرض المناطق والأماكن والأحداث فقط — اختر منطقة لترى شخصياتها</text>`
+    : '');
 
   $$('#web .node').forEach(g => {
     const go = () => {
@@ -730,10 +745,12 @@ function playIntro(){
 /** فترات مسماة، حدودها مأخوذة من تواريخ أحداث موثّقة في السجل */
 const PERIODS = [
   { id:'all',    name:'كل الفترات', span:null },
+  { id:'early',  name:'صدر الإسلام',            span:[610, 750] },
+  { id:'middle', name:'ما قبل الدولة السعودية', span:[750, 1727] },
   { id:'first',  name:'الدولة السعودية الأولى', span:[1727, 1818] },
   { id:'between',name:'بين الدولتين والثانية',  span:[1818, 1902] },
   { id:'unify',  name:'التوحيد والتأسيس',       span:[1902, 1932] },
-  { id:'after',  name:'بعد التأسيس',            span:[1932, 1960] },
+  { id:'after',  name:'بعد التأسيس',            span:[1932, 2000] },
 ];
 
 function renderPeriods(){
