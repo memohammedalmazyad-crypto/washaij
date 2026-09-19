@@ -861,8 +861,7 @@ function answer(pid, q){
       text: `${hit.name} سنة ${AR(hit.year)}م` + (hit.hijri ? ` (${hit.hijri})` : '') +
             (hit.blurb ? `. ${hit.blurb}` : '.') +
             (hit.note ? ` ${hit.note}` : '') +
-            ` وقع هذا في سنوات حياتي (${yearsText(p).replace(' م','')}).` +
-            ' وما تذكره المصادر عن دوري فيه تحديدًا ليس في هذا السجل، فلا أنسبه إلى نفسي.',
+            ` وقع هذا في سنوات حياتي (${yearsText(p).replace(' م','')}).`,
       sources: [{ label:hit.sourceName, url:hit.source, name:hit.name }]
     };
   }
