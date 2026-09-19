@@ -20,7 +20,7 @@ a{color:inherit}
   padding:14px clamp(14px,3vw,34px);background:var(--card);border-bottom:1px solid var(--line);
 }
 .brand{display:block;flex:none}
-.brand img{width:140px;height:60px;object-fit:contain;object-position:right center;display:block}
+.brand img{width:152px;height:auto;display:block}
 .tagline{flex:1;margin:0;font-size:14px;color:var(--ink-2);padding-inline-start:18px;border-inline-start:1px solid var(--line)}
 
 /* ---------- regions ---------- */
@@ -166,7 +166,7 @@ a{color:inherit}
 @media(max-width:760px){
   .layout{grid-template-columns:1fr;padding:12px}
   .tagline{display:none}
-  .brand img{width:118px;height:50px}
+  .brand img{width:124px}
   .stage-body{height:min(52vh,400px);min-height:290px}
   .stage-head{flex-direction:column;align-items:stretch;gap:8px}
   .views{justify-content:center}
