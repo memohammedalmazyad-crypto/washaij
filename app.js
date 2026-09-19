@@ -894,8 +894,10 @@ function sendChat(q){
   const c = state.chat;
   if (!c || !q.trim() || c.busy) return;
   c.msgs.push({ who:'me', text:q.trim() });
+  // النموذج اللغوي للمُفعَّلين وحدهم؛ البقية على المحرّك المحلي بلا نداءٍ ضائع
   const ep = window.WASHAIJ_CHAT;
-  if (ep) { askModel(c, q.trim(), ep); return; }
+  const on = (window.WASHAIJ_CHAT_IDS || []).includes(c.pid);
+  if (ep && on) { askModel(c, q.trim(), ep); return; }
   const a = answer(c.pid, q);
   if (a) c.msgs.push({ who:'them', text:a.text, sources:a.sources, refused:a.refused, guard:a.guard });
   renderDetail(); scrollChat();
