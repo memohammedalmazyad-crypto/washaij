@@ -965,8 +965,7 @@ function renderChat(){
       <button class="chat-back" id="chatBack" aria-label="رجوع">→</button>
       <div><strong>${esc(v.name)}</strong><small>${esc(v.role)} · ${esc(v.years)}</small></div>
     </div>
-    ${d.disclaimer ? `<p class="chat-note">${esc(d.disclaimer)}</p>` : ''}
-    ${v.disclaimerExtra ? `<p class="chat-note warn">${esc(v.disclaimerExtra)}</p>` : ''}
+
     <div class="chat-log" id="chatLog">${bubbles}</div>
     <div class="chat-chips">${(v.suggested || []).map(q =>
       `<button class="chip" data-ask="${esc(q)}">${esc(q)}</button>`).join('')}</div>
