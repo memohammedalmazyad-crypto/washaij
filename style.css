@@ -22,9 +22,6 @@ a{color:inherit}
 .brand{display:block;flex:none}
 .brand img{width:140px;height:60px;object-fit:contain;object-position:right center;display:block}
 .tagline{flex:1;margin:0;font-size:14px;color:var(--ink-2);padding-inline-start:18px;border-inline-start:1px solid var(--line)}
-.rights-link{font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--line);
-  border-radius:99px;padding:8px 14px;white-space:nowrap}
-.rights-link:hover{background:var(--gold-wash);border-color:var(--gold-soft)}
 
 /* ---------- regions ---------- */
 .regions{
