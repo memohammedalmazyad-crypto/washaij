@@ -290,8 +290,12 @@ function renderDetail(){
   box.innerHTML = `${img}<div class="d-body">
     <p class="d-kicker">${esc(region().name)} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
+    ${it.sourceLabel ? `<p class="src-name">الاسم في المصدر: <span>${esc(it.sourceLabel)}</span></p>` : ''}
     ${when}
     ${gradeTag}
+    ${it.review ? `<p class="reviewed-by">راجعها <b>${esc(it.review.by)}</b> · ${esc(it.review.date)}
+      ${it.coordStatus ? `<br><em>${esc(it.coordStatus)}</em>` : ''}
+      ${it.review.note ? `<br>${esc(it.review.note)}` : ''}</p>` : ''}
     <p class="txt">${esc(it.blurb)}</p>
     ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
     ${secs}
@@ -527,7 +531,7 @@ function drawMarkers(){
       const i = group.indexOf(x.id), a = (i / group.length) * Math.PI * 2, R = 0.0016;
       at = [x.at[0] + R*Math.cos(a), x.at[1] + R*Math.sin(a)];
     }
-    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}${x.proposed?' proposed':''}`,
+    const icon = L.divIcon({ className:`pin pin-${x.type}${on?' sel':''}${x.approx?' approx':''}${x.proposed && x.tier!=='reviewed' ?' proposed':''}${x.tier==='reviewed'?' reviewed':''}`,
       iconSize:[size,size], iconAnchor:[size/2,size/2] });
     return L.marker(at, { icon, title:x.name })
       .addTo(state.map)
