@@ -19,6 +19,7 @@ const localOrFetch = (value, path) => value
 
 const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية',
                      site:'موقع ثقافي مسجّل' };
+const VISIBLE_KINDS = new Set(['place', 'person', 'event']);
 
 const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[],
                 era:{ from:0, to:0, active:false }, q:'', sites:null, limit:80, voices:null, chat:null };
@@ -124,6 +125,7 @@ function clearSearch(){
 }
 
 function renderTabs(){
+  if (!VISIBLE_KINDS.has(state.kind)) state.kind = 'place';
   $$('.tabs button').forEach(b => {
     b.classList.toggle('on', b.dataset.kind === state.kind);
     b.setAttribute('aria-selected', b.dataset.kind === state.kind);
@@ -138,6 +140,7 @@ function renderTabs(){
 
 function bucket(){
   const d = state.data;
+  if (!VISIBLE_KINDS.has(state.kind)) state.kind = 'place';
   if (state.kind === 'site')
     return state.sites ? state.sites.rows.filter(inRegion) : [];
   const map = { place:d.places, person:d.people, event:d.events, material:d.materials };
@@ -307,18 +310,12 @@ function renderDetail(){
     });
   }
 
-  const lic = it.image
-    ? `<p class="credit"><b>الترخيص:</b> ${esc(it.image.license)}<br><b>النسب:</b> ${esc(it.image.artist)}
-       ${it.image.page ? `<br><a href="${esc(it.image.page)}" target="_blank" rel="noopener">صفحة الملف ↗</a>` : ''}</p>` : '';
-
   box.innerHTML = `${img}<div class="d-body">
     <p class="d-kicker">${esc(ownRegionName(it))} · ${esc(it.role || it.kind || KIND_LABEL[it.type])}</p>
     <h2>${esc(it.name)}</h2>
     ${when}
     ${it.blurb ? `<p class="txt">${esc(it.blurb)}</p>` : ''}
     ${secs}
-    ${lic}
-    ${it.source ? `<a class="src" href="${esc(it.source)}" target="_blank" rel="noopener noreferrer">${esc(it.sourceName || 'المصدر')} ↗</a>` : ''}
   </div>`;
 
   const mw = $('#moreWho');
@@ -784,6 +781,7 @@ function playIntro(){
   const el = $('#intro');
   if (!el) return;
   const logo = $('.intro-logo');
+  const introMap = $('.intro-map');
   const target = $('.topbar .brand img');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.body.classList.add('intro-active');
@@ -806,33 +804,38 @@ function playIntro(){
 
     logo.animate([
       { transform:'translate(0,0) scale(1)', opacity:1 },
-      { transform:`translate(${dx}px,${dy}px) scale(${scale})`, opacity:1, offset:.72 },
+      { transform:`translate(${dx}px,${dy}px) scale(${scale})`, opacity:1, offset:.76 },
       { transform:`translate(${dx}px,${dy}px) scale(${scale})`, opacity:0 }
-    ], { duration:980, easing:'cubic-bezier(.65,0,.2,1)', fill:'forwards' });
+    ], { duration:780, easing:'cubic-bezier(.4,0,.2,1)', fill:'forwards' });
+    introMap?.animate([
+      { transform:'translateZ(0) scale(1)', opacity:.82 },
+      { transform:'translateZ(0) scale(1.04)', opacity:.54, offset:.5 },
+      { transform:'translateZ(0) scale(1.07)', opacity:0 }
+    ], { duration:860, easing:'cubic-bezier(.2,.75,.2,1)', fill:'forwards' });
     el.animate([
       { opacity:1 },
-      { opacity:1, offset:.28 },
+      { opacity:1, offset:.2 },
       { opacity:0 }
-    ], { duration:1080, easing:'ease-out', fill:'forwards' });
+    ], { duration:880, easing:'ease-out', fill:'forwards' });
     target.animate([
       { opacity:0 },
-      { opacity:0, offset:.65 },
+      { opacity:0, offset:.62 },
       { opacity:1 }
-    ], { duration:980, easing:'ease-out', fill:'forwards' });
+    ], { duration:800, easing:'ease-out', fill:'forwards' });
     $('.layout')?.animate([
-      { opacity:.25, transform:'scale(1.018)', filter:'blur(7px)' },
-      { opacity:1, transform:'scale(1)', filter:'blur(0)' }
-    ], { duration:1100, easing:'cubic-bezier(.2,.75,.2,1)' });
+      { opacity:.45, transform:'translateZ(0) scale(1.008)' },
+      { opacity:1, transform:'translateZ(0) scale(1)' }
+    ], { duration:880, easing:'cubic-bezier(.2,.75,.2,1)' });
 
     setTimeout(() => {
       el.remove();
       target.style.opacity = '';
       document.body.classList.remove('intro-active');
       if (state.map) state.map.invalidateSize();
-    }, 1120);
+    }, 920);
   };
   el.addEventListener('click', merge, { once:true });
-  setTimeout(merge, 1450);
+  setTimeout(merge, 1100);
 }
 
 /** فترات مسماة، حدودها مأخوذة من تواريخ أحداث موثّقة في السجل */

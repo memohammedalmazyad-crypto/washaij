@@ -11,28 +11,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./leaflet.css?v=1">
-  <link rel="preload" as="image" href="./washaij-logo-white.svg?v=60">
-  <link rel="stylesheet" href="./style.css?v=60">
+  <link rel="preload" as="image" href="./intro-map.svg?v=65">
+  <link rel="preload" as="image" href="./washaij-logo-white.svg?v=62">
+  <link rel="stylesheet" href="./style.css?v=69">
   <script defer src="./leaflet.js?v=1"></script>
   <script defer src="./inline-data.js?v=59"></script>
   <script defer src="./chat-config.js?v=59"></script>
-  <script defer src="./app.js?v=60"></script>
+  <script defer src="./app.js?v=68"></script>
 </head>
 <body>
 <div class="intro" id="intro" aria-hidden="true">
-  <span class="intro-orbit orbit-one"></span>
-  <span class="intro-orbit orbit-two"></span>
-  <span class="intro-node node-one"></span>
-  <span class="intro-node node-two"></span>
-  <span class="intro-node node-three"></span>
-  <img class="intro-logo" src="./washaij-logo-white.svg?v=60" alt="">
+  <img class="intro-map" src="./intro-map.svg?v=65" alt="">
+  <span class="intro-focus" aria-hidden="true"></span>
+  <img class="intro-logo" src="./washaij-logo-white.svg?v=62" alt="">
 </div>
 <header class="topbar">
   <a class="brand" href="./index.html" aria-label="العودة إلى صفحة التعريف">
     <img src="./washaij-logo.svg?v=59" alt="وشائج — شخصيات تحكي، وأماكن تشهد">
   </a>
-  <p class="tagline">Cultural Intelligence Infrastructure</p>
-  <a class="docs-link" href="./index.html">عن وشائج</a>
+  <p class="tagline"><span aria-hidden="true"></span>الخريطة التفاعلية</p>
+  <a class="docs-link" href="./index.html">الصفحة الرئيسية</a>
 </header>
 
 <nav class="regions" id="regions" aria-label="المناطق"></nav>
@@ -99,11 +97,9 @@
       <span class="count" id="count"></span>
     </div>
     <div class="tabs" role="tablist" aria-label="نوع المحتوى">
-      <button role="tab" data-kind="place" class="on" aria-selected="true">أماكن</button>
-      <button role="tab" data-kind="person" aria-selected="false">شخصيات</button>
-      <button role="tab" data-kind="event" aria-selected="false">أحداث</button>
-      <button role="tab" data-kind="material" aria-selected="false">مواد</button>
-      <button role="tab" data-kind="site" aria-selected="false">المواقع الثقافية</button>
+      <button role="tab" data-kind="place" class="on" aria-selected="true"><span>أماكن</span></button>
+      <button role="tab" data-kind="person" aria-selected="false"><span>شخصيات</span></button>
+      <button role="tab" data-kind="event" aria-selected="false"><span>أحداث</span></button>
     </div>
     <div class="list" id="list"></div>
   </section>

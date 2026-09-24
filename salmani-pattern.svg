@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" fill="none">
+  <g stroke="#E3C7A1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 628V206h92v-44h92v44h92v-70h92v70h92v-44h92v44h92v-70h92v70h92v422" stroke-width="3" opacity=".34"/>
+    <path d="M89 628V242h128v38h128v-38h128v38h128v-38h128v38h142v348" stroke-width="2" opacity=".2"/>
+    <path d="M270 628V390l44-145h168l44 145v238" stroke-width="3" opacity=".28"/>
+    <path d="M316 628V402l30-98h104l30 98v226" stroke-width="2" opacity=".18"/>
+    <path d="M52 523h218M526 523h382M52 564h218M526 564h382" stroke-width="2" opacity=".15"/>
+  </g>
+  <g fill="#E3C7A1">
+    <path d="m109 315 31-54 31 54Z" opacity=".26"/>
+    <path d="m673 315 31-54 31 54Z" opacity=".26"/>
+    <path d="m775 315 31-54 31 54Z" opacity=".2"/>
+    <path d="m109 430 31-54 31 54Z" opacity=".18"/>
+    <path d="m673 430 31-54 31 54Z" opacity=".18"/>
+    <path d="m775 430 31-54 31 54Z" opacity=".14"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="2" opacity=".09">
+    <path d="M196 628V342M598 628V342M866 628V342"/>
+    <path d="M58 609h844"/>
+  </g>
+</svg>
