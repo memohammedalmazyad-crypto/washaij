@@ -13,6 +13,9 @@ const $$ = (s) => Array.from(document.querySelectorAll(s));
 const AR = (n) => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
 const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const localOrFetch = (value, path) => value
+  ? Promise.resolve(value)
+  : fetch(path + VER).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
 
 const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية',
                      site:'موقع ثقافي مسجّل' };
@@ -424,7 +427,7 @@ function initMap(){
   }).addTo(state.map);
 
   drawGraticule();
-  fetch('./land.geojson' + VER).then(x => x.json()).then(land => {
+  localOrFetch(window.WASHAIJ_LAND, './land.geojson').then(land => {
     state.land = L.geoJSON(land, {
       style: f => ({
         color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
@@ -434,7 +437,7 @@ function initMap(){
         { className:'land-label', permanent:false, direction:'center' })
     }).addTo(state.map);
     state.land.bringToBack();
-    return fetch('./regions.geojson' + VER).then(x => x.json()).then(drawRegions);
+    return localOrFetch(window.WASHAIJ_REGIONS, './regions.geojson').then(drawRegions);
   }).then(syncBase).catch(() => {});
 
   state.map.on('zoomend', syncBase);
@@ -822,7 +825,7 @@ function renderPeriods(){
 
 /* ---------------- الشخصيات المتكلّمة ---------------- */
 function loadVoices(){
-  return fetch('./voices.json' + VER).then(r => r.json())
+  return localOrFetch(window.WASHAIJ_VOICES, './voices.json')
     .then(v => { state.voices = v; renderDetail(); })
     .catch(() => {});
 }
@@ -985,7 +988,7 @@ function wireChat(){
 
 /* ---------------- السجل الوطني للمواقع (وزارة الثقافة) ---------------- */
 function loadSites(){
-  return fetch('./sites.json' + VER).then(r => r.json()).then(d => {
+  return localOrFetch(window.WASHAIJ_SITES, './sites.json').then(d => {
     d.rows.forEach(r => { r.kind = r.type; r.type = 'site'; });   // النوع الأصلي يصير «صنف»
     state.sites = d;
       if (state.kind === 'site' || state.q) renderList();
@@ -1051,15 +1054,27 @@ function setView(v){
 }
 
 /* ---------------- boot ---------------- */
-fetch('./data.json' + VER)
-  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+localOrFetch(window.WASHAIJ_DATA, './data.json')
   .then(d => {
     state.data = d;
     renderRegions(); renderTabs(); initFilters(); renderList(); renderDetail();
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
-    loadSites(); loadVoices(); playIntro();
+    loadSites();
+    loadVoices().then(() => {
+      const pid = new URLSearchParams(location.search).get('chat');
+      if (!pid || !state.voices || !state.voices.voices[pid]) return;
+      const person = byId(pid);
+      if (person){
+        const knownRegion = person.region && state.data.regions.some(r => r.id === person.region);
+        if (knownRegion) state.region = person.region;
+        state.kind = 'person';
+        renderRegions(); renderTabs(); renderList(); select(pid);
+      }
+      openChat(pid);
+    });
+    playIntro();
   })
   .catch(err => {
     $('#list').innerHTML = `<p class="empty">تعذّر تحميل البيانات (${esc(err.message)}).<br>

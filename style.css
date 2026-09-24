@@ -22,6 +22,8 @@ a{color:inherit}
 .brand{display:block;flex:none}
 .brand img{width:152px;height:auto;display:block}
 .tagline{flex:1;margin:0;font-size:14px;color:var(--ink-2);padding-inline-start:18px;border-inline-start:1px solid var(--line)}
+.docs-link{flex:none;padding:9px 14px;border:1px solid var(--line);border-radius:99px;text-decoration:none;font-size:13px;font-weight:700;color:var(--ink-2);background:var(--card)}
+.docs-link:hover{border-color:var(--gold-soft);color:var(--ink);background:var(--gold-wash)}
 
 /* ---------- institutional proposal ---------- */
 .proposal{
@@ -38,7 +40,7 @@ a{color:inherit}
 .proposal-cta{display:inline-flex;align-items:center;gap:12px;margin-top:28px;padding:12px 18px;border:1px solid rgba(255,255,255,.28);
   border-radius:99px;text-decoration:none;font-size:14px;font-weight:700;background:rgba(255,255,255,.07)}
 .proposal-cta:hover{background:#fff;color:var(--ink)}
-.proposal-proof{display:grid;grid-template-columns:1fr 1fr;align-content:center;border-top:1px solid rgba(255,255,255,.2);
+.proposal-proof{display:grid;grid-template-columns:repeat(3,1fr);align-content:center;border-top:1px solid rgba(255,255,255,.2);
   border-inline-start:1px solid rgba(255,255,255,.2)}
 .proposal-proof div{padding:24px;border-inline-end:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}
 .proposal-proof dt{font-size:clamp(30px,4vw,54px);line-height:1;color:#e1be8a;font-weight:700}
@@ -189,6 +191,7 @@ a{color:inherit}
   .proposal h1{font-size:36px}
   .proposal-lead{font-size:16px;line-height:1.8}
   .proposal-proof{border-inline-start:0}
+  .proposal-proof{grid-template-columns:1fr 1fr}
   .layout{grid-template-columns:1fr;padding:12px}
   .tagline{display:none}
   .brand img{width:124px}

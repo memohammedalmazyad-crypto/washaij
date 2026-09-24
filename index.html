@@ -3,128 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173d36">
-  <meta name="description" content="وشائج: بنية ثقافية ذكية تحوّل المصادر السعودية الموثّقة إلى معرفة مترابطة وتجارب تفاعلية قابلة للتشغيل في المتاحف والفعاليات والمنصات الرقمية.">
-  <title>وشائج | الذاكرة الوطنية، حيّة وموثّقة</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2715%27%20fill%3D%27%23173d36%27%2F%3E%3Cg%20transform%3D%27translate%2814.7%2010.5%29%20scale%28.21%29%20rotate%28180%2082.5%20103%29%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%23f3ece1%27%20stroke-width%3D%2722%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M176%2032C145%207%20101%208%2068%2029C34%2051%2022%2091%2033%20124C45%20159%2083%20177%20114%20165C143%20154%20154%20121%20137%2098C123%2079%2096%2077%2081%2096%27%2F%3E%3Cpath%20d%3D%27M43%20145C34%20179%2016%20195-11%20198%27%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%27%23b7834d%27%3E%3Ccircle%20cx%3D%27176%27%20cy%3D%2732%27%20r%3D%2715%27%2F%3E%3Ccircle%20cx%3D%2781%27%20cy%3D%2796%27%20r%3D%2715%27%2F%3E%3Ccircle%20cx%3D%27-11%27%20cy%3D%27198%27%20r%3D%2715%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <meta name="theme-color" content="#16352f">
+  <meta name="description" content="وشائج: بنية ثقافية ذكية تحوّل الذاكرة الوطنية إلى معرفة مترابطة وتجارب وشخصيات تفاعلية.">
+  <title>وشائج | الذاكرة الوطنية، حيّة</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="./style.css?v=57">
-  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script defer src="./chat-config.js?v=57"></script>
-  <script defer src="./app.js?v=57"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./landing.css?v=1">
 </head>
 <body>
-<div id="intro" class="intro" aria-hidden="true">
-  <img class="intro-logo" src="./washaij-logo.svg?v=56" alt="">
-  <span class="intro-tag">الذاكرة الوطنية، حيّة وموثّقة</span>
-</div>
+<main class="landing">
+  <section class="hero">
+    <nav class="top" aria-label="التنقل الرئيسي">
+      <a class="brand" href="./index.html"><img src="./washaij-logo.svg?v=58" alt="وشائج"></a>
+      <p class="top-note">Cultural Intelligence Infrastructure</p>
+    </nav>
 
-<header class="topbar">
-  <a class="brand" href="./index.html">
-    <img src="./washaij-logo.svg?v=56" alt="وشائج">
-  </a>
-  <p class="tagline">Cultural Intelligence Infrastructure</p>
-</header>
-
-<section class="proposal" aria-labelledby="proposalTitle">
-  <div class="proposal-copy">
-    <p class="proposal-kicker">مشروع سعودي قائم · جاهز للانتقال إلى المرحلة التالية</p>
-    <h1 id="proposalTitle">نحوّل الذاكرة الوطنية إلى تجربةٍ تُرى، وتُسمع، ويُمكن التفاعل معها.</h1>
-    <p class="proposal-lead">«وشائج» بنية ثقافية ذكية تربط الشخصيات والأحداث والأماكن بمصادرها، ثم تحوّلها إلى تجارب رقمية وشخصيات تفاعلية للمتاحف والفعاليات والمنصات. ما ترونه هنا نموذجٌ عامل بُني بمواردنا؛ ودعم المرحلة الأولى يوسّعه من تجربة مثبتة إلى منتجٍ وطني قابل للتشغيل.</p>
-    <a class="proposal-cta" href="#regions">استكشف النموذج العامل <span aria-hidden="true">←</span></a>
-  </div>
-  <dl class="proposal-proof" aria-label="ما أُنجز حتى الآن">
-    <div><dt>٢٥٧</dt><dd>شخصية موثّقة</dd></div>
-    <div><dt>٩٧</dt><dd>حدثًا مسندًا</dd></div>
-    <div><dt>٥٧</dt><dd>مكانًا مترابطًا</dd></div>
-    <div><dt>٢٥</dt><dd>مصدرًا مفحوص الحقوق</dd></div>
-  </dl>
-</section>
-
-<nav class="regions" id="regions" aria-label="المناطق"></nav>
-
-<section class="era" aria-label="تصفية بالفترة الزمنية">
-  <div class="periods" id="periods" role="group" aria-label="الفترات"></div>
-  <div class="era-head">
-    <span class="era-title">النطاق الزمني</span>
-    <output id="eraOut" class="era-out"></output>
-    <button id="eraReset" class="era-reset" type="button">كل الفترات</button>
-  </div>
-  <div class="era-track">
-    <div class="era-fill" id="eraFill"></div>
-    <input type="range" id="eraFrom" aria-label="من سنة">
-    <input type="range" id="eraTo" aria-label="إلى سنة">
-  </div>
-  <p class="era-note" id="eraNote"></p>
-</section>
-
-<main class="layout">
-  <section class="stage" aria-label="العرض">
-    <div class="stage-head">
-      <div class="views" role="tablist" aria-label="طريقة العرض">
-        <button role="tab" data-view="map" class="on" aria-selected="true">على الخريطة</button>
-        <button role="tab" data-view="time" aria-selected="false">عبر الزمن</button>
-        <button role="tab" data-view="web" aria-selected="false">بين الوشائج</button>
-      </div>
-      <p class="stage-hint" id="stageHint"></p>
-    </div>
-
-    <div class="stage-body">
-      <div id="mapView" class="view">
-        <div id="map"></div>
-        <div class="map-grain" aria-hidden="true"></div>
-        <div class="map-vignette" aria-hidden="true"></div>
-        <svg class="compass" viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="34" fill="none" stroke="#8a7350" stroke-width="1.4"/>
-          <circle cx="50" cy="50" r="27" fill="none" stroke="#8a7350" stroke-width=".7" stroke-dasharray="2 4"/>
-          <path d="M50 10 57 50 50 44 43 50Z" fill="#8a7350"/>
-          <path d="M50 90 43 50 50 56 57 50Z" fill="#8a7350" opacity=".45"/>
-          <path d="M10 50 50 43 44 50 50 57Z" fill="#8a7350" opacity=".45"/>
-          <path d="M90 50 50 57 56 50 50 43Z" fill="#8a7350" opacity=".45"/>
-          <text x="50" y="8" text-anchor="middle" font-size="11" font-weight="700" fill="#7c6742">ش</text>
-        </svg>
-      </div>
-      <div id="timeView" class="view hide"><div class="timeline" id="timeline"></div></div>
-      <div id="webView" class="view hide">
-        <svg id="web" viewBox="0 0 760 520" role="img" aria-label="شبكة تربط المناطق والأماكن والشخصيات والأحداث"></svg>
-        <div class="web-legend">
-          <span><i class="k-region"></i>منطقة</span>
-          <span><i class="k-place"></i>مكان</span>
-          <span><i class="k-person"></i>شخصية</span>
-          <span><i class="k-event"></i>حدث</span>
-          <span><i class="k-material"></i>مادة</span>
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">مشروع سعودي قائم · مطوّر محليًا</p>
+        <h1>تاريخ المملكة، في تجربةٍ يمكن الحديث معها.</h1>
+        <p class="lead">«وشائج» بنية ثقافية ذكية تربط الشخصيات والأحداث والأماكن في شبكة معرفة واحدة، ثم تحوّلها إلى تجربة حوارية حيّة للمتاحف والفعاليات والمنصات الرقمية.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#characters">اختر شخصية وابدأ الحديث <span aria-hidden="true">↓</span></a>
+          <a class="secondary" href="./map.html">ادخل الخريطة التفاعلية <span aria-hidden="true">←</span></a>
         </div>
       </div>
+      <div class="proof" aria-label="ما أُنجز حتى الآن">
+        <div><strong>٢٥٧</strong><span>شخصية أُضيفت</span></div>
+        <div><strong>٩٧</strong><span>حدثًا مسندًا</span></div>
+        <div><strong>٥٧</strong><span>مكانًا مترابطًا</span></div>
+      </div>
     </div>
-      <div class="region-note" id="regionNote"></div>
   </section>
 
-  <section class="browser" aria-label="الفهرس">
-    <div class="search">
-      <input id="q" type="search" placeholder="ابحث عن شخص أو مكان أو حدث…" aria-label="بحث" autocomplete="off">
-      <span class="count" id="count"></span>
+  <section class="characters" id="characters" aria-labelledby="charactersTitle">
+    <div class="section-head">
+      <div>
+        <p>ابدأ من صوتٍ واحد</p>
+        <h2 id="charactersTitle">مَن تريد أن تقابل؟</h2>
+      </div>
+      <div class="section-note">اختر شخصية لتنتقل إلى الخريطة وتبدأ حوارًا مبنيًا على سياقها التاريخي وصلاتها بالأحداث والأماكن.</div>
     </div>
-    <div class="tabs" role="tablist" aria-label="نوع المحتوى">
-      <button role="tab" data-kind="place" class="on" aria-selected="true">أماكن</button>
-      <button role="tab" data-kind="person" aria-selected="false">شخصيات</button>
-      <button role="tab" data-kind="event" aria-selected="false">أحداث</button>
-      <button role="tab" data-kind="material" aria-selected="false">مواد</button>
-      <button role="tab" data-kind="site" aria-selected="false">المواقع الثقافية</button>
+
+    <div class="cards">
+      <article class="character">
+        <div class="portrait" aria-hidden="true">ع</div>
+        <p class="era">١٨٧٦–١٩٥٣م</p>
+        <h3>الملك عبدالعزيز آل سعود</h3>
+        <p class="role">مؤسس المملكة العربية السعودية وأول ملوكها</p>
+        <p class="quote">ابدأ من الرياض، واسأل عن التوحيد والتأسيس ومن عاصر تلك المرحلة.</p>
+        <a class="talk" href="./map.html?chat=p_alam_3027_1953"><span>ابدأ الحديث مع الملك عبدالعزيز</span><span aria-hidden="true">←</span></a>
+      </article>
+
+      <article class="character">
+        <div class="portrait" aria-hidden="true">م</div>
+        <p class="era">ت ١٧٦٥م</p>
+        <h3>الإمام محمد بن سعود</h3>
+        <p class="role">مؤسس الدولة السعودية الأولى</p>
+        <p class="quote">انتقل إلى الدرعية، واسأل عن البدايات والموضع والزمن الذي نشأت فيه الدولة.</p>
+        <a class="talk" href="./map.html?chat=p_alam_5368_1765"><span>ابدأ الحديث مع الإمام محمد بن سعود</span><span aria-hidden="true">←</span></a>
+      </article>
+
+      <article class="character">
+        <div class="portrait" aria-hidden="true">غ</div>
+        <p class="era">١٩٤٠–٢٠١٠م</p>
+        <h3>غازي القصيبي</h3>
+        <p class="role">وزير وسفير وأديب</p>
+        <p class="quote">اسأل عن الأحساء ولندن، وعن مسيرة جمعت الوزارة والسفارة والعمل الأكاديمي.</p>
+        <a class="talk" href="./map.html?chat=p_flagship_algosaibi"><span>ابدأ الحديث مع غازي القصيبي</span><span aria-hidden="true">←</span></a>
+      </article>
     </div>
-    <div class="list" id="list"></div>
+
+    <div class="explore">
+      <div><h2>أو استكشف الصورة كاملة</h2><p>تنقّل بين المناطق، وتتبّع الأحداث عبر الزمن، واكتشف الوشائج بين الشخصيات والأماكن.</p></div>
+      <a href="./map.html">افتح الخريطة</a>
+    </div>
   </section>
 
-  <aside class="detail" id="detail" aria-live="polite" aria-label="التفاصيل"></aside>
+  <footer class="footer"><span>وشائج — الذاكرة الوطنية، حيّة وموثّقة</span><span>بُني بموارد شركة سحابة بلس</span></footer>
 </main>
-
-<footer class="foot">
-  <span>وشائج — نموذج عامل لبنية ثقافية ذكية. كل معلومة قابلة للعودة إلى مصدرها.</span>
-  <span>بُني بموارد الشركة · المرحلة التالية تحتاج شريكًا داعمًا</span>
-</footer>
 </body>
 </html>
