@@ -1,4 +1,4 @@
-/* وشائج — نموذج أولي. كل عنصر يحمل رابط مصدره. */
+/* وشائج — نموذج عامل لبنية ثقافية ذكية. كل عنصر قابل للعودة إلى مصدره. */
 'use strict';
 
 /* ختم الإصدار مأخوذ من وسم السكربت، فبَمْب رقم واحد في index.html يحدّث كل الملفات */
@@ -15,7 +15,7 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
 const KIND_LABEL = { place:'مكان', person:'شخصية', event:'حدث', material:'مادة أرشيفية',
-                     site:'موقع في السجل الوطني' };
+                     site:'موقع ثقافي مسجّل' };
 
 const state = { data:null, region:'all', kind:'place', view:'map', sel:null, map:null, markers:[],
                 era:{ from:0, to:0, active:false }, q:'', sites:null, limit:80, voices:null, chat:null };
@@ -207,7 +207,7 @@ function renderDetail(){
     const r = region();
     box.innerHTML = `<div class="d-body">
       <p class="d-kicker">${esc(r.name)}</p>
-      <h2>اختر عنصرًا من الفهرس</h2>
+      <h2>اختر مدخلًا لتظهر حكايته ووثائقه وصلاته</h2>
       <p class="txt">${esc(r.blurb)}</p>
     </div>`;
     return;
@@ -237,7 +237,7 @@ function renderDetail(){
            <span class="tl-y">${AR(m.y)}</span>
            <span class="tl-t">${esc(m.t)}<em class="tl-s">${esc(m.s)}</em></span></li>`).join('')}</ol>`);
     if (state.voices && state.voices.voices[it.id])
-      secs += `<button class="talk" data-talk="${esc(it.id)}">تحدّث إليه ↩</button>`;
+      secs += `<button class="talk" data-talk="${esc(it.id)}">ابدأ الحوار ↩</button>`;
   }
 
   if (it.type === 'event'){
@@ -289,16 +289,15 @@ function renderDetail(){
   if (it.type === 'site'){
     const src = state.sites && state.sites.source;
     when = `<p class="d-when">${esc(it.kind)}<em>${it.gov ? ' · ' + esc(it.gov) : ''} · ${esc(it.adm)}</em></p>`;
-    secs += section('ما يذكره السجل', `<ul class="detail-meta">
+    secs += section('البيانات المتاحة في السجل', `<ul class="detail-meta">
       <li><b>الصنف</b><span>${esc(it.kind)}</span></li>
       <li><b>المنطقة الإدارية</b><span>${esc(it.adm)}</span></li>
       ${it.gov ? `<li><b>المحافظة</b><span>${esc(it.gov)}</span></li>` : ''}
       <li><b>الإحداثي</b><span>غير منشور</span></li>
       <li><b>التاريخ</b><span>غير منشور</span></li></ul>`);
     it = Object.assign({}, it, {
-      blurb: 'موقع مسجّل في بيانات وزارة الثقافة المنشورة. السجل يذكر اسمه وصنفه وموقعه الإداري فقط.',
-      note: 'لا إحداثي لهذا الموقع في البيانات المنشورة، فلا يظهر على الخريطة. ' +
-            'توقيعه جغرافيًا يحتاج مصدرًا إضافيًا أو مسحًا ميدانيًا.',
+      blurb: 'موقع وارد في البيانات المنشورة لوزارة الثقافة. تتاح حاليًا هويته وتصنيفه ونطاقه الإداري.',
+      note: 'لا تتضمن البيانات المنشورة إحداثيات هذا الموقع؛ لذلك لا نضعه على الخريطة قبل استكمال التوثيق من مصدر إضافي أو مسح ميداني.',
       tier: 'official',
       source: (src && src.url) || '#',
       sourceName: src ? `${src.publisher} · ${src.title}` : 'المصدر'
@@ -970,8 +969,8 @@ function renderChat(){
     <div class="chat-chips">${(v.suggested || []).map(q =>
       `<button class="chip" data-ask="${esc(q)}">${esc(q)}</button>`).join('')}</div>
     <form class="chat-form" id="chatForm">
-      <input id="chatIn" type="text" placeholder="اسأله…" autocomplete="off" aria-label="اكتب سؤالك">
-      <button type="submit" aria-label="أرسل">أرسل</button>
+      <input id="chatIn" type="text" placeholder="اكتب سؤالك عن حياته أو زمنه…" autocomplete="off" aria-label="اكتب سؤالك">
+      <button type="submit" aria-label="أرسل السؤال">اسأل</button>
     </form>
     ${d.engine ? `<p class="chat-engine">${esc(d.engine)}</p>` : ''}
   </div>`;

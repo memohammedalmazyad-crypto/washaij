@@ -23,6 +23,27 @@ a{color:inherit}
 .brand img{width:152px;height:auto;display:block}
 .tagline{flex:1;margin:0;font-size:14px;color:var(--ink-2);padding-inline-start:18px;border-inline-start:1px solid var(--line)}
 
+/* ---------- institutional proposal ---------- */
+.proposal{
+  display:grid;grid-template-columns:minmax(0,1.45fr) minmax(320px,.8fr);gap:clamp(28px,6vw,90px);
+  padding:clamp(42px,7vw,88px) clamp(18px,5vw,72px);background:var(--ink);color:#fff;
+  position:relative;overflow:hidden
+}
+.proposal::after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.11);
+  border-radius:50%;inset-inline-end:-120px;top:-230px;box-shadow:0 0 0 54px rgba(255,255,255,.035),0 0 0 108px rgba(255,255,255,.025)}
+.proposal-copy,.proposal-proof{position:relative;z-index:1}
+.proposal-kicker{margin:0 0 18px;color:#e1be8a;font-size:13px;font-weight:700;letter-spacing:.025em}
+.proposal h1{max-width:900px;margin:0;font-size:clamp(35px,5.2vw,72px);line-height:1.16;letter-spacing:-.045em;font-weight:700}
+.proposal-lead{max-width:820px;margin:24px 0 0;font-size:clamp(16px,1.6vw,21px);line-height:1.9;color:#dce7e3}
+.proposal-cta{display:inline-flex;align-items:center;gap:12px;margin-top:28px;padding:12px 18px;border:1px solid rgba(255,255,255,.28);
+  border-radius:99px;text-decoration:none;font-size:14px;font-weight:700;background:rgba(255,255,255,.07)}
+.proposal-cta:hover{background:#fff;color:var(--ink)}
+.proposal-proof{display:grid;grid-template-columns:1fr 1fr;align-content:center;border-top:1px solid rgba(255,255,255,.2);
+  border-inline-start:1px solid rgba(255,255,255,.2)}
+.proposal-proof div{padding:24px;border-inline-end:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}
+.proposal-proof dt{font-size:clamp(30px,4vw,54px);line-height:1;color:#e1be8a;font-weight:700}
+.proposal-proof dd{margin:9px 0 0;color:#dce7e3;font-size:14px;line-height:1.5}
+
 /* ---------- regions ---------- */
 .regions{
   display:flex;gap:9px;overflow-x:auto;padding:14px clamp(14px,3vw,34px);
@@ -164,6 +185,10 @@ a{color:inherit}
   .browser{max-height:none;min-height:340px}
 }
 @media(max-width:760px){
+  .proposal{grid-template-columns:1fr;padding:38px 18px;gap:32px}
+  .proposal h1{font-size:36px}
+  .proposal-lead{font-size:16px;line-height:1.8}
+  .proposal-proof{border-inline-start:0}
   .layout{grid-template-columns:1fr;padding:12px}
   .tagline{display:none}
   .brand img{width:124px}
