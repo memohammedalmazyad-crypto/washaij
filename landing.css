@@ -11,7 +11,7 @@ a{color:inherit}
 .landing::before{content:"";position:absolute;inset:-20% -10% auto auto;width:700px;height:700px;border:1px solid rgba(255,255,255,.1);border-radius:50%;box-shadow:0 0 0 85px rgba(255,255,255,.025),0 0 0 170px rgba(255,255,255,.018);pointer-events:none}
 .hero{position:relative;background:var(--ink);color:#fff;padding:22px clamp(20px,5vw,76px) clamp(58px,8vw,108px)}
 .top{display:flex;align-items:center;gap:18px;max-width:1480px;margin:auto}
-.brand img{display:block;width:158px}
+.brand img{display:block;width:250px;height:auto}
 .top-note{margin:0;flex:1;color:#c8d8d3;font-size:13px;border-inline-start:1px solid rgba(255,255,255,.18);padding-inline-start:18px}
 .top-link{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:9px 15px;font-size:13px;font-weight:700}
 .hero-grid{max-width:1480px;margin:clamp(58px,8vw,118px) auto 0;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:clamp(34px,7vw,110px);align-items:end}
@@ -50,4 +50,4 @@ h1{margin:0;max-width:940px;font-size:clamp(43px,6.4vw,92px);line-height:1.08;le
 .explore a{flex:none;background:var(--gold);color:#fff;text-decoration:none;border-radius:99px;padding:13px 20px;font-weight:700}
 .footer{max-width:1480px;margin:auto;padding:0 clamp(20px,5vw,76px) 34px;color:#6d7f79;font-size:12px;display:flex;justify-content:space-between;gap:20px}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.proof{max-width:600px}.cards{grid-template-columns:1fr}.character{min-height:360px}.section-head,.explore{align-items:flex-start;flex-direction:column}.top-note{display:none}}
-@media(max-width:560px){.hero{padding-inline:18px}.top{flex-wrap:wrap}.brand img{width:138px}.top-link{margin-inline-start:auto}.proof{grid-template-columns:1fr}.proof div{display:flex;align-items:center;gap:14px}.proof span{margin:0}.characters{padding-inline:16px}.footer{flex-direction:column;padding-inline:18px}}
+@media(max-width:560px){.hero{padding-inline:18px}.top{flex-wrap:wrap}.brand img{width:210px}.top-link{margin-inline-start:auto}.proof{grid-template-columns:1fr}.proof div{display:flex;align-items:center;gap:14px}.proof span{margin:0}.characters{padding-inline:16px}.footer{flex-direction:column;padding-inline:18px}}

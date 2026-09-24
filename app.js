@@ -783,17 +783,56 @@ function drawWeb(){
 function playIntro(){
   const el = $('#intro');
   if (!el) return;
-  const seen = (() => { try { return sessionStorage.getItem('washaij-intro'); } catch(e){ return null; } })();
+  const logo = $('.intro-logo');
+  const target = $('.topbar .brand img');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const finish = () => {
-    el.classList.add('done');
-    setTimeout(() => el.classList.add('gone'), 1000);
-    if (state.map) setTimeout(() => state.map.invalidateSize(), 950);
+  document.body.classList.add('intro-active');
+  if (reduce){
+    el.remove();
+    document.body.classList.remove('intro-active');
+    return;
+  }
+
+  let started = false;
+  const merge = () => {
+    if (started) return;
+    started = true;
+    const from = logo.getBoundingClientRect();
+    const to = target.getBoundingClientRect();
+    const dx = to.left + to.width / 2 - (from.left + from.width / 2);
+    const dy = to.top + to.height / 2 - (from.top + from.height / 2);
+    const scale = Math.max(.12, to.width / from.width);
+    target.style.opacity = '0';
+
+    logo.animate([
+      { transform:'translate(0,0) scale(1)', opacity:1 },
+      { transform:`translate(${dx}px,${dy}px) scale(${scale})`, opacity:1, offset:.72 },
+      { transform:`translate(${dx}px,${dy}px) scale(${scale})`, opacity:0 }
+    ], { duration:980, easing:'cubic-bezier(.65,0,.2,1)', fill:'forwards' });
+    el.animate([
+      { opacity:1 },
+      { opacity:1, offset:.28 },
+      { opacity:0 }
+    ], { duration:1080, easing:'ease-out', fill:'forwards' });
+    target.animate([
+      { opacity:0 },
+      { opacity:0, offset:.65 },
+      { opacity:1 }
+    ], { duration:980, easing:'ease-out', fill:'forwards' });
+    $('.layout')?.animate([
+      { opacity:.25, transform:'scale(1.018)', filter:'blur(7px)' },
+      { opacity:1, transform:'scale(1)', filter:'blur(0)' }
+    ], { duration:1100, easing:'cubic-bezier(.2,.75,.2,1)' });
+
+    setTimeout(() => {
+      el.remove();
+      target.style.opacity = '';
+      document.body.classList.remove('intro-active');
+      if (state.map) state.map.invalidateSize();
+    }, 1120);
   };
-  if (seen || reduce){ el.classList.add('done', 'gone'); return; }
-  try { sessionStorage.setItem('washaij-intro', '1'); } catch(e){}
-  el.addEventListener('click', finish, { once:true });
-  setTimeout(finish, 2100);
+  el.addEventListener('click', merge, { once:true });
+  setTimeout(merge, 1450);
 }
 
 /** فترات مسماة، حدودها مأخوذة من تواريخ أحداث موثّقة في السجل */

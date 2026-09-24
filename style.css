@@ -20,7 +20,7 @@ a{color:inherit}
   padding:14px clamp(14px,3vw,34px);background:var(--card);border-bottom:1px solid var(--line);
 }
 .brand{display:block;flex:none}
-.brand img{width:152px;height:auto;display:block}
+.brand img{width:230px;height:auto;display:block}
 .tagline{flex:1;margin:0;font-size:14px;color:var(--ink-2);padding-inline-start:18px;border-inline-start:1px solid var(--line)}
 .docs-link{flex:none;padding:9px 14px;border:1px solid var(--line);border-radius:99px;text-decoration:none;font-size:13px;font-weight:700;color:var(--ink-2);background:var(--card)}
 .docs-link:hover{border-color:var(--gold-soft);color:var(--ink);background:var(--gold-wash)}
@@ -194,7 +194,7 @@ a{color:inherit}
   .proposal-proof{grid-template-columns:1fr 1fr}
   .layout{grid-template-columns:1fr;padding:12px}
   .tagline{display:none}
-  .brand img{width:124px}
+  .brand img{width:190px}
   .stage-body{height:min(52vh,400px);min-height:290px}
   .stage-head{flex-direction:column;align-items:stretch;gap:8px}
   .views{justify-content:center}
@@ -378,21 +378,36 @@ a{color:inherit}
 .chat-engine{margin:0;padding:0 15px 14px;font-size:11px;color:var(--ink-3);line-height:1.7}
 
 /* ---------- الافتتاح: الشعار يندمج في الخريطة ---------- */
-.intro{position:fixed;inset:0;z-index:9000;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:14px;background:#cfbd97;
-  transition:opacity .9s ease, background-color .9s ease}
-.intro-logo{width:min(56vw,420px);height:auto;
-  animation:introIn 1s cubic-bezier(.2,.7,.3,1) both}
-.intro-tag{font-size:clamp(12px,2.2vw,16px);font-weight:600;color:#6d5833;letter-spacing:.05em;
-  animation:introIn 1s .25s cubic-bezier(.2,.7,.3,1) both}
-@keyframes introIn{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
-.intro.done{opacity:0;pointer-events:none;background:#f7f4ee}
-.intro.done .intro-logo{transform:scale(.34) translateY(-26vh);transition:transform .9s cubic-bezier(.5,0,.2,1)}
-.intro.done .intro-tag{opacity:0;transition:opacity .4s}
+body.intro-active{overflow:hidden}
+.intro{position:fixed;inset:0;z-index:9000;display:grid;place-items:center;overflow:hidden;
+  background:#173d36;isolation:isolate;cursor:pointer}
+.intro::before{content:"";position:absolute;inset:-18%;z-index:-2;opacity:.22;
+  background:
+    linear-gradient(27deg,transparent 49.7%,rgba(255,255,255,.16) 50%,transparent 50.3%),
+    linear-gradient(153deg,transparent 49.7%,rgba(255,255,255,.11) 50%,transparent 50.3%);
+  background-size:190px 190px;transform:rotate(-5deg) scale(1.08);animation:introGrid 6s linear infinite}
+.intro::after{content:"";position:absolute;width:min(78vw,760px);aspect-ratio:1;border-radius:50%;z-index:-1;
+  border:1px solid rgba(229,196,155,.24);box-shadow:0 0 0 70px rgba(229,196,155,.035),0 0 0 140px rgba(229,196,155,.025);
+  animation:introHalo 1.8s ease-out both}
+.intro-logo{width:min(68vw,570px);height:auto;position:relative;z-index:3;will-change:transform,opacity;
+  filter:drop-shadow(0 20px 45px rgba(0,0,0,.2));animation:introReveal .9s cubic-bezier(.2,.8,.25,1) both}
+.intro-orbit{position:absolute;border:1px solid rgba(255,255,255,.15);border-radius:50%;z-index:1}
+.orbit-one{width:min(52vw,510px);aspect-ratio:1;animation:orbitSpin 13s linear infinite}
+.orbit-two{width:min(38vw,370px);aspect-ratio:1;border-style:dashed;animation:orbitSpin 9s linear infinite reverse}
+.intro-node{position:absolute;width:10px;height:10px;border-radius:50%;background:#e5c49b;z-index:2;
+  box-shadow:0 0 0 8px rgba(229,196,155,.08);transform:translate(var(--node-x),var(--node-y));
+  animation:nodePulse 1.6s ease-in-out infinite alternate}
+.node-one{--node-x:min(27vw,265px);--node-y:min(-17vw,-165px)}
+.node-two{--node-x:min(-29vw,-285px);--node-y:min(10vw,96px);animation-delay:.35s}
+.node-three{--node-x:min(22vw,215px);--node-y:min(21vw,205px);animation-delay:.7s}
+@keyframes introReveal{from{opacity:0;transform:translateY(18px) scale(.92);filter:blur(8px)}to{opacity:1;transform:none;filter:drop-shadow(0 20px 45px rgba(0,0,0,.2))}}
+@keyframes introHalo{from{opacity:0;transform:scale(.72)}to{opacity:1;transform:scale(1)}}
+@keyframes introGrid{to{background-position:190px 0,-190px 0}}
+@keyframes orbitSpin{to{transform:rotate(360deg)}}
+@keyframes nodePulse{from{transform:translate(var(--node-x),var(--node-y)) scale(1)}to{transform:translate(var(--node-x),var(--node-y)) scale(1.35);opacity:.72}}
 .intro.gone{display:none}
 @media(prefers-reduced-motion:reduce){
-  .intro-logo,.intro-tag{animation:none}
-  .intro,.intro.done .intro-logo{transition:opacity .3s}
+  .intro-logo,.intro::before,.intro::after,.intro-orbit,.intro-node{animation:none}
 }
 
 /* ---------- الفترات المسماة ---------- */
@@ -518,7 +533,7 @@ a{color:inherit}
 }
 
 /* ١١ · حدّ رفيع للصور: أسود صرف في الفاتح، لا رماديًّا مائلًا يقرأ كالأوساخ */
-.row img, .d-img img, .brand img{
+.row img, .d-img img{
   outline:1px solid oklch(0 0 0 / .1); outline-offset:-1px;
 }
 

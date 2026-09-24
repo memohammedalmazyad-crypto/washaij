@@ -11,16 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./leaflet.css?v=1">
-  <link rel="stylesheet" href="./style.css?v=59">
+  <link rel="preload" as="image" href="./washaij-logo-white.svg?v=60">
+  <link rel="stylesheet" href="./style.css?v=60">
   <script defer src="./leaflet.js?v=1"></script>
   <script defer src="./inline-data.js?v=59"></script>
   <script defer src="./chat-config.js?v=59"></script>
-  <script defer src="./app.js?v=59"></script>
+  <script defer src="./app.js?v=60"></script>
 </head>
 <body>
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="intro-orbit orbit-one"></span>
+  <span class="intro-orbit orbit-two"></span>
+  <span class="intro-node node-one"></span>
+  <span class="intro-node node-two"></span>
+  <span class="intro-node node-three"></span>
+  <img class="intro-logo" src="./washaij-logo-white.svg?v=60" alt="">
+</div>
 <header class="topbar">
   <a class="brand" href="./index.html" aria-label="العودة إلى صفحة التعريف">
-    <img src="./washaij-logo.svg?v=58" alt="وشائج">
+    <img src="./washaij-logo.svg?v=59" alt="وشائج — شخصيات تحكي، وأماكن تشهد">
   </a>
   <p class="tagline">Cultural Intelligence Infrastructure</p>
   <a class="docs-link" href="./index.html">عن وشائج</a>
