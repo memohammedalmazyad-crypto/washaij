@@ -16,6 +16,17 @@ AddType application/manifest+json   .webmanifest
   RewriteCond %{HTTP_HOST} ^www\.washaij\.com$ [NC]
   RewriteRule ^ https://washaij.com%{REQUEST_URI} [L,R=301]
 
+  # روابط نظيفة: washaij.com/ و washaij.com/map — والروابط القديمة بـ‎.html تُحوَّل إليها (٣٠١)،
+  # ويبقى الاستعلام (?chat=… و?view=…) كما هو. وTHE_REQUEST يمنع الدوران مع التحويل الداخلي تحته.
+  RewriteCond %{THE_REQUEST} \s/+index\.html[?\s] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[?\s] [NC]
+  RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+
   # إجبار HTTPS — مُعطَّل، والاستضافة تفعله أصلًا على مستوى الخادم
   # (فُحِص في ٢٤ سبتمبر ٢٠٢٦: http يحوّل إلى https من تلقائه).
   # لا تُفعّله إلا إن توقّف ذلك بعد الرفع، فتحذف # من السطرين:
@@ -50,3 +61,12 @@ ErrorDocument 404 /404.html
 <FilesMatch "^\.(git|htaccess|gitignore|nojekyll)">
   Require all denied
 </FilesMatch>
+
+# ٨ · ترويسات الأمان — الموقع لا يطلب كاميرا ولا ميكروفون ولا موقعًا جغرافيًّا
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>

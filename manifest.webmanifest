@@ -4,7 +4,7 @@
  "description": "شخصيات تحكي، وأماكن تشهد.",
  "lang": "ar",
  "dir": "rtl",
- "start_url": "./index.html",
+ "start_url": "/",
  "display": "browser",
  "background_color": "#f4f2ec",
  "theme_color": "#0f2f29",

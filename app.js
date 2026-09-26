@@ -214,7 +214,7 @@ function renderDetail(){
     box.innerHTML = `<div class="d-body">
       <p class="d-kicker">${esc(r.name)}</p>
       <h2>اختر مدخلًا لتظهر حكايته ووثائقه وصلاته</h2>
-      <p class="txt">${esc(r.blurb)}</p>
+      ${r.blurb ? `<p class="txt">${esc(r.blurb)}</p>` : ''}
     </div>`;
     return;
   }
@@ -412,16 +412,15 @@ const eventDocs = (e) => state.data.materials.filter(m =>
 function initMap(){
   if (!window.L){ $('#map').innerHTML = '<p class="empty">تعذّر تحميل الخريطة. تصفّح الفهرس والزمن.</p>'; return; }
   const r = region();
-  state.map = L.map('map', { scrollWheelZoom:false, zoomControl:false, minZoom:3, maxZoom:16 })
+  state.map = L.map('map', { scrollWheelZoom:false, zoomControl:false, attributionControl:false, minZoom:3, maxZoom:16 })
                .setView(r.center, r.zoom);
   frame(r, false);
   L.control.zoom({ position:'bottomleft' }).addTo(state.map);
 
-  // تفاصيل الشوارع تظهر وحدها عند التقريب، مصبوغة لتبقى في مزاج الورق القديم
-  state.tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom:9, maxZoom:16, opacity:.75, className:'aged-tiles',
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> · حدود: Natural Earth'
-  }).addTo(state.map);
+  // تفاصيل الشوارع تظهر وحدها عند التقريب، مصبوغة لتبقى في مزاج الورق القديم.
+  // كانت بلاطات OpenStreetMap، وسياستها تحظر أحيانًا («سوء استخدام»)؛ فصارت من OpenFreeMap: بلا مفتاح ولا حدّ.
+  state.map.on('zoomend', loadDetail);
+  loadDetail();
 
   drawGraticule();
   localOrFetch(window.WASHAIJ_LAND, './land.geojson').then(land => {
@@ -490,10 +489,68 @@ function paintRegions(){
 }
 
 /** الأرض المرسومة تختفي تدريجيًا لتكشف الشوارع عند التقريب */
+/* خلفية التفاصيل: خريطةٌ متّجهة من OpenFreeMap (مجانية، بلا مفتاح ولا حدّ طلبات، والاستعمال التجاري مسموح)،
+   تُحمَّل مكتبتها عند أول تقريب فلا تثقل الصفحة، وبلا أسماء: فأسماء المواضع من وشائج نفسها. */
+const DETAIL = {
+  zoom: 8,                                  // يبدأ التحميل قبل ظهور التفاصيل (٩) بدرجة
+  style: 'https://tiles.openfreemap.org/styles/positron',
+  js: 'https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js',
+  css: 'https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css',
+  plugin: 'https://cdn.jsdelivr.net/npm/@maplibre/maplibre-gl-leaflet@0.1.4/leaflet-maplibre-gl.js',
+  credit: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · '
+        + '<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> · '
+        + '<a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>'
+};
+
+/* الإسناد: تشترطه رخصة OpenStreetMap وOpenFreeMap ما دامت تفاصيل الشوارع ظاهرة، ولا يلزم في العرض الشامل
+   (حدود Natural Earth ملكٌ عام). يظهر مختصرًا مع التفاصيل، ثم ينطوي بعد خمس ثوانٍ إلى زرّ (i) —
+   كما تجيز إرشادات OpenStreetMap — ويعود بالضغط عليه. */
+function syncCredit(show){
+  if (!state.credit){
+    const c = L.control({ position:'bottomright' });
+    c.onAdd = () => {
+      const d = L.DomUtil.create('div', 'map-credit');
+      d.innerHTML = `<button type="button" aria-label="مصادر الخريطة" aria-expanded="true">i</button><span>${DETAIL.credit}</span>`;
+      const b = d.querySelector('button');
+      b.onclick = () => { const open = d.classList.toggle('shut') === false; b.setAttribute('aria-expanded', open); };
+      L.DomEvent.disableClickPropagation(d);
+      return d;
+    };
+    state.credit = c;
+  }
+  const on = !!state.credit._map;
+  if (show && !on){
+    state.credit.addTo(state.map);
+    const d = state.credit.getContainer();
+    clearTimeout(state.creditTimer);
+    state.creditTimer = setTimeout(() => { d.classList.add('shut'); d.querySelector('button').setAttribute('aria-expanded', 'false'); }, 5000);
+  } else if (!show && on){
+    clearTimeout(state.creditTimer);
+    state.credit.remove();
+  }
+}
+const loadScript = (src) => new Promise((ok, no) => {
+  const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s);
+});
+function loadDetail(){
+  if (state.detail || !state.map || state.map.getZoom() < DETAIL.zoom) return;
+  state.detail = 'loading';
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = DETAIL.css; document.head.appendChild(css);
+  Promise.all([loadScript(DETAIL.js).then(() => loadScript(DETAIL.plugin)), fetch(DETAIL.style).then(r => r.json())])
+    .then(([, style]) => {
+      style.layers = style.layers.filter(l => l.type !== 'symbol');   // بلا أسماء ولا أرقام طرق
+      state.tiles = L.maplibreGL({ style, interactive: false }).addTo(state.map);
+      state.detail = 'ready';
+      syncBase();
+    })
+    .catch(() => { state.detail = 'failed'; });   // تعذّر التحميل: تبقى الخريطة العتيقة وحدها، بلا تفاصيل شوارع
+}
+
 function syncBase(){
   if (!state.map) return;
   const z = state.map.getZoom(), close = z >= 9;
   document.getElementById('map').classList.toggle('close-up', close);
+  syncCredit(close && state.detail === 'ready');
   if (state.land) state.land.setStyle(f => ({
     color:'#8a7350', weight: f.properties.focus ? 1.6 : 0.9,
     opacity: close ? .5 : .85,

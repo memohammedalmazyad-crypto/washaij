@@ -209,8 +209,9 @@ a{color:inherit}
 
 /* ---------- الخريطة العتيقة ---------- */
 #map{background:#cfbd97}                       /* البحر: ورق داكن */
-#map .aged-tiles{filter:sepia(.7) saturate(.55) contrast(.98) brightness(1.02)}
-#map.close-up .aged-tiles{filter:sepia(.62) saturate(.8) contrast(1.07) brightness(.97)}
+/* خلفية التفاصيل (OpenFreeMap): تظهر عند التقريب وحده، مصبوغةً بلون الورق القديم */
+#map .leaflet-gl-layer{opacity:.75;filter:sepia(.62) saturate(.8) contrast(1.07) brightness(.97)}
+#map:not(.close-up) .leaflet-gl-layer{visibility:hidden}
 #map.close-up ~ .map-grain{opacity:.18}          /* حبيبات أخف قرب الشوارع لتبقى الأسماء مقروءة */
 .leaflet-container .land-label{
   background:none;border:0;box-shadow:none;padding:0;
@@ -743,3 +744,15 @@ body{min-height:100vh;background:
 @media(max-width:860px){
   .regions,.periods{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 36px);mask-image:linear-gradient(to right,transparent 0,#000 36px)}
 }
+
+/* رأس صفحة الخريطة بلا وسمٍ نصّي: زرّ الصفحة الرئيسية في طرفه، والملاحظة الفارغة لا تأخذ مكانًا */
+.topbar .docs-link{margin-inline-start:auto}
+.region-note:empty{display:none}
+
+/* إسناد الخريطة المختصر: حبّةٌ صغيرة في الركن، تنطوي إلى (i) */
+.map-credit{display:flex;align-items:center;gap:6px;margin:0 8px 8px 0!important;padding:3px 10px 3px 4px;border-radius:99px;
+  background:rgba(255,254,251,.92);color:#4d665f;font-size:11px;line-height:1.4;direction:ltr;box-shadow:0 2px 8px rgba(23,61,54,.12)}
+.map-credit a{color:#173d36;text-decoration:none}.map-credit a:hover{text-decoration:underline}
+.map-credit button{width:20px;height:20px;flex:none;border-radius:50%;background:rgba(23,61,54,.08);color:#173d36;
+  font-family:inherit;font-weight:700;font-size:12px;line-height:20px;text-align:center;padding:0}
+.map-credit.shut{padding:3px}.map-credit.shut span{display:none}
