@@ -38,10 +38,13 @@ AddType application/manifest+json   .webmanifest
   ExpiresByType image/svg+xml             "access plus 1 year"
   ExpiresByType application/json          "access plus 1 day"
   ExpiresByType application/geo+json      "access plus 1 day"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType application/manifest+json "access plus 1 day"
 </IfModule>
 
-# ٦ · لا فهرسة لمجلّد بلا صفحة
+# ٦ · لا فهرسة لمجلّد بلا صفحة، والرابط الخاطئ يصل إلى صفحةٍ تدلّه على الطريق
 Options -Indexes
+ErrorDocument 404 /404.html
 
 # ٧ · منع تنزيل ملفات الإعداد
 <FilesMatch "^\.(git|htaccess|gitignore|nojekyll)">

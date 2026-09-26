@@ -1103,6 +1103,9 @@ localOrFetch(window.WASHAIJ_DATA, './data.json')
     $$('.views button').forEach(b => b.onclick = () => setView(b.dataset.view));
     setView('map');
     initMap(); drawTimeline(); drawWeb();
+    // ?view=time أو ?view=web — روابط صفحة التعريف إلى العرض نفسه
+    const view = new URLSearchParams(location.search).get('view');
+    if (view === 'time' || view === 'web') setView(view);
     loadSites();
     loadVoices().then(() => {
       const pid = new URLSearchParams(location.search).get('chat');

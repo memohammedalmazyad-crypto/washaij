@@ -3,21 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173d36">
+  <meta name="theme-color" content="#f4f2ec">
   <meta name="description" content="وشائج: بنية ثقافية ذكية تحوّل المصادر السعودية الموثّقة إلى معرفة مترابطة وتجارب تفاعلية قابلة للتشغيل في المتاحف والفعاليات والمنصات الرقمية.">
   <title>وشائج | الخريطة التفاعلية</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2715%27%20fill%3D%27%23173d36%27%2F%3E%3Cg%20transform%3D%27translate%2814.7%2010.5%29%20scale%28.21%29%20rotate%28180%2082.5%20103%29%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27%23f3ece1%27%20stroke-width%3D%2722%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M176%2032C145%207%20101%208%2068%2029C34%2051%2022%2091%2033%20124C45%20159%2083%20177%20114%20165C143%20154%20154%20121%20137%2098C123%2079%2096%2077%2081%2096%27%2F%3E%3Cpath%20d%3D%27M43%20145C34%20179%2016%20195-11%20198%27%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%27%23b7834d%27%3E%3Ccircle%20cx%3D%27176%27%20cy%3D%2732%27%20r%3D%2715%27%2F%3E%3Ccircle%20cx%3D%2781%27%20cy%3D%2796%27%20r%3D%2715%27%2F%3E%3Ccircle%20cx%3D%27-11%27%20cy%3D%27198%27%20r%3D%2715%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <link rel="canonical" href="https://washaij.com/map.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="وشائج">
+  <meta property="og:title" content="وشائج — الخريطة التفاعلية">
+  <meta property="og:description" content="شخصياتٌ وأحداثٌ وأماكن من تاريخ المملكة على خريطةٍ واحدة، وكل شخصيةٍ تُكلَّم فتجيب.">
+  <meta property="og:url" content="https://washaij.com/map.html">
+  <meta property="og:image" content="https://washaij.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./leaflet.css?v=1">
   <link rel="preload" as="image" href="./intro-map.svg?v=65">
   <link rel="preload" as="image" href="./washaij-logo-white.svg?v=62">
-  <link rel="stylesheet" href="./style.css?v=69">
+  <link rel="stylesheet" href="./style.css?v=73">
   <script defer src="./leaflet.js?v=1"></script>
   <script defer src="./inline-data.js?v=59"></script>
   <script defer src="./chat-config.js?v=59"></script>
-  <script defer src="./app.js?v=68"></script>
+  <script defer src="./app.js?v=69"></script>
 </head>
 <body>
 <div class="intro" id="intro" aria-hidden="true">
@@ -26,6 +40,7 @@
   <img class="intro-logo" src="./washaij-logo-white.svg?v=62" alt="">
 </div>
 <header class="topbar">
+  <h1 class="sr-only">وشائج — الخريطة التفاعلية</h1>
   <a class="brand" href="./index.html" aria-label="العودة إلى صفحة التعريف">
     <img src="./washaij-logo.svg?v=59" alt="وشائج — شخصيات تحكي، وأماكن تشهد">
   </a>
